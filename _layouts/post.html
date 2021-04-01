@@ -13,11 +13,12 @@ layout: blog
   {{ content }}
 
   <div class="d-flex">
-    {% if page.next.url %}
-      <div class="p-2 flex-fill"><a class="next" href="{{page.next.url}}">&laquo; Next Post</a></div>
-    {% endif %}
     {% if page.previous.url %}
-    <div class="p-2 flex-fill text-end"><a class="prev" href="{{page.previous.url}}">Previous Post &raquo;</a></div>
+    <div class="p-2 flex-fill"><a class="prev" href="{{page.previous.url}}">&laquo; Previous Post</a></div>  
+    
+    {% endif %}
+    {% if page.next.url %}
+    <div class="p-2 flex-fill text-end"><a class="next" href="{{page.next.url}}">Next Post &raquo;</a></div>
   {% endif %}
   </div>
 </article>
