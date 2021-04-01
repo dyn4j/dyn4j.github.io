@@ -1,0 +1,23 @@
+<div class="mb-4">
+<h5 class="text-uppercase">Categories</h5>
+<hr class="mb-4"/>
+<ul>
+{% assign categories_list = site.categories %}
+  {% if categories_list.first[0] == null %}
+    {% for category in categories_list %}
+      <li>
+        <a href="/categories#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}" class="link-secondary">{{ category | camelcase }}</a>
+        <span class="badge bg-dark">{{ site.tags[category].size }}</span>
+      </li>
+    {% endfor %}
+  {% else %}
+    {% for category in categories_list %}
+      <li>
+        <span class="badge bg-dark" style="min-width: 30px;">{{ category[1].size }}</span>
+        <a href="/categories#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}" class="link-secondary">{{ category[0] | camelcase }}</a>
+      </li>
+    {% endfor %}
+  {% endif %}
+{% assign categories_list = nil %}
+</ul>
+</div>

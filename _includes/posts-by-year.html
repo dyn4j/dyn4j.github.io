@@ -1,0 +1,18 @@
+<div class="mb-4">
+    <h5 class="text-uppercase">Posts by Year</h5>
+    <hr class="mb-4"/>
+    <div class="ps-3">
+        {% for post in site.posts %}
+        {% assign currentdate = post.date | date: "%Y" %}
+        {% if currentdate != date %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h5><a href="#" class="link-secondary text-decoration-none" id="y{{post.date | date: " %Y"}}" data-bs-toggle="collapse" data-bs-target="#cy{{post.date | date: "%Y"}}" aria-expanded="false" aria-controls="cy{{post.date | date: " %Y"}}">{{ currentdate }}</a></h5>
+        <ul class="collapse" id="cy{{post.date | date: "%Y"}}">
+          {% assign date = currentdate %}
+          {% endif %}
+          <li><a href="{{ post.url }}" class="link-secondary">{{ post.title }}</a></li>
+          {% if forloop.last %}
+        </ul>{% endif %}
+        {% endfor %}
+    </div>
+</div>

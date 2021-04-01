@@ -1,0 +1,17 @@
+---
+layout: blog
+title: Categories
+---
+
+{%-assign categories = site.categories -%}
+
+{%- if categories.size > 0 -%}
+{% for category in categories %}
+<h3 id="{{ category | first | slugify }}">{{ category[0] }}</h3>
+
+  {% for post in category[1] %}
+  {% include post-list-item.html post=post %}
+  {% endfor %}
+
+{% endfor %}
+{%- endif -%}

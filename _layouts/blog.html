@@ -1,0 +1,19 @@
+---
+layout: main
+---
+
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 offset-1">
+            <h1>{{ page.title }}</h1>
+        </div>
+        <div class="col-lg-7 offset-lg-1">
+          {{ content }}
+        </div>
+        <div class="col-lg-3">
+            {% include blog-right-nav.html %}
+        </div>
+      </div>
+    </div>
+</section>

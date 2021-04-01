@@ -1,0 +1,55 @@
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="/img/logo2.png" alt="" width="104" height="51">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="abountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu" aria-labelledby="abountDropdown">
+                        <li><a class="dropdown-item" href="{{ site.release_notes_url }}">Release Notes</a></li>
+                        <li><a class="dropdown-item" href="{{ site.license_url }}">License</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="downloadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Download</a>
+                    <ul class="dropdown-menu" aria-labelledby="downloadDropdown">
+                        <li><a class="dropdown-item" href="{{ site.maven_url }}">Maven Central</a></li>
+                        <li><a class="dropdown-item" href="{{ site.packages_url }}">GitHub Packages</a></li>
+                        <li><a class="dropdown-item" href="{{ site.releases_url }}">GitHub Releases (versions prior to 3.4.0)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="docsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documentation</a>
+                    <ul class="dropdown-menu" aria-labelledby="docsDropdown">
+                        <li><a class="dropdown-item" href="{{ site.samples_url }}">Samples</a></li>
+                        <li><a class="dropdown-item" href="{{ site.javadoc_url }}">Javadocs</a></li>
+                        <li><a class="dropdown-item" href="{{ site.discussions_url }}">Discussions</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="githubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">GitHub</a>
+                    <ul class="dropdown-menu" aria-labelledby="githubDropdown">
+                        <li><a class="dropdown-item" href="{{ site.github_url }}">Source</a></li>
+                        <li><a class="dropdown-item" href="{{ site.issues_url }}">Issues</a></li>
+                        <li><a class="dropdown-item" href="{{ site.discussions_url }}">Discussions</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.news_url }}">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

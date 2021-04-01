@@ -1,0 +1,14 @@
+{% include tag-cloud.html %}
+{% include posts-by-category.html %}
+
+<div class="mb-4">
+  <h5 class="text-uppercase">Recent Posts</h5>
+  <hr class="mb-4"/>
+  <ul>
+    {% for post in site.posts limit:5 %}
+    <li><a href="{{ site.url }}{{ post.url }}" class="link-secondary">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% include posts-by-year.html %}

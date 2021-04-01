@@ -1,0 +1,14 @@
+<div class="mb-4">
+<h5 class="text-uppercase">Tags</h3>
+<hr class="mb-4"/>
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+    <a href="/tags#{{ tag | first | slugify }}"
+        class="text-decoration-none"
+        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+            {{ tag[0] | replace:'-', ' ' }}
+    </a>
+</span>
+{% endfor %}
+</div>

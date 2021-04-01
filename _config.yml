@@ -1,0 +1,46 @@
+# Site settings
+title: "dyn4j"
+email: "william.bittle@dyn4j.com"
+description: "A 100% Java 2D collision detection and physics engine. Designed to be fast, stable, extensible, and easy to use. dyn4j is free for use in commercial and non-commercial applications"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+author: "William Bittle"
+
+twitter_username: wnbittle
+github_username: "wnbittle"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: 'codehilite'
+      # syntax_highlighter: rouge
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+date_format: '%B %d, %Y'
+
+# urls
+samples_url: "https://github.com/dyn4j/dyn4j-samples"
+download_url: "https://github.com/dyn4j/dyn4j/packages"
+packages_url: "https://github.com/dyn4j/dyn4j/packages"
+releases_url: "https://github.com/dyn4j/dyn4j/releases"
+maven_url: "http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.dyn4j%22%20AND%20a%3A%22dyn4j%22"
+javadoc_url: "https://www.javadoc.io/doc/org.dyn4j/dyn4j/latest/index.html"
+release_notes_url: "https://github.com/dyn4j/dyn4j/blob/master/RELEASE-NOTES.md"
+license_url: "https://github.com/dyn4j/dyn4j/blob/master/LICENSE.md"
+github_url: "https://github.com/dyn4j/dyn4j"
+issues_url: "https://github.com/dyn4j/dyn4j/issues"
+discussions_url: "https://github.com/dyn4j/dyn4j/discussions"
+news_url: "https://github.com/dyn4j/dyn4j/discussions/categories/announcements"
+getting_started_url: "https://github.com/dyn4j/dyn4j#getting-started"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
