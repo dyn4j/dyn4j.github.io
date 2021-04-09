@@ -7,9 +7,6 @@ layout: blog
     <small class="text-muted">Posted on <span>{{- page.date | date: site.date_format -}}</span></small>
   </div>
   
-
-  <!-- <h1>{{ page.title }}</h1> -->
-
   {{ content }}
 
   <div class="d-flex">
@@ -21,4 +18,21 @@ layout: blog
     <div class="p-2 flex-fill text-end"><a class="next" href="{{page.next.url}}">Next Post &raquo;</a></div>
   {% endif %}
   </div>
+
+  {% assign comments = site.data.comments | where: "post_guid", page.guid | reverse %}
+
+  <h4 class="mt-4">Comments <span class="badge bg-primary">{{ comments.size }}</span></h4>
+  <hr class="mb-4" />
+  
+  {% for comment in comments %}
+  <div class="row mb-3">
+    <div class="col-md-6"><strong>{{ comment.author }}</strong></div>
+    <div class="col-md-6 text-muted text-end"><small>{{- comment.date | date: site.date_format -}}</small></div>
+    <div class="col-12">
+      {{ comment.content }}
+    </div>
+    <div class="col-12"><hr class="comment-divider" /></div>
+  </div>
+  {% endfor %}
+
 </article>
