@@ -157,3 +157,9 @@ article .comment-divider {
         opacity: 0.1;
         max-width: 100%;
 }
+
+article blockquote {
+        margin: 1em;
+        padding-left: 1em;
+        border-left: 2px solid #0d6efd;
+}

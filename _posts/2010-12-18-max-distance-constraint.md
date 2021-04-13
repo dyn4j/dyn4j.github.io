@@ -6,18 +6,6 @@ author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=295
 permalink: /2010/12/max-distance-constraint/
-zerif_testimonial_option:
-  - ""
-zerif_team_member_option:
-  - ""
-zerif_team_member_fb_option:
-  - ""
-zerif_team_member_tw_option:
-  - ""
-zerif_team_member_bh_option:
-  - ""
-zerif_team_member_db_option:
-  - ""
 categories:
   - Blog
   - Constrained Dynamics
@@ -35,10 +23,10 @@ The previous solution created a fixed length distance constraint which forced a 
 
 A max length constraint only specifies that the distance between the joined bodies does not exceed the given maximum. So before applying the fixed length distance constraint just check whether the bodies have separated past the maximum distance. If not, then do nothing. Simple!
 
-<pre class="lang:default decode:true ">l = (pa - pb).getMagnitude();
-if (l &gt; maxDistance) {
+```java
+l = (pa - pb).getMagnitude();
+if (l > maxDistance) {
   // apply constraint
 }
-// otherwise do nothing</pre>
-
-&nbsp;
+// otherwise do not apply the constraint
+```

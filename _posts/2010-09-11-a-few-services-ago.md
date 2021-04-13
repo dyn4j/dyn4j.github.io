@@ -13,7 +13,7 @@ tags:
   - Bible
   - One God
 ---
-A few services ago we had one of our Youth Ministers preach. The topic wasn&#8217;t necessarily about the Biblical teaching of One God, however some verses used in the sermon really stand out:
+A few services ago we had one of our Youth Ministers preach. The topic wasn't necessarily about the Biblical teaching of One God, however some verses used in the sermon really stand out:
 
 John 14:26  
 But the Comforter, which is the Holy Ghost, whom the Father will send in my name, he shall teach you all things, and bring all things to your rememberance, whatsoever I have said unto you.
@@ -25,6 +25,6 @@ It may seem like a contradiction, however, if you believe that the Father, the S
 
 These particularly stand out to me since they are both words spoken by Jesus (red letter edition), they are within the same book, within one chapter of each other, and the same verse number.
 
-In addition, it&#8217;s interesting to me because it resembles a logical proof. One method of proving a theory as true or false is to assume the opposite of what you are trying to prove is true and then find a contradiction. This does exactly that.
+In addition, it's interesting to me because it resembles a logical proof. One method of proving a theory as true or false is to assume the opposite of what you are trying to prove is true and then find a contradiction. This does exactly that.
 
 Anyway, just figured I would share this.

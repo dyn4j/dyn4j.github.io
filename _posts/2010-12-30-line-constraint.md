@@ -220,8 +220,8 @@ JM^{-1}J^T &= \vec{t}^TM_a^{-1}\vec{t} + (\vec{r_a} \times \vec{t})I_a^{-1}(\vec
 \end{align}
 $$
 
-Plug the values of the K matrix and b vector into your linear equation solver and you will get the impulse required to satisfy the constraint.
+Plug the values of the $$ K $$ matrix and $$ \vec{b} $$ vector into your linear equation solver and you will get the impulse required to satisfy the constraint.
 
-Note here that if you are using an iterative solver that the K matrix does not change over iterations and as such can be computed once each time step.
+Note here that if you are using an iterative solver that the $$ K $$ matrix does not change over iterations and as such can be computed once each time step.
 
-Another interesting thing to note is that the K matrix will always be a square matrix with a size equal to the number of degrees of freedom (DOF) removed. This is a good way to check that the derivation was performed correctly.
+Another interesting thing to note is that the $$ K $$ matrix will always be a square matrix with a size equal to the number of degrees of freedom (DOF) removed. This is a good way to check that the derivation was performed correctly.
