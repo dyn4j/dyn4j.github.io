@@ -156,9 +156,9 @@ The linear velocities are already isolated so we can ignore those for now. The a
 
 $$
 \begin{align}
-w \times \vec{r} &= \begin{bmatrix} -wr_y \\ wr_x \end{bmatrix} = \begin{bmatrix} -r_y \\ r_x \end{bmatrix}w \\
-R_s &= \begin{bmatrix} -r_y \\ r_x \end{bmatrix} \\
-w \times \vec{r} &= R_sw
+w \times \vec{r} &= \begin{bmatrix} -wr_y \\ wr_x \end{bmatrix} \\
+&= \begin{bmatrix} -r_y \\ r_x \end{bmatrix}w \\
+&= R_sw
 \end{align}
 $$
 

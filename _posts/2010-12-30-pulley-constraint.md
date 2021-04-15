@@ -172,14 +172,6 @@ The next step involves isolating the velocities and identifying the Jacobian. Th
 
 The linear velocities are already isolated so we can ignore those for now. The angular velocities on the other hand have a pesky cross product. In 3D, we can use the identity that a cross product of two vectors is the same as the multiplication by a skew symmetric matrix and the other vector; see <a href="http://en.wikipedia.org/wiki/Cross_product" target="_blank">here</a>. For 2D, we can do something similar by examining the cross product itself:
 
-First let:
-
-$$
-R_s = \begin{bmatrix} -r_y \\ r_x \end{bmatrix}
-$$
-
-Then:
-
 $$
 \begin{align}
 w \times \vec{r} &= \begin{bmatrix} -wr_y \\ wr_x \end{bmatrix} \\

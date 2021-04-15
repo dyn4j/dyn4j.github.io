@@ -6,18 +6,6 @@ author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=191
 permalink: /2010/07/equality-constraints/
-zerif_testimonial_option:
-  - ""
-zerif_team_member_option:
-  - ""
-zerif_team_member_fb_option:
-  - ""
-zerif_team_member_tw_option:
-  - ""
-zerif_team_member_bh_option:
-  - ""
-zerif_team_member_db_option:
-  - ""
 categories:
   - Blog
   - Constrained Dynamics
@@ -29,130 +17,143 @@ tags:
   - Game Development
   - Physics
 ---
-After the first release of the [dyn4j](http://www.dyn4j.org) project, I felt that it would be good to pass along what I learned about constrained dynamics.
+After the first release of the [dyn4j](http://www.dyn4j.org) project, I felt that it would be good to pass along what I learned about constrained dynamics.  This is not an easy subject and aside from purchasing books there's not much information out there about it for those of us not accustomed to reading research papers or theses.
 
-This is not an easy subject and aside from purchasing books there&#8217;s not much information out there about it for those of us not accustomed to reading research papers or theses.
+Recall that in 3D, for each body, there are 6 degrees of freedom (DOF) - or ways to move: translation along the x, y, and z axes and rotation about those same axes.  In 2D, there are only 3 DOF: x, y and rotation within the x-y plane.  The DOF are what are _constrained_ to produce mechanical effects like hinges, fixed distance, limits, etc.  While constraints are typically defined as pairwise, they can be any combination. Pairwise constraints are simple to define, solve, and use which explains their ubiquity.  Pairwise constraints can be _combined_ to produce complex behavior without creating complex formulations. Unary constraints are even easier but provide less flexibility when it comes to simulation effects.
 
-In this post I plan to solve a velocity constraint generally. Later posts will be for the individual types of constraints.  
-<!--more-->
+Constraints must be _solved_ to enforce their properties and this can be done on 3 different levels: acceleration, velocity, and position.  Each have their pros and cons, but velocity constraints are typically more stable, easier to construct and are easier to solve.  That said, solving on _multiple_ levels has its advantages as well.  A great example is that of acceleration and velocity constraints - while we can solve these constraints exactly, the nature of finite precision, discrete timesteps, and non-global solvers will always introduce drift - the effect of the constraint slowly being violated.  We can use furter solve the position constraints after solving the velocity constraints to prevent drift.
 
-  
-A phyiscial constraint is defined by some function:
+What follows is a framework for building a set of pairwise velocity constraints for 2D.  This same framework can be applied to 3D as well.  In subsequent posts, we'll examine a number of common constraints, define their position constriannt and velocity constraint.  They'll be a little heavy on the Vector/Matrix algrebra side, but a few tricks come up which are really important to reducing down the formulations.
 
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc0.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc0.png"><img loading="lazy" class=" size-full wp-image-554 alignnone" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc0.png" alt="eqc0" width="204" height="29" /></a>
+## Position Constraint, Velocity Constraint, and the Jacobian
 
-Where x is the position of the body and R is the rotation of the body. Typically constraints are pairwise. You can formulate constraints using any number of bodies, however, pairwise formulations are simple. When this function is equal to zero the constraint is satisfied.
+Let's first start with our simple formulation of a position constraint:
 
-If we perform the derivative with respect to time we get the velocity constraint
+$$
+C(x(t),y(t),\theta(t)) = C(\vec{q}(t))
+$$
 
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc1.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc1.png"><img loading="lazy" class=" size-full wp-image-539 alignnone" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc1.png" alt="eqc1" width="121" height="35" /></a>
+Where $$ x(t), y(t), \theta(t) $$ are the functions that define the translation along the x and y axes and the rotation within the x-y plane respectively. We simplify a bit by grouping these states into a vector $$ \vec{q}(t) $$. Next, our goal is to find the velocity constraint for the position constraint. To get the velocity constraint we need to take the derivative with respect to time of the position constraint. However, recall that our constraint function $$ C $$ is a vector valued function which [requires us to apply the multivariable chain rule](https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/differentiating-vector-valued-functions/a/multivariable-chain-rule-simple-version).  This gives us the following:
 
-Since C is a function of positions and rotations who are themselves functions of time, we must perform the chain rule. The derivative of one vector function (C) by another vector function (x) yields a Jacobian matrix:
+$$
+\begin{align}
+\frac{d}{dt}C(\vec{q}(t)) &= J\frac{d}{dt}\vec{q}(t) \\
+&= J\vec{v}
+\end{align}
+$$
 
-<div id="attachment_540" style="width: 112px" class="wp-caption alignnone">
-  <a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc2.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc2.png"><img aria-describedby="caption-attachment-540" loading="lazy" class="wp-image-540 size-full" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc2.png" alt="Equation 1" width="102" height="35" /></a>
-  
-  <p id="caption-attachment-540" class="wp-caption-text">
-    Equation 1
-  </p>
-</div>
+Where $$ \vec{v} $$ is a column vector containing both the linear and angular velocities and $$ J $$ is the [Jacobian Matrix](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant#Jacobian_matrix).  We know that for the position constraint to be satisfied $$ C = 0 $$ and the same applies for our velocity constraint:
 
-Where v is the vector of velocities from the bodies. The Jacobian rows contain the gradients of the scalar components of the constraint function C. We know that the gradient direction is the highest rate of increase of the scalar function C and unless the constraint is satisfied then it will be non-zero. Therefore the gradient is the direction of the illegal movement. We want the constraint force to act in this direction since we don&#8217;t want to constrain legal movement:
+$$
+\begin{equation}
+\frac{d}{dt}C = J\vec{v} = 0
+\tag{1}
+\end{equation}
+$$
 
-<div id="attachment_541" style="width: 121px" class="wp-caption alignnone">
-  <a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc3.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc3.png"><img aria-describedby="caption-attachment-541" loading="lazy" class="wp-image-541 size-full" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc3.png" alt="Equation 2" width="111" height="32" /></a>
-  
-  <p id="caption-attachment-541" class="wp-caption-text">
-    Equation 2
-  </p>
-</div>
+## Velocity Evolution
+What might not be apparent still is how this applies to keeping the constraint enforced.  The key here is understanding the evolution of a body's velocity over time:
 
-Where lambda a vector of the magnitudes of the constraint forces. The constraint force is the force that must be applied to counter act external forces so that the constraint is satisfied.
+$$
+\vec{v_f} = \vec{v_i} + \Delta t (\vec{a})
+$$
 
-We know that the final velocity of a system is:
+Also recall Netwon's second law and solve for $$ \vec{a} $$
 
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc4.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc4.png"><img loading="lazy" class=" size-full wp-image-542 alignnone" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc4.png" alt="eqc4" width="187" height="31" /></a>
+$$
+\begin{align}
+\sum \vec{f} &= M\vec{a} \\
+M\vec{a} &= \sum \vec{f} \\
+\vec{a} &= M^{-1}(\vec{f}_{ext} + \vec{f}_c)
+\end{align}
+$$
 
-We also know that the sum of all the forces on a body is:
+> A key concept here is the split of the total force into external forces $$ f_{ext} $$ and constraint forces $$ f_c $$.  In the next step this allows us to remove the external forces from the equation leaving only the the constraint forces.  We can do this by integrating them before we start solving the velocity constraints by numerically evaluating them via an ODE and assigning the result to $$ \vec{v_i} $$ i.e. $$ \vec{v_i} = \vec{v_i} + \Delta t M^{-1}\vec{f}_{ext} $$.
 
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc5.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc5.png"><img loading="lazy" class=" size-full wp-image-543 alignnone" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc5.png" alt="eqc5" width="234" height="108" /></a>
+Now if we combine these two equations:
 
-We can split the external forces and the constraint forces apart and then distribute:
+$$
+\begin{align}
+\vec{v_f} &= \vec{v_i} + \Delta t M^{-1}(\vec{f}_{ext} + \vec{f}_c) \\
+&= \vec{v_i} + \Delta t M^{-1}\vec{f}_c
+\end{align}
+$$
 
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc6.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc6.png"><img loading="lazy" class="alignnone wp-image-544 size-full" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc6.png" alt="eqc6" width="411" height="73" srcset="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc6.png 411w, http://www.dyn4j.org/wp-content/uploads/2010/07/eqc6-300x53.png 300w" sizes="(max-width: 411px) 100vw, 411px" /></a>
+## The Constraint Force
+At this point, we have a general equation for getting the new velocity of a body given it's initial velocity, the sum of constraint forces, and the elapsed time.  The next key step is to combine our equation (1) from above with this equation.  But to do so we need to define $$ \vec{f}_c $$ as the magnitude of the force $$ \vec{\lambda} $$ times the direction of the force $$ J^T $$.
 
-If we look closely we can perform the integration using the external forces separately therefore removing the external forces from the equation:
+$$
+\vec{f}_c = J^T\vec{\lambda}_f
+$$
 
-<div id="attachment_545" style="width: 248px" class="wp-caption alignnone">
-  <a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc7.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc7.png"><img aria-describedby="caption-attachment-545" loading="lazy" class="wp-image-545 size-full" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc7.png" alt="Equation 3" width="238" height="36" /></a>
-  
-  <p id="caption-attachment-545" class="wp-caption-text">
-    Equation 3
-  </p>
-</div>
+> See [here](https://physics.stackexchange.com/a/47962), [here](http://www.cs.cmu.edu/~baraff/sigcourse/notesf.pdf) page 7, and [here](https://ubm-twvideo01.s3.amazonaws.com/o1/vault/gdc09/slides/04-GDC09_Catto_Erin_Solver.pdf) slide 15 for the best description of this.
 
-Now if we substitute equation [2] into [3]:
+If we substitute this equation into our last equation we get:
 
-<div id="attachment_546" style="width: 275px" class="wp-caption alignnone">
-  <a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc8.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc8.png"><img aria-describedby="caption-attachment-546" loading="lazy" class="wp-image-546 size-full" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc8.png" alt="Equation 4" width="265" height="36" /></a>
-  
-  <p id="caption-attachment-546" class="wp-caption-text">
-    Equation 4
-  </p>
-</div>
+$$
+\begin{align}
+\vec{v_f} &= \vec{v_i} + \Delta t M^{-1}\vec{f}_c \\
+&= \vec{v_i} + M^{-1}J^T(\Delta t \vec{\lambda}_f) \\
+&= \vec{v_i} + M^{-1}J^T\vec{\lambda}_{imp} \tag{2}
+\end{align}
+$$
 
-Now if we substitue equation [4] into equation [1]:
+> Note that $$ \Delta t $$ is a scalar and can be moved around.  Also note that $$ \vec{\lambda}_f $$ is the magnitude of the force and $$ \Delta t\vec{\lambda}_f $$ is the magnitude of the impulse $$ \vec{\lambda}_{imp} $$.  This is how at the velocity level we deal with impulses.
 
-<div id="attachment_547" style="width: 314px" class="wp-caption alignnone">
-  <a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc9.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc9.png"><img aria-describedby="caption-attachment-547" loading="lazy" class="wp-image-547 size-full" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc9.png" alt="Equation 5" width="304" height="37" srcset="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc9.png 304w, http://www.dyn4j.org/wp-content/uploads/2010/07/eqc9-300x37.png 300w" sizes="(max-width: 304px) 100vw, 304px" /></a>
-  
-  <p id="caption-attachment-547" class="wp-caption-text">
-    Equation 5
-  </p>
-</div>
+## Solving for the Impulse $$ \vec{\lambda}_{imp} $$
+Finally, we have what we need to solve the constraint by substituting the above equation for $$ \vec{v} $$ in equation (1):
 
-Now if we rearrange the terms to match the form Ax = b:
+$$
+\begin{align}
+J\vec{v} &= 0 \\
+J(\vec{v_i} + M^{-1}J^T\vec{\lambda}_{imp}) &= 0 \\
+J\vec{v_i} + JM^{-1}J^T\vec{\lambda}_{imp} &= 0 \\
+JM^{-1}J^T\vec{\lambda}_{imp} &= -J\vec{v_i} \tag{3}
+\end{align}
+$$
 
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc10.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc10.png"><img loading="lazy" class="alignnone wp-image-548 size-full" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc10.png" alt="" width="323" height="116" srcset="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc10.png 323w, http://www.dyn4j.org/wp-content/uploads/2010/07/eqc10-300x108.png 300w" sizes="(max-width: 323px) 100vw, 323px" /></a>
+It may not look like much, but this is exactly what we need to solve the constraint now.  It's now in the [general form](https://en.wikipedia.org/wiki/System_of_linear_equations#Matrix_equation) for solving a system of linear equations $$ A\vec{x} = \vec{b} $$ where:
 
-We also know that:
+$$
+\begin{align}
+A &= JM^{-1}J^T \\
+\vec{x} &= \vec{\lambda}_{imp} \\
+\vec{b} &= -J\vec{v_i}
+\end{align}
+$$
 
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc11.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc11.png"><img loading="lazy" class=" size-full wp-image-549 alignnone" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc11.png" alt="eqc11" width="103" height="32" /></a>
+This will solve the constraints exactly, however, given that the integrator is only an approximation of the ODE and the lack of infinite precision, the constraint will drift as mentioned in the beginning. For example, a point-to-point constraint (simulates a revolute joint) will drift, where the local points of the world space anchor point slowly separate over time.
 
-Where P is the impulse, therefore:
+Drift can be solve using methods like Baumgarte stabilization, post/pre stabilizations methods, etc. which is best left for another post.
 
-<div id="attachment_550" style="width: 300px" class="wp-caption alignnone">
-  <a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc12.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc12.png"><img aria-describedby="caption-attachment-550" loading="lazy" class="wp-image-550 size-full" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc12.png" alt="Equation 6" width="290" height="37" srcset="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc12.png 290w, http://www.dyn4j.org/wp-content/uploads/2010/07/eqc12-285x37.png 285w" sizes="(max-width: 290px) 100vw, 290px" /></a>
-  
-  <p id="caption-attachment-550" class="wp-caption-text">
-    Equation 6
-  </p>
-</div>
+> You can solve the system of equations using a general linear equation solver or via matrix multiplication $$ \vec{x} = A^{-1}\vec{b} $$
 
-Where lambda is the constraint impulse. We stated at the beginning of the post that if the constraint is satisfied if the constraint equals zero. This is true for the velocity constraint as well:
+After solving for $$ \vec{\lambda}_{imp} $$, we can substitute it back into equation 2 to get the final velocities.
 
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc13.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc13.png"><img loading="lazy" class=" size-full wp-image-551 alignnone" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc13.png" alt="eqc13" width="268" height="34" /></a>
+## Final Comments
+What we've done is built a foundation for solving a general set of constraints (equation 3).  This general formulation requires the definition of the velocities, masses, and the Jacobian.  With this new found ability, the next few posts will focus on describing the position constraints for fundamental constraint types, performing the derivative, isolating the velocities, and identifying the Jacobian by inspection.  Then, we'll take the masses and Jacobian and build the $$ A $$ matrix and $$ \vec{b} $$ vector so we can solve for the impulse $$ \vec{\lambda}_{imp} $$.  And finally, after solving for the impulse we'll use it to compute the new velocities.
 
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc14.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc14.png"><img loading="lazy" class=" size-full wp-image-552 alignnone" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc14.png" alt="eqc14" width="242" height="34" /></a>
+The next few posts will focus on pairwise constraints in 2D.  Each constraint's Jacobian will be different, but we can get a little head start by defining the mass and velocity vector which will be the same for every constraint:
 
-This will solve the constraint exactly, however, given that the integrator is only an approximation of the ODE and the lack of infinite precision the constraint will &#8220;drift.&#8221; For example, a point-to-point constraint (simulates a revolute joint) will drift, where the local points of the world space anchor point slowly separate over time.
+$$
+\begin{align}
+M^{-1} &= \begin{bmatrix} 
+M_a^{-1} & 0 & 0 & 0 \\
+0 & I_a^{-1} & 0 & 0 \\
+0 & 0 & M_b^{-1} & 0 \\
+0 & 0 & 0 & I_b^{-1}
+\end{bmatrix} \\
+\vec{v}_i &= \begin{bmatrix}
+\vec{v_a} \\
+w_a \\
+\vec{v_b} \\
+w_b
+\end{bmatrix}
+\end{align}
+$$
 
-Drift can be solve using methods like Baumgarte stabilization, post/pre stabilizations methods, etc. That will be left for another post.
+> Note that in 2D the angular velocity $$ w $$ is a scalar.
 
-The equation is now in the form:
+> These are denoted this way because they represent the mass and velocity of the **system**.
 
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc15.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc15.png"><img loading="lazy" class=" size-full wp-image-553 alignnone" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc15.png" alt="eqc15" width="169" height="131" /></a>
-
-and can be solved using any linear equation solver desired. After solving for lamda, we can substitute it back into equation 4:
-
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc16.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc16.png"><img loading="lazy" class="alignnone wp-image-537 size-full" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc16.png" alt="eqc16" width="265" height="111" /></a>
-
-to find the final velocities.
-
-Remember that the velocity vector is the velocity of the **system** and the mass matrix is the mass of the **system**. For example, a two body system would have the form:
-
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc17.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc17.png"><img loading="lazy" class=" size-full wp-image-538 alignnone" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc17.png" alt="eqc17" width="220" height="108" /></a>
-
-<a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2010/07/eqc18.png');"  href="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc18.png"><img loading="lazy" class="alignnone wp-image-555 size-full" src="http://www.dyn4j.org/wp-content/uploads/2010/07/eqc18.png" alt="eqc18" width="196" height="30" /></a>
-
-The Jacobian, as we will see in the next few posts, will be specific to the type of constraint being added and the number of bodies involved (as we see above).
+A final note on solving the system of equations.  In 2D there will be a maximum of 3x3 system to solve (though this could depend on how you solve other constraints like limits) if you solve each constraint individually.  The formulation above _could_ be used to solve the entire system of all constraints for all bodies, but the challenge is the size of the resulting $$ A $$ matrix and computing it's inverse (or solving for it - these concepts are the same).  Instead, for [dyn4j](http://www.dyn4j.org), we solve each constraint by itself _sequentially_.  This can have the effect of invalidating a constraint after another one has been solved and so we do this same sequential solve process N times to reach a global solution.  The trick to make this work is to clamp the total impulse, not the incremental impulse.  This process ends up begin equivalent to solving the global solution (with enough iterations) but with the added benefits of a simpler and performance-accuracy trade off configuration (the number of iterations).  
