@@ -10,6 +10,7 @@ twitter_username: wnbittle
 github_username: "wnbittle"
 
 # Build settings
+timezone: America/New_York
 markdown: kramdown
 highlighter: rouge
 kramdown:
