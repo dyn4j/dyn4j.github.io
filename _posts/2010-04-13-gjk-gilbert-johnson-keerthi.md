@@ -1,7 +1,7 @@
 ---
 id: 368
 title: GJK (Gilbert–Johnson–Keerthi)
-date: 2010-04-13T22:12:35-05:00
+date: 2010-04-13T00:12:35-05:00
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=88
