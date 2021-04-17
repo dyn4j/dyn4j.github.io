@@ -1,7 +1,7 @@
 ---
 id: 369
 title: 'GJK, Distance, Closest Points'
-date: 2010-04-26T00:23:39-05:00
+date: 2010-04-26 00:23:39 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=153

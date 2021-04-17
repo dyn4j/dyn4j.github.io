@@ -1,7 +1,7 @@
 ---
 id: 370
 title: EPA (Expanding Polytope Algorithm)
-date: 2010-05-14T00:37:48-05:00
+date: 2010-05-14 00:37:48 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=180
