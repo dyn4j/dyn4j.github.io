@@ -2,10 +2,16 @@
 
 <div class="card mb-3 post-list-item">
     <div class="row g-0">
+      {% if post.image != blank and post.image != "" and post.image != nil %}
+      {% assign sizeClass = "col-md-8" %}
       <div class="col-md-4">
         <img src="{{ post.image }}" class="card-img-top"/>
       </div>
-      <div class="col-md-8">
+      {% else %}
+      {% assign sizeClass = "col-md-12" %}
+      {% endif %}
+      
+      <div class="{{ sizeClass }}">
         <div class="card-body">
           <h5 class="card-title"><a href="{{ post.url }}" class="link-dark text-decoration-none">{{- post.title -}}</a></h5>
           <p class="card-text">{{ post.excerpt }}</p>

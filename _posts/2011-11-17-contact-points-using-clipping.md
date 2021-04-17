@@ -55,7 +55,7 @@ The first step is to identify the features of the shapes that are involved in th
 int c = vertices.length;
 for (int i = 0; i < c; i++) {
   double projection = n.dot(v);
-  if (projection &gt; max) {
+  if (projection > max) {
     max = projection;
     index = i;
   }
