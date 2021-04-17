@@ -1,7 +1,7 @@
 ---
 id: 375
 title: Max Distance Constraint
-date: 2010-12-18T13:22:59-05:00
+date: 2010-12-18 13:22:59 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=295

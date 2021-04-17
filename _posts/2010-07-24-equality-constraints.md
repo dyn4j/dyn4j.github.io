@@ -1,7 +1,7 @@
 ---
 id: 371
 title: Equality Constraints
-date: 2010-07-24T13:36:21-05:00
+date: 2010-07-24 13:36:21 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=191

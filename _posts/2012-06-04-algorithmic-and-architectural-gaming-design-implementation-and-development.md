@@ -1,7 +1,7 @@
 ---
 id: 435
 title: 'Algorithmic and Architectural Gaming Design: Implementation and Development'
-date: 2012-06-04T11:22:57-05:00
+date: 2012-06-04 11:22:57 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=435

@@ -1,7 +1,7 @@
 ---
 id: 437
 title: Weld Constraint
-date: 2010-12-30T17:05:41-05:00
+date: 2010-12-30 17:05:41 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=337

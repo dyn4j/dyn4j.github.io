@@ -1,7 +1,7 @@
 ---
 id: 377
 title: Angle Constraint
-date: 2010-12-30T14:45:25-05:00
+date: 2010-12-30 14:45:25 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=330

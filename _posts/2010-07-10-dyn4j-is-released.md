@@ -1,7 +1,7 @@
 ---
 id: 99
 title: dyn4j Is Released!
-date: 2010-07-10T15:20:25-05:00
+date: 2010-07-10 15:20:25 -0500
 author: William Bittle
 layout: post
 guid: http://www.dyn4j.org/?p=99

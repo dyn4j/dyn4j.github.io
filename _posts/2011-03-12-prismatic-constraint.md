@@ -1,7 +1,7 @@
 ---
 id: 440
 title: Prismatic Constraint
-date: 2011-03-12T18:52:03-05:00
+date: 2011-03-12 18:52:03 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=375

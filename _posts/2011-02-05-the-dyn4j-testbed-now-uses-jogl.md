@@ -1,7 +1,7 @@
 ---
 id: 439
 title: The dyn4j TestBed Now Uses JOGL
-date: 2011-02-05T14:31:35-05:00
+date: 2011-02-05 14:31:35 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=367

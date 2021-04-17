@@ -1,7 +1,7 @@
 ---
 id: 394
 title: Contact Points Using Clipping
-date: 2011-11-17T20:18:44-05:00
+date: 2011-11-17 20:18:44 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=394

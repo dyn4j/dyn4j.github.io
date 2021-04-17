@@ -1,7 +1,7 @@
 ---
 id: 373
 title: A Few Services Ago
-date: 2010-09-11T11:26:05-05:00
+date: 2010-09-11 11:26:05 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=261

@@ -1,7 +1,7 @@
 ---
 id: 438
 title: Line Constraint
-date: 2010-12-30T20:45:04-05:00
+date: 2010-12-30 20:45:04 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=348

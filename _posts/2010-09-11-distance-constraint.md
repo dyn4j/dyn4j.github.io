@@ -1,7 +1,7 @@
 ---
 id: 374
 title: Distance Constraint
-date: 2010-09-11T13:07:48-05:00
+date: 2010-09-11 13:07:48 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=267

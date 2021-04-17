@@ -1,7 +1,7 @@
 ---
 id: 782
 title: dyn4j Moved to GitHub
-date: 2015-03-14T01:07:35-05:00
+date: 2015-03-14 01:07:35 -0500
 author: William Bittle
 layout: post
 guid: http://www.dyn4j.org/?p=782

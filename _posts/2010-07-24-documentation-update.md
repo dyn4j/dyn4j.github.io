@@ -1,7 +1,7 @@
 ---
 id: 122
 title: Documentation Update
-date: 2010-07-24T09:42:56-05:00
+date: 2010-07-24 09:42:56 -0500
 author: William Bittle
 layout: post
 guid: http://www.dyn4j.org/?p=122

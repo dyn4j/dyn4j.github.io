@@ -1,7 +1,7 @@
 ---
 id: 384
 title: How A Differential Gear Works
-date: 2011-03-29T11:22:45-05:00
+date: 2011-03-29 11:22:45 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=384
