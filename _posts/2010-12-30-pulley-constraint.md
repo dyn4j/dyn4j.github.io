@@ -1,7 +1,7 @@
 ---
 id: 376
 title: Pulley Constraint
-date: 2010-12-30 13:32:42 -0500
+date: 2010-12-30 00:32:42 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=300
