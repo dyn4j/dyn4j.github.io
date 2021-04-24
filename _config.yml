@@ -41,6 +41,7 @@ issues_url: "https://github.com/dyn4j/dyn4j/issues"
 discussions_url: "https://github.com/dyn4j/dyn4j/discussions"
 news_url: "https://github.com/dyn4j/dyn4j/discussions/categories/announcements"
 getting_started_url: "https://github.com/dyn4j/dyn4j#getting-started"
+pages_url: "/pages"
 
 plugins:
   - jekyll-feed

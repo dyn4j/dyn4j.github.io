@@ -22,8 +22,6 @@ tags:
 ---
 Many have asked "How do I get the contact points from GJK?" or similar on the <a title="SAT" href="/2010/01/sat/" target="_blank">SAT</a>, <a title="GJK (Gilbert–Johnson–Keerthi)" href="/2010/04/gjk-gilbert-johnson-keerthi/" target="_blank">GJK</a>, and <a title="EPA (Expanding Polytope Algorithm)" href="/2010/05/epa-expanding-polytope-algorithm/" target="_blank">EPA</a> posts. I've finally got around to creating a post on this topic. Contact point generation is a vital piece of many applications and is usually the next step after collision detection. Generating **good** contact points is crucial to predictable and life-like iteractions between bodies. In this post I plan to cover a clipping method that is used in <a href="http://www.box2d.org/">Box2d</a> and [dyn4j](http://www.dyn4j.org/). This is not the only method available and I plan to comment about the other methods near the end of the post.
 
-<!--more-->
-
   1. [Introduction](#cpg-intro)
   2. [Finding the Features](#cpg-find)
   3. [Clipping](#cpg-clip)

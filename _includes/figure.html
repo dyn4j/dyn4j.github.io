@@ -1,5 +1,10 @@
-{% capture imagePath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+{% capture imagePath %}{{ page.date | date: "%Y-%m-%d-" }}{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+{% if page.id %}
+{% assign type = "posts" %}
+{% else %}
+{% assign type = "pages" %}
+{% endif %}
 <figure class="figure">
-  <img src="/assets/posts/{{ imagePath }}" class="figure-img img-fluid rounded" alt="{{ include.caption }}">
+  <img src="/assets/{{ type }}/{{ imagePath }}" class="figure-img img-fluid rounded" alt="{{ include.caption }}">
   <figcaption class="figure-caption text-center">{{ include.caption }}</figcaption>
 </figure>
