@@ -1,0 +1,6 @@
+id: 9231
+date: 2011-06-29 16:07:14 -0400
+author: Dirk Gregorius
+parent: prismatic-constraint
+avatar: http://0.gravatar.com/avatar/fae854963a661a0fb368359effc41a59?s=96&d=mm&r=g
+message: "<p>The Jacobian is not correct. You have to start from position constraint and then find the Jacobian by inspection.</p>\n<p>C = (x2 + r2 &#8211; x1 &#8211; r1) * t = 0</p>\n<p>This is a function of the C = f(t) * g(t) with f(t) = (x2 + r2 &#8211; x1 &#8211; r1) and g(t) = t. The derivative is dC/dt = df*dt * g + f * dg/dt.</p>\n<p>This is a common mistake people make for prismatic joints. You can look into Box2D for a correct Jacobian.</p>\n<p>For a general framework on how to indentify constraints and Jacobians I recommend looking at Shabana \"Multibody Dynamics\"</p>\n<p>Cheers,<br />\n-Dirk</p>"

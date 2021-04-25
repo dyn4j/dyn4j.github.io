@@ -1,0 +1,6 @@
+id: 156380
+date: 2017-06-18 16:11:39 -0400
+author: Benjamin
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/666e55bc0cf0133e72a7d9c0c0fa2bbe?s=96&d=mm&r=g
+message: "<p>That is, I am dealing with low depth collisions where a vertex shallowly penetrates an edge.  Using GJK, I know a collision has occurred before significant penetration, but I need to know the vertex and edge involved in the collision to calculate a physically accurate collision response.</p>"

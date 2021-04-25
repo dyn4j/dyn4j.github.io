@@ -1,0 +1,6 @@
+id: 9244
+date: 2012-03-16 18:36:02 -0400
+author: Albert
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/c027c85bd07353cfb7f9fa65076e5734?s=96&d=mm&r=g
+message: "<p>Hi William, I have a doubt</p>\n<p>How I calculate: </p>\n<p>19 // get the reference edge normal<br />\n20 Vector2 refNorm = ref.cross(-1.0);</p>\n<p>.cross is cross product?<br />\ncross product is defined for two vectors in R3, so..<br />\n How do I calculate  ref.cross(-1.0) ?</p>\n<p>Sorry my bad english..</p>"

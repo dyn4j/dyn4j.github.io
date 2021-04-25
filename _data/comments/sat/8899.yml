@@ -1,0 +1,6 @@
+id: 8899
+date: 2012-01-30 13:38:27 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Ok, I see where the confusion is now.  Actually that code there purposefully excludes normalizing the vector.  This is because I save talking about the MTV until later in the post.  (The SAT algorithm can determine if two shapes are intersecting without normalized vectors if you don't need the MTV later.  I think this is probably what's not clear.)  The axes array actually contains a list of normal vectors <strong>not</strong> normalized normal vectors.  Later I add a note in the \"Projecting A Shape Onto An Axis\" section about how the axis needs to be normalized if you want accurate MTVs.</p>\n<p>I have added some additional comments to the post in that section elaborating a little.  Does that address the confusion?</p>\n<p>William</p>"

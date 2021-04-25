@@ -1,0 +1,6 @@
+id: 8996
+date: 2011-02-05 19:13:29 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Yes, that's exactly right.  If you are only looking for a boolean true/false then you only need to create a simplex within the Minkowski sum (difference in our case) as outlined in this post.  If you can create a simplex that contains the origin, then the shapes are colliding, otherwise they are not.</p>\n<p><img src=\"http://www.dyn4j.org/wp-content/uploads/2010/04/gjk-figure11.png\" alt=\"Figure 11\" /></p>\n<p><img src=\"http://www.dyn4j.org/wp-content/uploads/2010/04/gjk-figure12.png\" alt=\"Figure 12\" /></p>\n<p>Here is the same example just the blue shape has been translated (1, -1).  <em>Notice how the Minkowski sum shape doesnt change, it only moves (-1, 1).</em>  If you run through the code above using this example you will notice that the condition:</p>\n<pre>\n// make sure that the last point we added actually passed the origin\nif (Simplex.getLast().dot(d) <= 0) {\n</pre>\n<p>Will fail during the \"create simplex\" iteration.  If at any point this condition fails then we know that they shapes are not overlapping.</p>"

@@ -1,0 +1,6 @@
+id: 198549
+date: 2019-10-05 22:37:01 -0400
+author: Orbit
+parent: sat
+avatar: http://2.gravatar.com/avatar/b93325e5762b03090b84240fc82353a7?s=96&d=mm&r=g
+message: "<p>i have implemented this for convex polygons and its working fine, but how do i get the MTV for concave polygons?</p>"

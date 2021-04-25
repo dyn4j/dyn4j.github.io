@@ -1,0 +1,6 @@
+id: 9079
+date: 2014-03-31 11:55:49 -0400
+author: NL
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/0883e1f1534f3cbb17733b81e7573a77?s=96&d=mm&r=g
+message: "<p>Hi William<br />\nAgain an awesome tutorial. I implemented this algorithm and SAT for the same set of data. I get results. However, the time of collision that I find for GJK is always a little before than the result I get from SAT algorithm. Do you think this has a possible explanation?<br />\nBest Regards</p>"

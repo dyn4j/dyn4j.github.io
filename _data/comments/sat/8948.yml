@@ -1,0 +1,6 @@
+id: 8948
+date: 2013-12-20 13:15:13 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Greg</p>\n<p>Yes. </p>\n<p>A vector represents two things: a direction and a magnitude (length).  What I meant by \"vector portion\" was the direction. The axes that we used to test for collision are normalized (they have a length of 1) and as such represent only the direction of the MTV. For the magnitude of the MTV we use the overlap along the axis (we use the axis whose overlap is the smallest).</p>\n<p>William</p>"

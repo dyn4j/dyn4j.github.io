@@ -1,0 +1,6 @@
+id: 9214
+date: 2012-12-28 10:42:54 -0500
+author: c0der
+parent: angle-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>I am having trouble with the hinge constraint. Which equations do you use in addition to the revolute joint constraint?</p>\n<p>I have C1 = xa + ra &#8211; xb &#8211; rb (rev joint)</p>\n<p>C2 = t1.(thetaA &#8211; thetaB) = 0<br />\nC3 = t2.(thetA &#8211; thetaB) = 0</p>\n<p>Where the dot product between the two axes perpendicular to the free hinge axis and the change in orientation between the two bodies is zero</p>\n<p>I now have the combined Jacobian for C2 and C3 as follows</p>\n<p>JC2 = [ 0 t1T 0 -t2T ]<br />\nJC3 = [ 0 t2T 0 -t2T ]</p>\n<p>Using the fact that the dot product with a vector is equivalent to the inverse of that vector multiplied by it</p>\n<p>IS this how you would go about this? Thanks for your input</p>"

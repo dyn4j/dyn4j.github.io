@@ -1,0 +1,6 @@
+id: 24380
+date: 2015-05-14 14:14:45 -0400
+author: William Bittle
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Chase</p>\n<p>I should update that code block to be more clear.  The constructor should look like Edge(maxVertex, edgeVertex1, edgeVertex2).  The max vertex is used in the 4th code block, line 28 (ref.max), to do the last clip operation.</p>\n<p>William</p>"

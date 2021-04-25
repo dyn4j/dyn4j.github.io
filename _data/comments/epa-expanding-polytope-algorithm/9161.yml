@@ -1,0 +1,6 @@
+id: 9161
+date: 2014-12-02 04:21:51 -0500
+author: William
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Student</p>\n<p>1.  EPA doesn't have to start with the simplex from GJK.  It could build its own, but to save time you might as well just use the one from GJK.  If implemented appropriately, GJK in 2D will always end with a triangle simplex.</p>\n<p>2.  The example here isn't the best, since the closest edge is already part of the simplex.  Generally, this may not be the case.  As a result, EPA expands the simplex until it finds the edge closest to the origin.</p>\n<p>William</p>"

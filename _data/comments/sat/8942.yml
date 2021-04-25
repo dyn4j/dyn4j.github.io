@@ -1,0 +1,6 @@
+id: 8942
+date: 2013-10-23 12:15:18 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>The number of planes you need to test on is dependent on the number of faces in the two shapes.  For example, if we are trying to test if a box and a tetrahedron are intersecting we need to get all the planes to project onto from both shapes.  Looking at the box first, there are 6 faces.  Normally this would mean 6 planes to test, but since some of the faces are parallel, we only need to test the 3 non-parallel faces.  For the tetrahedron, we have 4 faces.  No faces are parallel in this shape so we have 4 planes to test.  In total we have 7 planes to project both shapes onto.  Once you've done the projection onto a plane, then you can use whats described in the post.</p>\n<p>Having said this, I think I've read somewhere that you can do 3D SAT a little different to save some work, but I don't remember where I read that.  A Google search might help here.</p>\n<p>William</p>"

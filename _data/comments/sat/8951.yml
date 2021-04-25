@@ -1,0 +1,6 @@
+id: 8951
+date: 2014-03-12 14:36:46 -0400
+author: NL
+parent: sat
+avatar: http://0.gravatar.com/avatar/0883e1f1534f3cbb17733b81e7573a77?s=96&d=mm&r=g
+message: "<p>Hi! This has helped me a lot in the implementation. But I am still confused about the conditions of overlap. I have looked at many places but everywhere it confuses me more. According to me, Lets say when two polygons are present 1 and 2 and I project it on one of the normals. Lets say normals of polygon 1. Then the overlap condition should be min11>min21 and max11>min21. Am I understanding it right or is it something else? Because almost everywhere I have seen the opposite of these conditions! I would be grateful if you could help me. I have been stuck with this for days now. Thanks in advance.</p>"

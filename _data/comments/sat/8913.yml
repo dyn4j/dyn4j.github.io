@@ -1,0 +1,6 @@
+id: 8913
+date: 2012-05-12 07:13:19 -0400
+author: Cecilectomy
+parent: sat
+avatar: http://1.gravatar.com/avatar/1432ab7870469494e1d607207145d10f?s=96&d=mm&r=g
+message: "<p>Thanks.</p>\n<p>Well if anything, it was a good learning experience. I may end up implementing some basic physics / collision resolution but i think for now, what I have will suffice, and I will just end up working around the issues, and just use an existing library for advanced stuff.</p>\n<p>I always try to refrain from using 3rd party libraries whenever I can, so I can learn as much as I can.</p>"

@@ -1,0 +1,6 @@
+id: 8850
+date: 2010-05-22 07:15:55 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>No, you are on the right track.  Normalization is the same thing as making it a unit vector:</p>\n<p>Say your axis is the vector (3, 4) to normalize (i.e. make it a unit vector) just find the length:</p>\n<p>l = sqrt(x2 + y2)<br />\nl = sqrt( 3 * 3 + 4 * 4 ) = 5</p>\n<p>Then divide by the length</p>\n<p>= (3/5, 4/5) = (0.6, 0.8)</p>"

@@ -1,0 +1,6 @@
+id: 83651
+date: 2016-04-10 12:25:48 -0400
+author: Olai Solheim
+parent: epa-expanding-polytope-algorithm
+avatar: http://1.gravatar.com/avatar/d99d1dd01f7e7fb0305d53236d951ecb?s=96&d=mm&r=g
+message: "<p>Thanks for the great articles, they've really helped.</p>\n<p>I did some testing because I wanted to find the contact points after the EPA had terminated, and I found that by using the exact same technique using the Convex Collection and lambda expressions as in your GJK distance algorithm, I could use the final edge endpoints in Minkowski Space to find the two contact points in real space.</p>\n<p>You mention you have to expand on EPA or use another algorithm to find these, som I just thought I'd share the expansion.</p>"

@@ -1,0 +1,6 @@
+id: 162509
+date: 2018-01-18 22:40:25 -0500
+author: Christiansen
+parent: sat
+avatar: http://0.gravatar.com/avatar/998646a06d256e7c79f829ba9411f223?s=96&d=mm&r=g
+message: "<p>Does the algorithm have to be performed in 2 for loops? I generate all of my normals and store them in a single buffer, then do a single for loop over them. I've been battling bugs for days. After reducing my shapes to triangles (which made their behavior easier to observe) I noticed the issue is most likely related to the MTV or the normals. The MTV appears to be correct when based off one shape's normals, but backwards when based off the other. My shapes are generated in a circular fashion (rotating counter clockwise using sin/cos) and I use the corresponding right-hand normals.  I have tried flipping the vector based on the direction of the vector between the two shapes' centers but this only reverses the issue to the other shape.</p>"

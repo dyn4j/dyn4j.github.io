@@ -16,9 +16,9 @@ tags:
   - Game Development
   - GJK
 ---
-<a onclick="javascript:pageTracker._trackPageview('/outgoing/www.igi-global.com/book/algorithmic-architectural-gaming-design');" title="Algorithmic and Architectural Gaming Design: Implementation and Development"  href="http://www.igi-global.com/book/algorithmic-architectural-gaming-design" target="_blank">Algorithmic and Architectural Gaming Design: Implementation and Development</a> covers a myriad of game development topics. But what sets this book apart, in my opinion, is the focus on actual implementation.
+<a title="Algorithmic and Architectural Gaming Design: Implementation and Development"  href="http://www.igi-global.com/book/algorithmic-architectural-gaming-design" target="_blank">Algorithmic and Architectural Gaming Design: Implementation and Development</a> covers a myriad of game development topics. But what sets this book apart, in my opinion, is the focus on actual implementation.
 
-<a onclick="javascript:pageTracker._trackPageview('/outgoing/www.igi-global.com/book/algorithmic-architectural-gaming-design');" title="Algorithmic and Architectural Gaming Design: Implementation and Development"  href="http://www.igi-global.com/book/algorithmic-architectural-gaming-design" target="_blank"><img loading="lazy" style="margin-right: 10px;" title="Algorithmic and Architectural Gaming Design: Implementation and Development" alt="Algorithmic and Architectural Gaming Design: Implementation and Development" src="http://www.dyn4j.org/wp-content/uploads/2012/06/book-cover-gjk.png" width="150" height="203" align="left" /></a>
+<a title="Algorithmic and Architectural Gaming Design: Implementation and Development"  href="http://www.igi-global.com/book/algorithmic-architectural-gaming-design" target="_blank"><img loading="lazy" style="margin-right: 10px;" title="Algorithmic and Architectural Gaming Design: Implementation and Development" alt="Algorithmic and Architectural Gaming Design: Implementation and Development" src="/assets//book-cover-gjk.png" width="150" height="203" align="left" /></a>
 
 Of course I&#8217;m a bit biased since I was privileged to write the chapter _Collision Detection Using the GJK Algorithm_ (chapter 11). The chapter is about 35 pages long and covers a 2D implementation and explanation of GJK and related algorithms.
 

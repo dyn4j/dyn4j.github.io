@@ -1,0 +1,6 @@
+id: 30712
+date: 2015-06-15 13:18:14 -0400
+author: William Bittle
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@anirudh</p>\n<p>Think of collision detection as a three stage process: detection (yes/no collision), penetration (collision depth/direction), and contact generation (contact points).  GJK, as described in this post, only performs detection.  As a comparison, <a href=\"http://www.dyn4j.org/2010/01/sat/\" target=\"_blank\" rel=\"nofollow\">SAT</a> performs both detection and penetration stages.</p>\n<p>GJK can be augmented with another algorithm to perform the penetration stage.  The popular ones are <a href=\"http://www.dyn4j.org/2010/05/epa-expanding-polytope-algorithm/\" target=\"_blank\" rel=\"nofollow\">EPA</a>, sampling, and GJK distance checks on smaller &#8216;core' shapes.</p>\n<p>From there you'll need another algorithm to get the exact coordinates (contact points).  Popular choices for this is <a href=\"http://www.dyn4j.org/2011/11/contact-points-using-clipping/\" target=\"_blank\" rel=\"nofollow\">Sutherland–Hodgman clipping</a> and contact caching from GJK distance checks.</p>\n<p>William</p>"

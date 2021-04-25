@@ -1,0 +1,6 @@
+id: 9282
+date: 2015-01-29 21:24:33 -0500
+author: Jeremy
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/52eae8e39015985b7d7a8ee2aad09271?s=96&d=mm&r=g
+message: "<p>Hi William,<br />\nI have trouble understanding the use of the ref vector. I thought it was an edge made from a maximum and two vectors representing the extremities, obtained from the best() method. However in the next code snippet you seem to be using it as a vector, as opposed to the incident edge, where you use it's v1 and v2 properties instead of the edge itself. Could you please shed some light on my comprehension issue?<br />\nThanks!</p>"

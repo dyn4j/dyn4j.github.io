@@ -1,0 +1,6 @@
+id: 9146
+date: 2012-04-18 12:47:01 -0400
+author: William
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>The winding of the simplex can be found just like you would find the winding of any polygon.  See <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/paulbourke.net/geometry/polygonmesh/');\"  href=\"http://paulbourke.net/geometry/polygonmesh/\" title=\"Winding Direction\" target=\"_blank\" rel=\"nofollow\">this</a> for more details.</p>\n<p>As a performance enhancement, you only really need to know the value of the first non-zero cross product to determine the winding.  In addition, since EPA retains the winding of the simplex throughout the algorithm, you only need to calculate the winding when the algorithm starts.</p>\n<p>William</p>"

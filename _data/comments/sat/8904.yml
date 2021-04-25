@@ -1,0 +1,6 @@
+id: 8904
+date: 2012-04-09 12:52:37 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>To check for overlap see the previous comments.  It can be a bit tricky.</p>\n<p>Since the projection class is a one dimensional projection of the shapes onto an axis there is only the above check to perform on each projection so no additional code should be required.  For SAT to work however, the shapes must be projected onto every axis (edge normal) of both shapes.</p>\n<p>Let me know if it needs more explanation.</p>\n<p>William</p>"

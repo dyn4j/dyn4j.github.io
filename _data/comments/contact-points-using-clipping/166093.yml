@@ -1,0 +1,6 @@
+id: 166093
+date: 2018-05-31 17:19:39 -0400
+author: Sean
+parent: contact-points-using-clipping
+avatar: http://1.gravatar.com/avatar/4dbf90ba36b325c04f4ac020a0c9ce90?s=96&d=mm&r=g
+message: "<p>Mine follows your examples exactly but when it reaches the calculation of refNorm it differs. In example 1 and 3 I get the same values for refNorm as your examples do. When it comes to example 2, calculating the cross product gives me (0, -1) which is then flipped to be (0,1) when it should have been crossed to give (0,1) and then flipped to (0,-1). I can alter the way I calculate cross products with how you describe but then it only works for example 2 and now examples 1 and 3 are not correct.</p>\n<p>Everything works exactly as expected right up until the refNorm calculation and when refNorm is correct the output is as expected too.</p>\n<p>Thanks for your help! Your tutorials are really well done!</p>"

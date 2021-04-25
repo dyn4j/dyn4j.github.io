@@ -1,0 +1,6 @@
+id: 9055
+date: 2013-10-30 12:41:27 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Dimension:</p>\n<p>There are two ways to handle concave shapes: 1) develop/find an algorithm that supports concave shapes or 2) decompose the concave shape into convex shapes.</p>\n<p>My research into concave shape collision detection algorithms is minimal.  Typically they are avoided due to complexity and run-time cost, but this may changed since I last looked.</p>\n<p>Most go the second route and decompose the concave shape into convex shapes and perform collision detection using a convex algorithm.  There are a number of methods to decompose concave shapes.  I have listed a few that I have implemented in comment on the SAT post.  If you are working in 3D then you may be interested in <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/sourceforge.net/projects/hacd/');\"  href=\"http://sourceforge.net/projects/hacd/\" title=\"HACD\" target=\"_blank\" rel=\"nofollow\">HACD</a>.  The convex decomposition can be done as a pre-processing step to save some time.</p>\n<p>William</p>"

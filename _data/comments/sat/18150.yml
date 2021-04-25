@@ -1,0 +1,6 @@
+id: 18150
+date: 2015-04-03 23:15:17 -0400
+author: Mogra
+parent: sat
+avatar: http://0.gravatar.com/avatar/cc58970870994c2c60e2eb94c5488bba?s=96&d=mm&r=g
+message: "<p>One of my shapes has parallel lines, which causes the overlap to be equal for those two axis. This makes it choose the correct MTV on one side, but the wrong MTV on the other side since it just takes the first minimum. Is there a way to fix this?</p>"

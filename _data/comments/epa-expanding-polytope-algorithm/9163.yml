@@ -1,0 +1,6 @@
+id: 9163
+date: 2015-01-13 01:56:22 -0500
+author: William
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Evan</p>\n<p>The difference for 3d is that you expand the simplex until you obtain the face, rather than an edge, that is closest to the origin.</p>\n<p>For each face in the simplex, we need to compute the face normal.  Doing so allows us to compute the distance to the origin via the dot product.</p>\n<p>For example, if A, B and C define the vertices of a 3d triangle, we can get a normal by taking the cross product of any two edges: N = AB X AC.  <em>Note that there are two normals here one that will point inward and one that will point outward.</em>  Using the dot product we can get the distance to the origin.</p>\n<p>The triple product in the code here is a way to get the normal of the edge that points in the direction of the origin without doing a dot product with AO.  To keep things simple, I'd stick with the dot product for now.</p>\n<p>Loop over all faces and obtain the closest one.  Once the closest is found, get a new support point in that direction.  If its no closer than the face, then you are done.  If it is closer, then you must split that face into 3 faces using the new support point.</p>\n<p>William</p>"

@@ -1,0 +1,6 @@
+id: 9108
+date: 2012-04-10 14:02:05 -0400
+author: Ernst
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/c2af557cb3840617db0ccb7fbf98cc75?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>First of all, thanks for the great articles you've put online! </p>\n<p>I've been playing with an implementation in C#/WPF based on this text and the dyn4j code. Everything looks quite alright but there is an small issue with the closest point that you might be able to give me some hints on.</p>\n<p>I have the following (default) quadrant setup; </p>\n<p>  4 | 1<br />\n&#8212;&#8212;&#8211;<br />\n  3 | 2 </p>\n<p>the origin (0,0) is in the middle of my screen. q1 = x > 0 &amp;&amp; y > 0;  q2 = x > 0 &amp;&amp; y < 0 and so on. </p>\n<p>The results look fine whenever I keep both polygons inside the first quadrant. i.e. all the vertices have a positive value. As soon as I move one or more shapes to a different region the closest points start to drift. Is this something you&#039;ve seen before using this algorithm or am I overlooking a minus sign somewhere and just need to look harder?</p>\n<p>Thanks!<br />\nErnst</p>\n<p>b.t.w. I&#039;m in 2d as you might have guessed.</p>"

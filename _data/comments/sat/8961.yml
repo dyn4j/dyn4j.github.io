@@ -1,0 +1,6 @@
+id: 8961
+date: 2014-05-19 17:47:04 -0400
+author: saadne
+parent: sat
+avatar: http://1.gravatar.com/avatar/a187f1c664f89298f5fbdd19ac86358a?s=96&d=mm&r=g
+message: "<p>Hi. I am trying to implement SAT to detect collision between two rotated 3D rectangles. They might have a rotation (degree) around x, y or z axis. I have tried to read through all replies here but I cant find a solution that works for me. Can you please explain the following from your answer 11.sept 2012: \"The projection code in the 3D to 2D case will need to return the actual projected points rather than an interval\". How do you find the actual projected points?<br />\nAs far as I understand I need to include the axis of the face normals of both rectangles in addition to the edge axis? How many axis do I need to check against? I guess 3 face axis for each rectangle, but number of edges axis I dont know.</p>\n<p>I am really stuck finding a solutions for detection in 3D. I would be really happy if you had some good answers. Thanks!</p>"

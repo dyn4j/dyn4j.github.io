@@ -1,0 +1,6 @@
+id: 48586
+date: 2015-08-30 04:47:29 -0400
+author: William Bittle
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Monty</p>\n<p>You are correct.  I made a mistake in my calculation the last time I updated the post.  That should be (-0.8, 2.4):<br />\n<code><br />\na = (1, 3)<br />\nb = (-11, -1)<br />\nAB = (-11 - 1, -1 - 3) = (-12, -4) = (-3, -1)<br />\nAO = (0 - 1, 0 - 3) = (-1, -3)<br />\nAO.dot(AB) = -1 * -3 + -3 * -1 = 3 + 3 = 6<br />\nAB.dot(AB) = -3 * -3 + -1 * -1 = 9 + 1 = 10<br />\nt = 3/5<br />\nAB.mult(t).add(A) = (-9/5 + 5/5, -3/5 + 15/5) = (-4/5, 12/5) = (-0.8, 2.4)<br />\n</code></p>\n<p>This was due to my last update to the post again.  The d.negate() should be inside the while loop.</p>\n<p>Thanks for pointing these out.  I have fixed both within the post.</p>\n<p>William</p>"

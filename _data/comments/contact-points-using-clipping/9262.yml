@@ -1,0 +1,6 @@
+id: 9262
+date: 2014-01-22 07:22:55 -0500
+author: Karl
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/805c60bf8bd814085444322f6bbfc0e2?s=96&d=mm&r=g
+message: "<p>Thank you for this awesome tutorial. I had a question on the initial value of &#8216;max' at the finding the feature part.<br />\nAre you initializing it to a really big negative number (-100000.0f)? Or are you setting it to 0?</p>"

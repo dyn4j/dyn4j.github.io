@@ -1,0 +1,6 @@
+id: 8941
+date: 2013-10-22 21:11:44 -0400
+author: Sarasca
+parent: sat
+avatar: http://0.gravatar.com/avatar/fad45af4eb33ad504fc440236c4805aa?s=96&d=mm&r=g
+message: "<p>Hi,</p>\n<p>i want to use the SAT &amp; MTV for a 3D-Javagame.</p>\n<p>So i have a 3D-Object and project that Object onto a 2D-Plane. After that is done i just follow this tutorial. Am i right with the thought that i have to project the same 3D-Object onto two other 2D-Planes from different angles (top, side, front), in order to get the full 3D-Object? Or do i have to project it even more?</p>"

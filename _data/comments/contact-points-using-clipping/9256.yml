@@ -1,0 +1,6 @@
+id: 9256
+date: 2013-09-27 02:15:20 -0400
+author: William
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>The cross product of a vector and 1, in this case, is the same as the cross product of a vector and the z-axis (0, 0, 1).  It turns out that doing this, with the negative z-axis, gives us the counter-clockwise normal of the vector.  So all you need is some way to get the edge's normal.  In the 3d case, you might be able to use the face's normal that the edge belongs to.</p>\n<p>Other than that, I can see this method needed some additional logic to get working properly (handling all the collision cases).  I think that the cases are narrowed down to two (face-edge and edge-edge?)</p>\n<p>To learn more, search on Sutherland-Hodgman clipping.</p>"

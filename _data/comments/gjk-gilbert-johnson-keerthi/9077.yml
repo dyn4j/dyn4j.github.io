@@ -1,0 +1,6 @@
+id: 9077
+date: 2014-02-18 04:07:54 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Saad</p>\n<p>An example of a shape similar to a circle is a capsule.  Unless the support direction is perpendicular to the long part of the shape, the farthest point can be found in constant time just like the circle.  An ellipse is just a non-uniformly scaled circle, which means you could also find the farthest point in constant time.  For arbitrary convex polygons, you'd have to find a way to improve the search (using a binary search or something).</p>\n<p>William</p>"

@@ -1,0 +1,6 @@
+id: 8877
+date: 2011-08-08 12:37:30 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>You'll have to forgive me, my C/C++ is really REALLY rusty so ill try my best.</p>\n<p>You can define the Axis struct/class exactly like the vertex one you have already.  In most projects I've seen points, vertices and vectors use the same class since they all need to store x and y components.  For instance:</p>\n<pre>\nstruct Vector {\n  double x, y;\n}\n\nstruct Triangle {\n  Vector v1, v2, v3;\n  Vector* axes = new Vector[3];\n}\n</pre>\n<p>Remember that an axis in the context of SAT is just a normalized vector.</p>"

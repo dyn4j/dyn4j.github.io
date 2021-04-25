@@ -1,0 +1,6 @@
+id: 9026
+date: 2012-04-21 22:04:24 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Yeah, as you point out, what I describe will only work in 2D.</p>\n<p>If the origin lies on the triangle simplex plane (yielding a zero triple product), you can use the normal of the triangle plane by using the three vertices of the simplex instead.  Either normal of the plane will work in this case (only two to choose from).  For the line segment case in 3D, I would probably just choose an arbitrary direction (that is perp. to the line) so I could get to the triangle simplex case.  Once you have a tetrahedron, its much easier to make better decisions about the \"special\" cases.</p>\n<p>The Minkowski Sum algorithms (GJK and EPA) are typically harder to get correct for this very reason.  Many of these \"special\" cases happen more often then you'd think.  In addition, the finite precision doesn't help.</p>\n<p>Thanks for sharing what you found!<br />\nWilliam</p>"

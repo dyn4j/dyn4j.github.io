@@ -1,0 +1,6 @@
+id: 8949
+date: 2014-01-20 21:46:52 -0500
+author: Maynza
+parent: sat
+avatar: http://1.gravatar.com/avatar/ace25a31a695f7a6ed7a5c38cce3ab2d?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>On the off chance you still respond to things on here I have a question.  I am trying to derive the center of the overlapping area of the polygons in the event of a collision.  How can I use the overlapping portions which are not in the x and y plane and determine where the center of my overlap would be in x and y.  I feel like I am on the cusp of it but I keep missing something.</p>\n<p>Here is my matlab attempt:<br />\n<a onclick=\"javascript:pageTracker._trackPageview('/outgoing/ideone.com/RGuYBv');\"  href=\"http://ideone.com/RGuYBv\" rel=\"nofollow ugc\">http://ideone.com/RGuYBv</a></p>\n<p>I couldn't use pastebin so the syntax highlighting is off but hopefully you can understand what I am doing.</p>"

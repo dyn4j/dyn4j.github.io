@@ -1,0 +1,6 @@
+id: 9225
+date: 2012-12-19 23:06:10 -0500
+author: c0der
+parent: weld-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>Thanks William, that helps.</p>\n<p>I have temporarily just applied the revolute joint and restricted angle joint separately to both bodies and it seems to be doing the trick.</p>\n<p>For the elbow angle:</p>\n<p>currAngleDiff = body1.orientation &#8211; body2.orientation<br />\nif(currAngleDiff.z>=0 &amp;&amp; currAngleDiff.z<=radians(130) skip constraint, assuming the arm is straight at first at angle zero</p>\n<p>Hope that helps anyone</p>"

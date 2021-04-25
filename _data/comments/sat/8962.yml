@@ -1,0 +1,6 @@
+id: 8962
+date: 2014-05-20 11:02:12 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@saadne</p>\n<p>You only need to test the face normals of the two shapes.  For example, two boxes only need to test at a maximum 6 normals; 3 from each.  Don't let this fool you since there is much more work.</p>\n<p>In the post, when you projected the 2D shape onto a normal, this produced a 1D projection (an interval).  By contrast, in 3D you are projecting onto a plane (as opposed to a line) which produces a 2D shape. Think of this as a shadow cast by a light source onto a flat surface.  Once you have the 2D \"shadow\" of both 3D shapes in the plane, then you can proceed as described in the post.</p>\n<p>I hope that this explains how 3D is slightly different from 2D.  There are some optimizations, of course, that you can look at as well (<a onclick=\"javascript:pageTracker._trackPageview('/outgoing/gamedev.stackexchange.com/questions/44500/how-many-and-which-axes-to-use-for-3d-obb-collision-with-sat');\"  href=\"http://gamedev.stackexchange.com/questions/44500/how-many-and-which-axes-to-use-for-3d-obb-collision-with-sat\" target=\"_blank\" rel=\"nofollow\">see here</a>).</p>\n<p>William</p>"

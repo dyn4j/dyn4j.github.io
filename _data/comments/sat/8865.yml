@@ -1,0 +1,6 @@
+id: 8865
+date: 2011-05-07 13:56:08 -0400
+author: heishe
+parent: sat
+avatar: http://1.gravatar.com/avatar/15ca0d8471100d12247a315d66f91206?s=96&d=mm&r=g
+message: "<p>Oops, I just noticed, when I posted the comment I accidentally deleted out part of the projectionOnto code. This if the full one:</p>\n<pre>\n	public Projection2D projectOnto(Vector2f axis)\n	{\n		float min = Float.MAX_VALUE;\n		float max = Float.MIN_VALUE;\n		\n		for(int i=0;i max)\n				max = dot;\n			if(dot < min)\n				min = dot;\n		}\n		return new Projection2D(min,max);\n	}\n</pre>"

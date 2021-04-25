@@ -1,0 +1,6 @@
+id: 9158
+date: 2014-07-20 17:32:07 -0400
+author: William
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Asylum</p>\n<p>EPA should complete in a finite number of iterations for polytopes, although it could run forever on curved solids.  Have you been able to get a reproducible test case that you can debug through?  Have you looked through my 2D implementation <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/collision/narrowphase/Epa.java');\"  href=\"https://github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/collision/narrowphase/Epa.java\" title=\"dyn4j EPA Implementation\" target=\"_blank\" rel=\"nofollow\">here</a>?</p>\n<p>William</p>"

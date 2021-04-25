@@ -1,0 +1,6 @@
+id: 102938
+date: 2016-07-22 23:45:21 -0400
+author: William Bittle
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Sorry, I may not have been clear. I was simply showing that corner cases are possible and that my post certainly didn't attempt to cover them.  The link to my 2D implementation was really just to have another source to compare against, not to point to a specific solution.</p>\n<p>Thinking out loud... So you have a triangular simplex.  The next point you get should be along the normal of the triangular simplex in the direction of the origin.  This shouldn't give you a point in the opposite direction of the origin.  Are you using the triple product to calculate the simplex normal?  This can cause problems in some cases like when the simplex is degenerate (all points are the same or two points are the same).  It can also cause problems if the origin lies on the simplex's face as well.</p>\n<p>I'm not sure what else to suggest without being able to examine the code and the configuration of the shapes when the problem occurs.</p>\n<p>William</p>"

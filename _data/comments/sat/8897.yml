@@ -1,0 +1,6 @@
+id: 8897
+date: 2012-01-25 13:28:48 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Thanks for the comment.  However I think that my usage is correct since the axes that we are testing against are normal vectors; they are normal to their respective edge of the polygon shape (they just happen to be normalized later to obtain an accurate penetration depth).  Can you be more specific on where in the post I misuse the term?</p>\n<p>William</p>"

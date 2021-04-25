@@ -1,0 +1,6 @@
+id: 9271
+date: 2014-04-03 02:47:46 -0400
+author: Branden
+parent: contact-points-using-clipping
+avatar: http://1.gravatar.com/avatar/785e03d4f6ec3f259f022c4bfe258475?s=96&d=mm&r=g
+message: "<p>This is an excellent tutorial! And I appreciate the effort that went into it.</p>\n<p>I have one question though.<br />\nWhen using the variable max, to later clamp our points, what is ref.max referring to?</p>\n<pre>\ndouble max = refNorm.dot(ref.max);\n</pre>\n<p>Is that the furthest vertex in the reference edge using the reference edge's direction?</p>"

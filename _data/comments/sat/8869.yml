@@ -1,0 +1,6 @@
+id: 8869
+date: 2011-07-11 07:16:21 -0400
+author: C
+parent: sat
+avatar: http://1.gravatar.com/avatar/a4a3bbedfff637b64df924466753efaf?s=96&d=mm&r=g
+message: "<p>William,</p>\n<p>Your pseudo-code \"Projecting a Shape Onto an Axis\" have three mistakes:</p>\n<p>01	double min = // really small number;   Should be really large number instead<br />\n02	double max = // really large number;   Should be really small number instead<br />\n...<br />\n08	  } else if (p > max) {                         else is not needed<br />\n...</p>\n<p>Other than that, great tutorial and working code!</p>"

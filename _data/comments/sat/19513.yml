@@ -1,0 +1,6 @@
+id: 19513
+date: 2015-04-10 15:37:57 -0400
+author: William Bittle
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Mogra</p>\n<p>What this does is make sure that the normal is always pointing from object A to object B.  This is useful, for example, when you try to separate the objects, you know which way to move them.  Which way the normal points, A to B or B to A doesn't matter, but the fact that its consistent does.</p>\n<p>William</p>"

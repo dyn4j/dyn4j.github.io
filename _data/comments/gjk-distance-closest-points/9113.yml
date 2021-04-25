@@ -1,0 +1,6 @@
+id: 9113
+date: 2013-12-04 12:36:35 -0500
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Futurecoming</p>\n<p>Yeah, I can see how that is a little confusing.  Its a carry over comment from the GJK collision detection post.  I updated this post to better explain whats happening.</p>\n<p>To explain a little further:<br />\nWe are basically checking to make sure we are making progress.  Progress, in this case, is defined by getting closer to the origin.  In other words, we are checking to make sure that the points we store in the simplex are the closest ones that we have found so far.  This will ensure, after a few iterations, that we will get the closest simplex to the origin, and from there, the closest points.</p>\n<p>William</p>"

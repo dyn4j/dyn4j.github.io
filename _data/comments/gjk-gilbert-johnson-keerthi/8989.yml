@@ -1,0 +1,6 @@
+id: 8989
+date: 2010-11-23 05:31:24 -0500
+author: mikewolf
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/5d9f8f136432fee0a9e1dac59999ccd6?s=96&d=mm&r=g
+message: "<p>2. jude orgin if in the 4 face voronoi area, if in a face voronoi area, we will choose direction of voronoi and remove vertex opposite this face, insert new vertex to simplex by new direction.</p>"

@@ -1,0 +1,6 @@
+id: 9268
+date: 2014-03-11 20:36:33 -0400
+author: Dylan
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/5d6acc0dc7e2148ec433f9befd19fd55?s=96&d=mm&r=g
+message: "<p>Actually it turns out I get the same correct results if I just always use the normal from referenceEdge.crossProduct(-1.0f) and forget about the whole flipping thing.  Not sure why mine works like this.</p>"

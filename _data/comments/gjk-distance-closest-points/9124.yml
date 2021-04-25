@@ -1,0 +1,6 @@
+id: 9124
+date: 2014-02-18 13:41:01 -0500
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@karim</p>\n<p>Nope, it's no trouble.</p>\n<p>We have two equations with two unknowns: λ1 and λ2.  Our equations are:</p>\n<pre>\n(λ1A + λ2B) · L = 0\nλ1 + λ2 = 1\n</pre>\n<p>Solve one of the equations for λ1. (I'll solve the 1st equation)</p>\n<pre>\n// Distribute the dot product of L\nλ1A · L + λ2B · L = 0\n// We can factor out the lambdas since they are scalars\nλ1(A · L) + λ2(B · L) = 0\n// Move the λ2(B · L) term to the other side\nλ1(A · L) = -λ2(B · L)\n// Divide by (A · L)\nλ1 = (-λ2(B · L)) / (A · L)\n</pre>\n<p>Then substitute this into the other equation.</p>\n<pre>\n(-λ2(B · L)) / (A · L) + λ2 = 1\n</pre>\n<p>Then solve for λ2</p>\n<pre>\n(-λ2(B · L)) / (A · L) + λ2 = 1\n// Multiply everything by (A · L)\n-λ2(B · L) + λ2(A · L) = (A · L)\n// Factor out λ2 since its a scalar\nλ2(A · L - B · L) = (A · L)\n// Factor out the dot product with L (since its distributive)\nλ2((A - B) · L) = (A · L)\n// Remember that L = B - A\n-λ2(L · L) = (A · L)\n// Divide by L · L\nλ2 = -(A · L) / (L · L)\n</pre>\n<p>To find λ1, substitute λ2 into the λ1 + λ2 = 1 equation.</p>\n<p>William</p>"

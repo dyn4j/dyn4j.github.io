@@ -1,0 +1,6 @@
+id: 9247
+date: 2012-03-24 19:42:48 -0400
+author: Haubna
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/0be50c12a6e81314bb9d895239381d1e?s=96&d=mm&r=g
+message: "<p>First of all thank you for great tutorial!</p>\n<pre>Vector2 refNorm = ref.cross(-1.0);\n// if we had to flip the incident and reference edges\n// then we need to flip the reference edge normal to\n// clip properly\nif (flip) refNorm.negate();</pre>\n<p>I tried to implement it like that but it wasn't working right. Then i tried it with that peace of code (without the flip and a positive cross product):</p>\n<pre>Vector2d refNorm = ref.edge.cross(1.0);</pre>\n<p>and everything worked fine. Is that peace of code from you wrong or am i confused?</p>"

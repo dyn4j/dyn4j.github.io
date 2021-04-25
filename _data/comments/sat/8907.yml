@@ -1,0 +1,6 @@
+id: 8907
+date: 2012-05-01 12:15:48 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>The best way to do this is to always fix the direction to be either from shape A to shape B or vise-versa.  Once you have decided, you can do something like this to make sure its always pointed in the correct direction:</p>\n<pre>\nVector2 centerA = // the center/centroid of shape A\nVector2 centerB = // the center/centroid of shape B\n// get the vector pointing in the desired \n// direction as described above in this case \n// i want the vector to always point from A to B\nVector2 CAtoCB = centerB - centerA;\n// now we check the normal to see if its \n// pointing the right way\nif (CAtoCB.dot(normal) < 0) {\n  // if its pointing in the opposite \n  // direction then we just reverse it\n  normal = -normal;\n}\n</pre>\n<p>This makes sure that the normal is always pointing in the correct direction.  There is one issue with this.  What happens if the centers of A and B are the same point?  In this case, you don't need to worry which direction the normal is in, you can just assume that its correctly pointing from A to B.</p>\n<p>William</p>"

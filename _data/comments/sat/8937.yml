@@ -1,0 +1,6 @@
+id: 8937
+date: 2013-04-23 12:21:35 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>It's hard to know what exactly might be the problem without seeing some code, but here are some things to check:</p>\n<ol>\n<li>How are you calculating the overlap?  For instance, I do\n<pre>Math.min(p1.max, p2.max) - Math.max(p1.min, p2.min);</pre>\n<p> in my getOverlap method.</li>\n<li>Are the axes normalized? (they should be if you want accurate MTVs)</li>\n</ol>\n<p>You can either post your code here in a comment or <a onclick=\"javascript:pageTracker._trackPageview('/mailto/william.bittle@dyn4j.org');\"  href=\"mailto:william.bittle@dyn4j.org\" title=\"Email Me\" rel=\"nofollow\">send it to me privately</a>.</p>\n<p>William</p>"

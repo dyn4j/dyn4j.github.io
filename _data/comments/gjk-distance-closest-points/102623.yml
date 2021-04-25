@@ -1,0 +1,6 @@
+id: 102623
+date: 2016-07-21 21:23:57 -0400
+author: Asher
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/f7e7593f8a2508fbd65d3fe0786ca7a0?s=96&d=mm&r=g
+message: "<p>I mostly fixed it. I was just doing something dumb that was hard to notice. However there is still the problem of the occasional crash. Normally this happens when you try to test a single point against an axis aligned box. The algorithm gets stuck in a loop because the 4th point of the simplex it calculates later turns out to be the furthest point away, so that point gets removed from the simplex, and then re-added because it calculates the same point again. Do you have any advice to remedy this?</p>"

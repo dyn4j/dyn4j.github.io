@@ -1,0 +1,6 @@
+id: 9245
+date: 2012-03-16 18:44:56 -0400
+author: Konrad
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/90774ce3f8a4d8c10ec578f76a4224ef?s=96&d=mm&r=g
+message: "<p>Cross product for 2D vector with scalar looks like this:</p>\n<p>Vec = (Vec.Y * Scalar, Vec.X * &#8211; Scalar)</p>\n<p>So this code:<br />\n20 Vector2 refNorm = ref.cross(-1.0);<br />\nis:<br />\nVector2 refNorm = Vector2 (ref.Y * -1.0, ref.X * -(-1.0));</p>"

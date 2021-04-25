@@ -1,0 +1,6 @@
+id: 9216
+date: 2012-12-28 23:05:17 -0500
+author: c0der
+parent: angle-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>Same here, references are hard to find. It behaves well until the constraint is violated about the restricted axis. </p>\n<p>Perhaps someone else has had this problem before, I follow this process:</p>\n<p>Initialise the joint:</p>\n<p>1) Transform the world anchor (anchor &#8211; body.position) and world free hinge axis into local coords of each body<br />\n2) build an orthogonal basis consisting of the restricted axes (tangent1 and tangent2) from the local free hinge axis of body1</p>\n<p>Each frame:</p>\n<p>3) Transform (anchor &#8211; body.position) into world coords of each body<br />\n4) Transform the local hinge axis into world coords of each body<br />\n5) Transform each tangent vector into world coords of body1<br />\n6) Compute the constraint, bias, and K matrix</p>\n<p>At each impulse iteration:<br />\n7) Solve for lambda as with other joints<br />\n8) Update the velocities of each body</p>\n<p>THe only problem I see is the world hinge axis of body2 is not used but I don't see where to actually use it. Can anyone point me in the right direction?</p>"

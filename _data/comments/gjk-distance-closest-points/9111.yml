@@ -1,0 +1,6 @@
+id: 9111
+date: 2012-04-11 12:32:35 -0400
+author: Ernst
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/c2af557cb3840617db0ccb7fbf98cc75?s=96&d=mm&r=g
+message: "<p>right.... it looks like this was a drawing error and not an algorithmic one! </p>\n<p>I was using the Margin property of an Ellipse to define it's offset from the borders. </p>\n<p>This works as long as positive integral values are provided. Negative, non-integral values for margin values are technically permitted, but should be avoided because they are rounded by the layout rounding behavior. </p>\n<p>This perfectly explains the behavior I was seeing where points would &#8216;lag behind' a shape. </p>\n<p>Again, thanks for you suggestions. It helped me verify the points where chosen correctly but just drawn incorrectly.</p>\n<p>On to the EPA article :)</p>\n<p>cheers!<br />\nErnst</p>"

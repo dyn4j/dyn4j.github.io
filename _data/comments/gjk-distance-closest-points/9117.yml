@@ -1,0 +1,6 @@
+id: 9117
+date: 2014-02-11 11:21:54 -0500
+author: Vishal
+parent: gjk-distance-closest-points
+avatar: http://1.gravatar.com/avatar/1f47ac89fcc86ffbc09c9ed60f047b6d?s=96&d=mm&r=g
+message: "<p>Hi,<br />\nI implemented the GJK algorithm for 3D case. The code runs fine but I am not able to get a grasp on the terminating condition.</p>\n<p>I quote your comment \"Right, the termination case is a bit tricky. You know to terminate the loop when the new point you found via the support function is projected onto the search direction and that projection is not greater than zero. \"</p>\n<p>But in iteration 2, your dc value is -0.33 and in the next iteration it is -1.72. So shouldn't it have ended at iteration 2 itself? when the value of dc became negative.</p>\n<p>Also, the termination condition is checking for dc-da. Can you explain that further?</p>"

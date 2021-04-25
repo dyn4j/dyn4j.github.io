@@ -1,0 +1,6 @@
+id: 8967
+date: 2014-06-09 11:57:22 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@John</p>\n<blockquote><p>Are the axes referring to the X and Y axes, or an arbitrary made up axes?</p></blockquote>\n<p>The axes I'm referring to are not the Coordinate System axes.  Instead, the axes are the really the normals (perpendicular vectors) of the edges of the polygon.</p>\n<blockquote><p>What did you mean by 'flipping the coordinates and negating one.'?</p></blockquote>\n<p>In 2D, a quick way to get a perpendicular vector to another vector is to flip the coordinates and negate one.  For example, v = (1, 2), to get it's normal (or perpendicular vector), we flip the coordinates to get (2, 1) and then negate one, (-2, 1).  The one you negate determines which normal you will get (since there two perpendicular vectors pointing in opposite directions for any given vector in 2D).  <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/mathworld.wolfram.com/PerpendicularVector.html');\"  href=\"http://mathworld.wolfram.com/PerpendicularVector.html\" title=\"Perpendicular Vector\" target=\"_blank\" rel=\"nofollow\">See here</a> for a more formal explanation.</p>\n<p>William</p>"

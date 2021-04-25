@@ -1,0 +1,6 @@
+id: 8982
+date: 2015-01-13 01:58:15 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Evan</p>\n<p>Yes this can be used in 3d with some modifications.  Read through the comments above to find some questions and links.  Note also that you only need the normalization if you need the collision depth, otherwise you it's not necessary to normalize.</p>\n<p>William</p>"

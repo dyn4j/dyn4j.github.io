@@ -1,0 +1,6 @@
+id: 8944
+date: 2013-12-09 13:13:43 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Sam</p>\n<p>The shape you describe is <em>concave</em>, not <em>convex</em>. As such, SAT will not work on it (however, see this <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/www.metanetsoftware.com/technique/tutorialA.html');\"  href=\"http://www.metanetsoftware.com/technique/tutorialA.html\" target=\"_blank\" rel=\"nofollow\">article</a>, for a way to get around it for circular <em>concave</em> shapes).  SAT can work with any convex <em>circular</em> shape (Circles, Capsules, half circles, circular sections, etc) without really any extra work.  In these cases always test the axis from the center of the arc to each vertex of the other shape (you can eliminate some of the vertices to test if you examine which voronoi region of the polygon the center of the arc lies).  You will run into problems if the curved shape is not circular (ellipse, arbitrary bezier, cubic, etc).</p>\n<p>That said, depending on the goal, you can decompose the concave shape into many convex shapes.  This will work just fine, you just have more shapes to detect collision with.</p>\n<p>William</p>"

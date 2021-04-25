@@ -1,0 +1,6 @@
+id: 9032
+date: 2012-09-04 12:35:14 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Good question.  For whatever reason I had (-1.5, 1) for d but it really should be (-1, 1); I fixed this in the post.  Using d (the first line of Iteration 1), we get (-6, 9) as the next support point (we now have 2 support points in our simplex).  Then we need to make sure that the last support point we just added is past the origin along d; that's what proj is for (the second line of Iteration 1):</p>\n<pre>proj = last.dot(d) = (-6, 9).dot(-1, 1) = -6 * -1 + 9 * 1 = 15\n</pre>\n<p>Since the dot product is greater than zero, then we know that the point is past the origin along d and we can continue the algorithm.  Then next step is to find the next search direction (since we need 3 points to form a triangle to enclose the origin in 2D).  To do this, we use the line segment case below in the <a href=\"http://www.dyn4j.org/2010/04/gjk-gilbert-johnson-keerthi/#gjk-top\" title=\"Checking the Simplex\" rel=\"nofollow\"></a> section.  Once we have a new search direction, we use it to obtain a new support point (just like we did with the original direction).</p>\n<p>Let me know if something is still confusing here,<br />\nWilliam</p>"

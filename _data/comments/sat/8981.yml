@@ -1,0 +1,6 @@
+id: 8981
+date: 2015-01-08 11:31:31 -0500
+author: Loki
+parent: sat
+avatar: http://0.gravatar.com/avatar/c3e13072f6effb180031e74a9cda8ebf?s=96&d=mm&r=g
+message: "<p>Thank you so much for this post. I tried to implement it yesterday but couldn't get it to work. Today I threw all away and restarted implementing a clean collision approach.</p>\n<p>This time it works fine, though I don't really understand the mtv and how to implement it. But I got a nice approximation so I don't need the mtv.</p>\n<p>Thanks to you I finally have a working collision. :)</p>"

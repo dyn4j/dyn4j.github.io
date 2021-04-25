@@ -1,0 +1,6 @@
+id: 156344
+date: 2017-06-17 03:49:05 -0400
+author: Benjamin
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/666e55bc0cf0133e72a7d9c0c0fa2bbe?s=96&d=mm&r=g
+message: "<p>Hello!</p>\n<p>I just finished implementing this algorithm in part of my mission to build a physics engine for game development. I found this page very helpful, but I still need some more information from the collision finding algorithm: point of collision. The very point in which one vertex crosses another polygon's side is necessary for calculating impulse and simulating physics. Could someone guide me to how to do this?</p>\n<p>Thanks,<br />\nBenjamin</p>"

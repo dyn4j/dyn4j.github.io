@@ -1,0 +1,6 @@
+id: 8871
+date: 2011-07-17 01:40:30 -0400
+author: Severin
+parent: sat
+avatar: http://2.gravatar.com/avatar/8c096ff25742662ba9917821ebe3315a?s=96&d=mm&r=g
+message: "<p>Very good article, thanks a lot! I'm implementing SAT in Java &#8211; very comfortable according to this pseudo-code example :)<br />\nBut now, I'd like to handle SAT with non-convex polygons. According to the article, SAT can be applied to non-convex polygons, when we partition the polygon in convex parts (e.g. triangles) &#8211; quite obivous. Could anybody tell me, how to do this? I've been thinking about it for hours now, and haven't found a \"satisfying\" solution :P<br />\nThere are also many suggestions (algorithms), but maybe someone could give me a concrete code example?<br />\nI'd be very glad about some useful inputs :)</p>"

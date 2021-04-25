@@ -1,0 +1,6 @@
+id: 9099
+date: 2010-12-24 19:56:15 -0500
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Rodrigo,</p>\n<p>Sorry for the late response.  Now I just to remember how this works....</p>\n<p>To answer the first question:  You are right that (1.7, 2.51) is the closest point <strong>if the simplex was a line</strong>, since it isn't, the closest point is the end point of the line segment.  Now I haven't fully thought it through yet, but it may not matter because you still obtain a vector in that points to the same Voronoi region of the simplex.  Ideally, I think you would want d to always be the simplex normal in the direction of the origin.</p>\n<p>The second question is bit tricky:  What you have found here is a degenerate case!  If you look closely, the origin actually lies on the line created by the simplex points, thereby causing the result to be zero.  Even if you do something like what I suggested in the first questions answer, this can still happen depending on the method you arrive at the closest point.  So in this case, you do have to do something different, which is <strong>keep the points who are closest to the origin</strong> (so you must pick 2 of the 3).  What you have suggested is similar to what I do as well.</p>"

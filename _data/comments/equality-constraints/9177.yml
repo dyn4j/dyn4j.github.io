@@ -1,0 +1,6 @@
+id: 9177
+date: 2014-07-13 22:21:30 -0400
+author: William
+parent: equality-constraints
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Nick</p>\n<p>Ok, thanks for elaborating.</p>\n<p>Yeah, you can solve the compound constraints separately for sure.  The problem with doing it that way is that it will be less accurate.  This manifests itself as requiring more iterations of the global solver (which will solve <em>every</em> constraint every iteration).  As a result, it's much faster, and more accurate, to solve them together when possible.</p>\n<p>Aside from this, some small benefits include better encapsulation along with some other niceties (for example allowing the toggling/configuring of various properties of the joints (which could reduce or increase the number of DOF that are solved) without the caller destroying or creating new joints.</p>\n<p>William</p>"

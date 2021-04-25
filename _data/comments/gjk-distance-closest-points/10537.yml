@@ -1,0 +1,6 @@
+id: 10537
+date: 2015-02-14 02:13:19 -0500
+author: Alex
+parent: gjk-distance-closest-points
+avatar: http://1.gravatar.com/avatar/753c51c03cf3be0b4e31bf957ede4a17?s=96&d=mm&r=g
+message: "<p>Hello again!</p>\n<p>Im having trouble with working out where the program actually exits and calls a collision.</p>\n<p>I understand this is a collision as the objects are touching .<br />\n if (p.isZero()) {<br />\n    return false;<br />\n  }</p>\n<p>Is this also a collision ? If so why is it returning true instead of false ?<br />\n  if (dc &#8211; da < tolerance) {<br />\n    distance = dc;<br />\n    return true;<br />\n  }</p>\n<p>At the moment when my two objects collide i get stuck in an infinite loop where p doesn&#039;t equal vec2(0,0), and dc &#8211; da is no where near less then the tolerance. Also dc &#8211; da returns alot of negative values im not sure if that is meant to happen or not ? I am using 2 concave shapes for my collision test made out of straight lines, im not sure if this is a problem ? </p>\n<p>Thanks!</p>"

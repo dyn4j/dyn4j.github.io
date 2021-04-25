@@ -1,0 +1,6 @@
+id: 9109
+date: 2012-04-10 19:02:56 -0400
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>No I haven't seen that behavior before.  What do you mean by drift?</p>\n<p>The first thing I would check is if the distance check is working correctly minus the closest points in all quadrants.  Then I would make sure that the Minkowski points are correct.  The Minkowski points should be the points on the Minkowski sum that form the edge that is closest to the origin (see Figure 6).</p>\n<p>If you still can't find the problem you are welcome to send me the code via <a onclick=\"javascript:pageTracker._trackPageview('/mailto/william.bittle@dyn4j.org');\"  href=\"mailto:william.bittle@dyn4j.org\" rel=\"nofollow\">email</a> or by posting it here.</p>\n<p>William</p>"

@@ -1,0 +1,6 @@
+id: 9031
+date: 2012-09-03 04:12:12 -0400
+author: Roely de Vries
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/64ad7dde8d4bd0084772a2c6807fb806?s=96&d=mm&r=g
+message: "<p>sorry, correction, I mean at iteration 1:</p>\n<p>proj = (6, -9).dot(10,-7) = 60 +63 = 123.<br />\nThis because AB=(10,-7)  and AO=(6,-9)</p>"

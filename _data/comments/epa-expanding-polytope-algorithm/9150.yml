@@ -1,0 +1,6 @@
+id: 9150
+date: 2012-06-08 08:43:24 -0400
+author: Quentin
+parent: epa-expanding-polytope-algorithm
+avatar: http://2.gravatar.com/avatar/e9ee16999373da7e48e37add841a2b6a?s=96&d=mm&r=g
+message: "<p>Thank you so much for this fast and accurate answer William !</p>\n<p>I'm in 2D(second case) and it works perfectly !</p>\n<p>Just a little thing: in your correction I believe it is ab.left and not abPerp.left as abPerp is \"null\".</p>\n<p>Thanks a lot !</p>\n<p>Quentin</p>"

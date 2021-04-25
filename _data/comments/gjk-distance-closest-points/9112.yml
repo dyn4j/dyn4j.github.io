@@ -1,0 +1,6 @@
+id: 9112
+date: 2013-12-04 01:44:27 -0500
+author: Futurecoming
+parent: gjk-distance-closest-points
+avatar: http://2.gravatar.com/avatar/b514703dd3528c7bff8281a55397817d?s=96&d=mm&r=g
+message: "<p>Dear William:<br />\nI'm not so clear what the following is used for.</p>\n<p>c = support(A, B, d) = (4, 5) &#8211; (15, 6) = (-11, -1)<br />\n// is c far enough along d<br />\ndc = 3.52 + 0.95 = 4.47<br />\nda = -0.32 &#8211; 2.85 = -3.17<br />\n// 4.47 &#8211; -3.17 = 7.64 not small enough</p>\n<p>What does it mean the c is far enough along d ?</p>\n<p>Thx a lot!</p>"

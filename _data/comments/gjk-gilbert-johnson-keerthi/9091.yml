@@ -1,0 +1,6 @@
+id: 9091
+date: 2014-08-29 12:54:35 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Vic</p>\n<p>It's hard to say really without some more details.  When trying to solve problems like these, I've found that adding some code to halt the simulation and dump the current state is very useful.  Then using that current state I build a test case in which its easier to debug.</p>\n<p>I'm not sure if you followed the video and my tutorial here, but it is possible that the perp can be zero or near zero.  In fact a talk specifically about this in the post (do a find on the page and search for \"zero\").  This can happen when using the triple product in some cases.</p>\n<p>William</p>"

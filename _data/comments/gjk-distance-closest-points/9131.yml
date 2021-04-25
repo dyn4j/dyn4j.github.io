@@ -1,0 +1,6 @@
+id: 9131
+date: 2014-10-01 22:49:15 -0400
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@aadne</p>\n<p>You should be able to get the closest point within the triangle, which is a start, but not necessarily the closest for the face.  I haven't went much further than this.</p>\n<p>Thinking out loud, I wonder if you could do something similar to EPA, where you expand out the simplex on that face?  I'm not sure what the details would be but it might be one option.</p>\n<p>William</p>"

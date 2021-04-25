@@ -1,0 +1,6 @@
+id: 9226
+date: 2013-01-02 07:44:52 -0500
+author: c0der
+parent: line-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>I have a a body at (-20,0,0) and an immovable body at (0,41,0). The world anchor point is at (-20,0,0). Therefore the initial world u vector should be along the line connecting the two body's center points? I am having trouble getting the simulation correct and trying the 2D case first.</p>\n<p>Also, at each frame I have Cross(wa, t) in the velocity equation, therefore the tangent vector should change with body A and be fixed relative to body B. </p>\n<p>Thanks for your help</p>"

@@ -1,0 +1,6 @@
+id: 8878
+date: 2011-08-13 07:34:25 -0400
+author: Shaw
+parent: sat
+avatar: http://0.gravatar.com/avatar/9455f32614e734fea3f4528c67020557?s=96&d=mm&r=g
+message: "<p>Thanks for your prompt answer on my earlier comment.<br />\nI am not sure what the statement<br />\nif (!p1.overlap(p2))<br />\nwould mean in context to my version of the problem. I am coding in C as I said in my last post.</p>\n<p>When I obtain the dot product to get the min and max values for the projection, does it mean that projection p1 overlaps p2 if p1 < p2 or vice versa.</p>\n<p>It would be great if you could let me know what exactly do we check in the method overlap() ?</p>\n<p>Thanks!</p>"

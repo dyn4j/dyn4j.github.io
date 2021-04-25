@@ -1,0 +1,6 @@
+id: 156381
+date: 2017-06-18 18:40:33 -0400
+author: Benjamin
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/666e55bc0cf0133e72a7d9c0c0fa2bbe?s=96&d=mm&r=g
+message: "<p>Hello,</p>\n<p>This article looks like it could complete my necessary collision processing for my physics engine, but there is one point I am confused on: how do I get the collision/seperation normal?  You begin this algorithm assuming it is found, but my current GJK algorithm simply returns true/false on a collision check.</p>"

@@ -1,0 +1,6 @@
+id: 9066
+date: 2013-11-06 13:21:02 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Futurecoming</p>\n<p>That's correct. Just be a little more accurate, as each point is added to the simplex we check where the origin is so that we build up to the tetrahedron case in the direction of the origin.  In otherwords, we are trying to enclose the origin at every step, not just after we have a tetrahedron.  Ideally we would get the 4th point to make the tetrahedron and immediately detect the origin inside.  Technically you could build the tetrahedron however you want, but if we continuously check where the origin is, relative to the simplex, then we can eliminate a lot of ifs in the triangle and tetrahedron cases like I described in the <a href=\"http://www.dyn4j.org/2010/04/gjk-gilbert-johnson-keerthi/#gjk-origin\" title=\"Checking The Simplex\" target=\"_blank\" rel=\"nofollow\">Checking The Simplex</a> section.</p>\n<p>William</p>"

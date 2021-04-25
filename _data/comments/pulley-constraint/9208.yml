@@ -1,0 +1,6 @@
+id: 9208
+date: 2013-08-19 12:17:03 -0400
+author: William
+parent: pulley-constraint
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>I'm not sure I understand what you are asking.  Why do you need the time derivative of the Jacobian?  For this particular instance we only need the time derivative of the constraint, then we identify the Jacobian and then plug it into our equality constraints formulation.  Can you elaborate a bit more one what you are looking for?</p>\n<p>William</p>"

@@ -1,0 +1,6 @@
+id: 9197
+date: 2012-07-11 12:55:16 -0400
+author: roehit
+parent: distance-constraint
+avatar: http://2.gravatar.com/avatar/2b0bdff3518af39097a87ce13e415840?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>You have mentioned that the size of the K matrix will be equal to the no. of degrees of freedom removed.<br />\nThis makes the &#8216;K' matrix in the distance constraint a 1&#215;1(a scalar).<br />\nAnd with &#8216;J' having a &#8216;nT' (transpose of n) term before the 3&#215;12 matrix, that makes &#8216;b' a scalar too.<br />\nDoes this mean &#8216;x' (lambda) will be a scalar too? And if so, how will this lambda be used to calculate the impulses to be applied on both the bodies?</p>"

@@ -1,0 +1,6 @@
+id: 9278
+date: 2014-10-23 17:46:29 -0400
+author: William
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Andrei</p>\n<p>Good catch, those should be normalized.  I've fixed it within the post.  In my implementations I use the normals (pre-normalized in local space) of the edges rather than the edges themselves to do this test so I can avoid the normalization every iteration.</p>\n<p>We don't need absolute value there because both the r and l vectors are pointing at the farthest point and because n is pointing in the same direction.  This will always yield a non-negative value.</p>\n<p>William</p>"

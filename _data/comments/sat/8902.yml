@@ -1,0 +1,6 @@
+id: 8902
+date: 2012-04-08 01:11:53 -0400
+author: bruce wayne
+parent: sat
+avatar: http://2.gravatar.com/avatar/2033a17c3b7b7a990f30dd7b9ef5b81a?s=96&d=mm&r=g
+message: "<p>EDIT:<br />\nI screwed up the function in my first post.<br />\nHere's how I should have wrote it:</p>\n<pre>\nfunction overlap(V1,V2){\n  if( (V1.min>V2.min AND V1.minV2.min) \n   OR (V1.max>V2.min AND V1.max<V2.min) )\n  {return true;}\n  return false;\n}\n</pre>"

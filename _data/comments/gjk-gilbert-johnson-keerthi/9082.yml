@@ -1,0 +1,6 @@
+id: 9082
+date: 2014-04-02 06:53:03 -0400
+author: NL
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/0883e1f1534f3cbb17733b81e7573a77?s=96&d=mm&r=g
+message: "<p>Hi William<br />\nits really quite simple. My data provides for both time and coordinates. I just correlate at what coordinate there is a collision with the corresponding time. Anyway, I found my mistake and now I get the same time of collision same for both algorithms. However, I have a small question about the triple product. In the post you have written to find ABPerp as ACxABxAB but shouldn't it be ABxABxAC, as you have rightly written in the formula.<br />\nRegards &amp; Thanks!</p>"

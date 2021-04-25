@@ -1,0 +1,6 @@
+id: 106365
+date: 2016-08-05 06:24:33 -0400
+author: shome
+parent: gjk-distance-closest-points
+avatar: http://2.gravatar.com/avatar/89d0fc92514f172bdab3e4f57496dfa1?s=96&d=mm&r=g
+message: "<p>what are the algorithms to determine distance between convex hulls in non-intersecting case? I read that GJK slows down once its near convergence. I am looking for faster ones.</p>"

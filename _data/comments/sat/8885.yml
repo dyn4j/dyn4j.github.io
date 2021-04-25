@@ -1,0 +1,6 @@
+id: 8885
+date: 2011-11-28 19:14:32 -0500
+author: Sunada
+parent: sat
+avatar: http://1.gravatar.com/avatar/d19f92117740e2e3f02fbb71cb1c9c29?s=96&d=mm&r=g
+message: "<p>Hi Williams<br />\nFirst of all thank you so much. This article was really helpful in implementing SAT.<br />\nHowever, I have a few questions for you.<br />\n1. I am trying to implement polygon-polygon, and polygon-circle contact detection for simulation gravity settling of these particles in a box. I have around 4000 particles, and initially i avoid containment. Also initially all the particles are pretty much overlapping with atleast one more particle. However, when i look at my final ensemble of these particles, I get a couple of particles that are floating. I mean they are not in contact with any other particle, and they just float in air. This is however not physical, since in reality you can't have floating particles in space. Do you have any suggestions ?</p>"

@@ -1,0 +1,6 @@
+id: 9106
+date: 2011-02-07 14:56:24 -0500
+author: Ray Zong
+parent: gjk-distance-closest-points
+avatar: http://2.gravatar.com/avatar/5f0e12478dba74d5cf03385efa0a6d85?s=96&d=mm&r=g
+message: "<p>So right now my understanding is:<br />\nIf we have two objects in interaction, then we'll always be able to locate at least one point giving a positive dot product in the direction we're searching for. And for each point added in, we can generate a simplex to determine if it contains the origin. And eventually we'll find such origin.<br />\nIf the two objects are not in contact, we'll soon jump out of the loop when we can not find any points giving positive \"dot product\".<br />\nIs it correct? </p>\n<p>One more question, I'm trying to do a 3D case. So I need to build a triangle first then add a point in the search direction to get a tetrahedron. How to get the first triangle? With the same method in 2D, I can easily find a line segment, then doing a triple cross product will give a third point and thus generating a triangle. Do you think this can be the triangle to start with? thanks.</p>"

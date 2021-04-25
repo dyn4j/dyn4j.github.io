@@ -1,0 +1,6 @@
+id: 72951
+date: 2016-02-14 01:49:02 -0500
+author: Jordan
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/0f3d55fd986c4917be53c17a17e8639f?s=96&d=mm&r=g
+message: "<p>Thanks William,<br />\nThis lines up perfectly with the implementation I have now.<br />\nOnly problem (I assume you may have forgotten to change this when updating there) is that the final value you have calculated for distance should probably also correspond to 2.95 (the value of dc in this iteration), and not the old value of 1.72. But that said, this doesn't seem to line up with diagram 1 then!</p>"

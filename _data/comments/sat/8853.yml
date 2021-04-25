@@ -1,0 +1,6 @@
+id: 8853
+date: 2010-08-14 21:01:04 -0400
+author: Mukkarum
+parent: sat
+avatar: http://1.gravatar.com/avatar/1db7b3d250f506d7a530a2e2f9fd7379?s=96&d=mm&r=g
+message: "<p>First of all I would like to thank you for this tutorial. It is far clearer than many others that I have encountered online. </p>\n<p>I was implementing separating axis, using this guide, and was curious about the implementation of Projection. Is the following how you would implement it? I am particularly concerned about getOverlap.</p>\n<pre>\npublic class Projection {\n  \n  private final float m_min;\n  private final float m_max;\n\n  public Projection(float min, float max) {\n    m_min = min;\n    m_max = max;\n  }\n\n  public boolean doesOverlap(final Projection other) {\n    if(m_max > other.m_min) {\n      return true;\n    }\n\n    if(m_min > other.m_max) {\n      return true;\n    }\n\n    return false;\n  }\n\n  public double getOverlap(final Projection other) {\n    if(!doesOverlap(other)) {\n      return 0;\n    }\n\n    if(m_max > other.m_min) {\n      return Collider.getDistance(m_max, other.m_min);\n    }\n    else if(m_min > other.m_max) {\n      return Collider.getDistance(m_min, other.m_max);\n    }\n    else {\n      Log.warning(\"Bad case in getOverlap!\");\n      return 0;\n    }\n  }\n}\n</pre>"

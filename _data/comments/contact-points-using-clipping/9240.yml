@@ -1,0 +1,6 @@
+id: 9240
+date: 2012-02-21 13:38:36 -0500
+author: William
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Typically I'm referring to the vector of minimum penetration of the two bodies as the normal (called the separation or collision normal).  Later I use the term in the Clipping section to identify a vector perpendicular to an edge.</p>\n<p>I qualified each time I used the word \"normal\" with either \"separation\" or \"edge\" to help clarify what I talking about.  I hope that takes care of the confusion (thanks for the comment).</p>\n<p>William</p>"

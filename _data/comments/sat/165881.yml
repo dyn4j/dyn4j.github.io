@@ -1,0 +1,6 @@
+id: 165881
+date: 2018-05-24 16:20:38 -0400
+author: William Bittle
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Macky I have updated the broken links.  For quick reference, here are the links to the relevant code:</p>\n<ul>\n<li><a onclick=\"javascript:pageTracker._trackPageview('/outgoing/github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/geometry/Polygon.java');\"  href=\"https://github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/geometry/Polygon.java\" rel=\"nofollow\">Polygon</a></li>\n<li><a onclick=\"javascript:pageTracker._trackPageview('/outgoing/github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/geometry/Interval.java');\"  href=\"https://github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/geometry/Interval.java\" rel=\"nofollow\">Interval</a></li>\n<li><a onclick=\"javascript:pageTracker._trackPageview('/outgoing/github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/collision/narrowphase/Sat.java');\"  href=\"https://github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/collision/narrowphase/Sat.java\" rel=\"nofollow\">SAT</a></li>\n</ul>\n<p>William</p>"

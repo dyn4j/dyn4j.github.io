@@ -1,0 +1,6 @@
+id: 8882
+date: 2011-10-05 05:07:12 -0400
+author: Mogra
+parent: sat
+avatar: http://0.gravatar.com/avatar/cc58970870994c2c60e2eb94c5488bba?s=96&d=mm&r=g
+message: "<p>One of your comments under Obtaining The Separating Axes seems to be incorrect<br />\n// perform the perproduct to obtain the normal<br />\nYou are not actually doing the perproduct here, you are just getting the normal/perpendicular. According to the tutorial you linked at the top the perproduct is a combination of getting the normal and doing the dot product but instead you are doing the dot product later on with your projections. </p>\n<p>Additionally I think it would also help if you added the following afterwords as it would clarify what you are trying to do.</p>\n<pre>axes[i] = normal;</pre>"

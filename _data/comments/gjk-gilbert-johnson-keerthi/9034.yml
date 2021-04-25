@@ -1,0 +1,6 @@
+id: 9034
+date: 2012-11-12 04:56:36 -0500
+author: Anghan
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://1.gravatar.com/avatar/4b0bae87f1890c838b6de2331fa4c75b?s=96&d=mm&r=g
+message: "<p>hi William, </p>\n<p>i think there should be a little improvement(through i am not very sure)</p>\n<p>as you said \"Instead what we can do is iteratively build a polygon inside the Minkowski Difference that attempts to enclose the origin.\", </p>\n<p>so we need a line(triangle for 3D) before the &#8216;while' looping(line 7 in your skeleton code), not a single point, then we never need to check whether the &#8216;Simplex' has been built, or there is only a line in it.</p>\n<pre>\nVector d = // choose a search direction\n// get the first Minkowski Difference point\nSimplex.add(support(A, B, d));\n// negate d for the next point\nd.negate();\nSimplex.add(support(A, B, d));  <b>  //*** build the first line ****// </b> \n// start looping\nwhile (true) {\n  // same as your code\n}\n</pre>\n<p>and Sorry, English is not my native language.</p>"

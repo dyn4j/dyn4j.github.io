@@ -1,0 +1,6 @@
+id: 9223
+date: 2012-12-19 10:58:56 -0500
+author: c0der
+parent: weld-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>When combining a revolute joint and an angle constraint to form the 2&#215;2 block K matrix consisting of four 3&#215;3 matrices below for an elbow joint with restricted angular movement, how do I invert this matrix to solve for lambda, which seems like another matrix of two 3&#215;1 vectors as follows:</p>\n<p>A*lambda = b</p>\n<p>A = JM^-1JT</p>\n<p>A11 = Ma^-1 + [~ra]TIa^-1[~ra] + Mb^-1 + [~rb]TIb^-1[~rb]<br />\nA12 = [~ra]TIa^-1 + [~rb]TIb^-1<br />\nA21 = Ia^-1[~ra] + Ib^-1[~rb]<br />\nA22 = Ia^-1 + Ib^-1</p>\n<p>b = -Jvi</p>\n<p>b11 = -va &#8211; [~ra]Twa + vb + [~rb]Twb<br />\nb12 = -wa + wb</p>\n<p>A*lambda = b</p>\n<p>I am working in 3D, so multiplying the matrices out gets really messy</p>\n<p>Thanks for another great tutorial</p>"

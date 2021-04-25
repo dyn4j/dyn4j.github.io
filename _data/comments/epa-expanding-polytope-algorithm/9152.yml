@@ -1,0 +1,6 @@
+id: 9152
+date: 2013-01-22 01:59:25 -0500
+author: honestann
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/64d21be2185f18bef8cb2ab9a3bd2eed?s=96&d=mm&r=g
+message: "<p>After a collision, why not separate objects by moving them back along their velocity vectors?  This should get the objects back to their actual positions at the TOI (time of impact), which is clearly more precise.</p>"

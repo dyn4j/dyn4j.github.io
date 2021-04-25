@@ -1,0 +1,6 @@
+id: 9209
+date: 2013-08-29 03:43:18 -0400
+author: seeanvit
+parent: pulley-constraint
+avatar: http://0.gravatar.com/avatar/f3d3fb9d1364908a196c799b08f8e6d6?s=96&d=mm&r=g
+message: "<p>Actually, I am working on STEP (a physics simulator). Its constraintsolver  calculates the  &#8216;b'  vector  as :<br />\n    b = info->jacobian * info->acceleration;<br />\n    b += info->jacobianDerivative * info->velocity;<br />\n    b = &#8211; (b + info->value + info->derivative);</p>\n<p>(&#8216;info'  is  a pointer to a structure  here)</p>"

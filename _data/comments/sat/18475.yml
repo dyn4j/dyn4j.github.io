@@ -1,0 +1,6 @@
+id: 18475
+date: 2015-04-06 02:05:07 -0400
+author: Mogra
+parent: sat
+avatar: http://0.gravatar.com/avatar/cc58970870994c2c60e2eb94c5488bba?s=96&d=mm&r=g
+message: "<p>I actually solved it by looking at your code. I needed to flip the axis when the dot product of the line between the two centers and the axis was less than 0. Although I'm not exactly sure what this represents.</p>"

@@ -1,0 +1,6 @@
+id: 9025
+date: 2012-04-21 19:26:32 -0400
+author: Grieverheart
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/5f71426da6340603613339a5ab6fe938?s=96&d=mm&r=g
+message: "<p>Hi William, thanks for your very quick reply. I'm trying to implement GJK in 3D and I get into all kinds of trouble in the case where the origin lies &#8216;on' (i.e. on the line or inside the triangle in 3D) the simplex. What you suggest works in 2D but in 3D (in the case of the edge of the tetrahedron) you have to take the cross product ABxAOxAB, which gives a null vector. You then also have to consider that we don't have infinite precision which introduces additional complications. </p>\n<p>I tried to read ch.4 of \"Collision Detection in Interactive 3D Environments\" by Gino van den Bergen. From my understanding, he introduces two additional checks on each iteration. He first computes the new point using the support function and then he returns &#8216;false' if either the new point belongs to the previous simplex or  if the origin lies farther than the new point. The second additional check is to return &#8216;true' whenever the direction vector becomes relatively small.</p>\n<p>This may be beyond the scope of this excellent tutorial but I hope it helps those interested in implementing it in 3D.</p>"

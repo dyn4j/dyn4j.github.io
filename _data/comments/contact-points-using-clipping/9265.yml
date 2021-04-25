@@ -1,0 +1,6 @@
+id: 9265
+date: 2014-03-10 23:49:11 -0400
+author: William
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Dylan</p>\n<p>Good question.  Actually, it shouldn't matter since both n and -n should be equally perpendicular.  However, what does need to be done is compare the absolute value of the dot products, not just the dot products.  I've updated the post to reflect this.</p>\n<p>William</p>"

@@ -1,0 +1,6 @@
+id: 9155
+date: 2013-12-11 12:14:09 -0500
+author: William
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@ng</p>\n<p>Can you point to the place in the post where you think it should be in the opposite direction?  More specifically, which iteration and which edge calculation?</p>\n<p>I am making some assumptions that may not be apparent that may answer your question:<br />\n1. I'm using a <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/en.wikipedia.org/wiki/Right-hand_rule');\"  href=\"http://en.wikipedia.org/wiki/Right-hand_rule\" title=\"The Right Hand Rule\" target=\"_blank\" rel=\"nofollow\">right handed coordinate system</a><br />\n2. When computing the vector from A to B, you subtract the vectors in reverse order: A to B becomes B &#8211; A.</p>\n<p>William</p>"

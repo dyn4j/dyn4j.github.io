@@ -1,0 +1,6 @@
+id: 9201
+date: 2012-07-25 06:18:48 -0400
+author: roehit
+parent: distance-constraint
+avatar: http://2.gravatar.com/avatar/2b0bdff3518af39097a87ce13e415840?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>Thanks for the replies.<br />\nI am getting the right responses from the bodies when i've implemented the distance constraint, but there seems to be a constant drift arising out of the numerical integration errors. I've noticed this error for the point-to-point constraint also.<br />\nHow do we solve/cancel out these errors and ensure close-to-perfect behavior with the constraints?</p>\n<p>Thanks in advance.</p>"

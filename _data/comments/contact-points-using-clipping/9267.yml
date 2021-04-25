@@ -1,0 +1,6 @@
+id: 9267
+date: 2014-03-11 19:12:50 -0400
+author: Dylan
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/5d6acc0dc7e2148ec433f9befd19fd55?s=96&d=mm&r=g
+message: "<p>I finally got my version of this working.  All of my code seems to be on par with yours with one small difference however.  I had to change my code to compare things differently if the reference angle is flipped/not flipped as follows:</p>\n<pre>\n    float max = referenceNormal.dotProduct(referenceEdge->vertex);\n    \n    if (flip) {\n        if (referenceNormal.dotProduct(clippedPoints[1]) > max)\n            clippedPoints.erase(clippedPoints.begin() + 1);\n    \n        if (referenceNormal.dotProduct(clippedPoints[0]) > max)\n            clippedPoints.erase(clippedPoints.begin());\n    } else {\n        if (referenceNormal.dotProduct(clippedPoints[1]) < max)\n            clippedPoints.erase(clippedPoints.begin() + 1);\n        \n        if (referenceNormal.dotProduct(clippedPoints[0]) < max)\n            clippedPoints.erase(clippedPoints.begin());\n    }\n</pre>"

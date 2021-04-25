@@ -1,0 +1,6 @@
+id: 9081
+date: 2014-04-01 22:42:35 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@NL</p>\n<p>Can you elaborate a little more on what you mean by the &#8216;time of collision is a little before'?  If you mean the collision information (normal and depth) are different, then that's definitely possible.  What method are you using to get the collision information (sampling, EPA, collision margins, etc.)?</p>\n<p>William</p>"

@@ -1,0 +1,6 @@
+id: 61171
+date: 2015-10-28 19:15:43 -0400
+author: Joe
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://1.gravatar.com/avatar/d7294767a30da1c173b937a36b957179?s=96&d=mm&r=g
+message: "<p>Brilliant! However, I don't think it is the same as GJK, especially in the first iteration of GJK, (for example in 2D) d is actually the direction from a random point towards origin, in your algorithm, it is a random direction and because of this, the decision strategy in containsOrigin() is a slightly different too, in GJK, it says \"which takes a simplex s and returns the simplex on s closest to the origin\", it picks the result line(here in 2-D) based on distance (it think it uses angle bisector, which is reasonable for GJK's first iteration but not for your first iteration), but you actually pick it based on the Voronoi region it is in. Both are right. Just want to point that out.</p>"

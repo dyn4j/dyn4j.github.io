@@ -1,0 +1,6 @@
+id: 9160
+date: 2014-11-28 14:15:35 -0500
+author: Student
+parent: epa-expanding-polytope-algorithm
+avatar: http://1.gravatar.com/avatar/dbe4d25fbc01fd1410bf7b268bd8c46d?s=96&d=mm&r=g
+message: "<p>Hi!<br />\nI am a little confused:<br />\n1. EPA starts with a edge of Minkowski Difference(MD) so why simplex from GJK is needed?<br />\n2. In this example, the simplex is composed by two edges of MD so EPA tries to reach another edge of MD?</p>\n<p>Btw, your tutorials are awesome! Thanks!</p>"

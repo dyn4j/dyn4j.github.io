@@ -1,0 +1,6 @@
+id: 9148
+date: 2012-06-07 13:12:48 -0400
+author: Quentin
+parent: epa-expanding-polytope-algorithm
+avatar: http://2.gravatar.com/avatar/e9ee16999373da7e48e37add841a2b6a?s=96&d=mm&r=g
+message: "<p>Little precision: When I fix this in GJK the output simplex only have 2 points and when I look for the closest edge the on I find has a e.distance =0 . So I never enter the if(d &#8211; e.distance < epsilon)...</p>"

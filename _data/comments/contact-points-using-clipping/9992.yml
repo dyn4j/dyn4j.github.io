@@ -1,0 +1,6 @@
+id: 9992
+date: 2015-02-10 03:21:07 -0500
+author: William Bittle
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Mike</p>\n<p>The best method should return the edge on the shape (A or B) that is most perpendicular to the separation normal.  An example implementation is given in the Finding the Features section (the code sample just before the one you reference).  Call that for both A and B to get their respective \"best\" edges.</p>\n<p>William</p>"

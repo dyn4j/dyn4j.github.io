@@ -1,0 +1,6 @@
+id: 9181
+date: 2012-12-15 10:48:13 -0500
+author: c0der
+parent: point-to-point-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>I am having trouble solving for lambda in J*M^-1*JT*lambda = -Jvi in 3D</p>\n<p>With the following equation:</p>\n<p>( Ma^-1 + skew(ra)*Ia^-1*skew(ra)T + Mb^-1 + skew(rb)*Ib^-1*skew(rb)T ) * lambda = ( -vai &#8211; skew(ra)*wai + vbi + skew(rb)*wb)</p>\n<p>THe matrices added are of the following dimensions for 3D:</p>\n<p>( [4&#215;4] + [3&#215;3] + [4&#215;4] + [3&#215;3] ) * lambda = [3&#215;1]</p>\n<p>Since the addition of different sizes matrices is not defined, do you have any idea how to add these to end up with a 4&#215;1 vector lambda to sub into the following equations:</p>\n<p>vaf = vai + Ma^-1*lambda<br />\nwaf = wai + Ia^-1*skew(ra)T*lambda<br />\nvbf = vbi &#8211; Mb^-1*lambda<br />\nwbf = wbi &#8211; Ib^-1*skew(rb)T*lambda</p>\n<p>Much appreciate your help</p>"

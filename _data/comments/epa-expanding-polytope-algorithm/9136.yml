@@ -1,0 +1,6 @@
+id: 9136
+date: 2010-11-30 19:04:35 -0500
+author: mrful
+parent: epa-expanding-polytope-algorithm
+avatar: http://1.gravatar.com/avatar/1c0703937a715cbfa380ae525abf23b2?s=96&d=mm&r=g
+message: "<p>Hi!</p>\n<p>I really like your walkthrough of the EPA algorithm! But I have a question.<br />\nYou talk a lot about the winding of the simplex, and I do understand how that would work in 2D, How would you do in 3d, as I am about to implement this in to my 3d game engine that already got GJK working nicely, it would be very practical if I knew this.</p>\n<p>Greetings from Sweden!<br />\nMr.Ful</p>"

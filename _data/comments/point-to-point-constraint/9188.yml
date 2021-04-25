@@ -1,0 +1,6 @@
+id: 9188
+date: 2012-12-18 12:12:59 -0500
+author: c0der
+parent: point-to-point-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>I am misrepresenting the distance of course, stupid me. The distance should be zero if the relative position is zero, so ra and rb should extend to the boundaries of the bodies and pa and pb should be points on the bodies rather than points at the anchor ! Sorry for the previous post.</p>"

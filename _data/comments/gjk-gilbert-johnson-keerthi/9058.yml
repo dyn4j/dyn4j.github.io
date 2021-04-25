@@ -1,0 +1,6 @@
+id: 9058
+date: 2013-11-01 13:30:26 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>In 2D you only have two cases: the segment and triangle cases.  For 3D you need one more case in addition to these: the tetrahedron case.  By the time you have built a triangle simplex and verified that the origin is \"inside\" you need to add another simplex point in the direction of the origin.  This is because the origin could be above or below the plane of the triangle.  In other words, in 3D we may not have fully enclosed the origin yet.  The algorithm proceeds as normal from here, do plane tests until you verify the origin is (or is not) contained in the tetrahedron.  You can use the same logic as described in Casey's video and my post here to try to reduce the number of \"if\" conditions for the tetrahedron case to make the code simpler.</p>\n<p>If you give it a try and have more specific questions I'd be happy to answer,<br />\nWilliam</p>"

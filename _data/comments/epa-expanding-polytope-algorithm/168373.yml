@@ -1,0 +1,6 @@
+id: 168373
+date: 2018-10-05 00:07:09 -0400
+author: Damien
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/6aef3d976a506017d1c98b0a65397573?s=96&d=mm&r=g
+message: "<p>Hi,<br />\nThank you for your description of the EPA. In the end you say that due to its computational cost, the EPA is sometimes not used and the GJK distance algorithm runs with smaller homotheties of the shapes. I wonder what you call &#8216;small' penetration depths, and how slower it is to use the EPA over GJK to compute contact points.<br />\nMy current code does the second option (performing GJK on smaller solids), and is based on the Gino Van den Bergen implementation of GJK.<br />\nThanks a lot<br />\nDamien</p>"

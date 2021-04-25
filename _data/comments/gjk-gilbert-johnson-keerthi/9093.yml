@@ -1,0 +1,6 @@
+id: 9093
+date: 2014-09-08 14:03:17 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@LeCoder</p>\n<p>Is the algorithm working as expected without the changes you are trying to make?  Trying to catch just edge-edge collisions will be difficult due to finite precision.  The equals condition will rarely be satisfied.  Instead of changing the code, could you base whether to handle edge-edge collisions on the penetration depth (if its near-zero, for example)?</p>\n<p>William</p>"

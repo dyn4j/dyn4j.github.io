@@ -1,0 +1,6 @@
+id: 8969
+date: 2014-06-23 15:31:41 -0400
+author: Aviv
+parent: sat
+avatar: http://2.gravatar.com/avatar/b9d644da87a6f866764c2a31d45edb0a?s=96&d=mm&r=g
+message: "<p>Hey William, thanks for the great article. I have two questions regarding this, will appreciate your help.</p>\n<p>1-</p>\n<p>Here is how I get the axes:</p>\n<pre>\nVector[] edges1 = shape1.getEdges();\nfor(int i=0; i<edges1.length; i++){\n	Vector perp = edges1[i].getPerp();\n	axes1[i] = perp.getUnitLength();\n}\n// .. same for the second polygon\n\n// in Vector class: getPerp():\npublic Vector getPerp(){\n    return new Vector((-1) * this.y, this.x);\n}\n</pre>\n<p>I understand I always need the normal that points *out* of the polygon. However getPerp() always returns the (-y, x) vector, which sometimes will be the correct normal and sometimes won't.</p>\n<p>How can I always get the correct normal, aka the one pointing out of the polygon?</p>\n<p>2-</p>\n<p>After I got the MTV (aka the axis of the collision normalized and multiplied by the overlap), how do I add it to the positions of the entities in the collision?</p>\n<p>Adding it to both entities obviously will do nothing. So how do I know to the position of which entity I need to add it?</p>"

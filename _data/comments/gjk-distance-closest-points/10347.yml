@@ -1,0 +1,6 @@
+id: 10347
+date: 2015-02-11 18:01:23 -0500
+author: Alex
+parent: gjk-distance-closest-points
+avatar: http://1.gravatar.com/avatar/753c51c03cf3be0b4e31bf957ede4a17?s=96&d=mm&r=g
+message: "<p>What does the findClosestEdge function do ? Does it return the closest point to the origin or does it return the closest edge that is made up of two points ?</p>"

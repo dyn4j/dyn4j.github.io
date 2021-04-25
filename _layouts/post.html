@@ -12,27 +12,40 @@ layout: blog
   <div class="d-flex">
     {% if page.previous.url %}
     <div class="p-2 flex-fill"><a class="prev" href="{{page.previous.url}}">&laquo; Previous Post</a></div>  
-    
     {% endif %}
     {% if page.next.url %}
     <div class="p-2 flex-fill text-end"><a class="next" href="{{page.next.url}}">Next Post &raquo;</a></div>
-  {% endif %}
+    {% endif %}
   </div>
 
-  {% assign comments = site.data.comments | where: "post_guid", page.guid | reverse %}
+  {% capture default_slug %}{{ page.slug | default: page.title | slugify }}{% endcapture %}
+  {% capture slug %}{{ page.slug  }}{% endcapture %}
+  {% assign comments_map = site.data.comments[slug] %}
+  {% assign cmts = site.emptyArray %}
+  {% for comment in comments_map %}
+    {% assign cmts = cmts | push: comment[1] %}
+  {% endfor %}
+  {% assign comment_count = cmts | size %}
+  {% assign comments = cmts | sort: 'date' %}
 
+  {% if comment_count > 0 %}
   <h4 class="mt-4">Comments <span class="badge bg-primary">{{ comments.size }}</span></h4>
   <hr class="mb-4" />
   
   {% for comment in comments %}
+  <a id="{{ comment.id }}"></a>
   <div class="row mb-3">
-    <div class="col-md-6"><strong>{{ comment.author }}</strong></div>
-    <div class="col-md-6 text-muted text-end"><small>{{- comment.date | date: site.date_format -}}</small></div>
-    <div class="col-12">
-      {{ comment.content }}
+    <div class="col" style="width: 150px; max-width: 150px;">
+      <div><img src="{{ comment.avatar }}"/></div>
+      <div><strong>{{ comment.author }}</strong></div>
+      <div><small><a href="#{{ comment.id }}">{{- comment.date | date: site.date_format -}}</a></small></div>
+    </div>
+    <div class="col-10">
+      {{ comment.message }}
     </div>
     <div class="col-12"><hr class="comment-divider" /></div>
   </div>
   {% endfor %}
+  {% endif %}
 
 </article>

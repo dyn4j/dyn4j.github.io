@@ -1,0 +1,6 @@
+id: 9266
+date: 2014-03-11 18:10:19 -0400
+author: Dylan
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/5d6acc0dc7e2148ec433f9befd19fd55?s=96&d=mm&r=g
+message: "<p>That makes more sense.  I think you also need to compare absolute dot products in your findBestEdge() method, when looking for the secondary vertex of the edge.  Cheers.</p>"

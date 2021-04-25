@@ -1,0 +1,6 @@
+id: 9230
+date: 2013-01-05 01:53:19 -0500
+author: c0der
+parent: line-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>Thanks William, that does clear things up. </p>\n<p>I have managed to implement the 3D version, with two restricted tangent axis, thereby ending up with a 2&#215;2 matrix. The only difference is for 3D, you need to build an orthogonal basis from the supplied legal axis of movement and derive a second constraint identical to the one you derived.</p>"

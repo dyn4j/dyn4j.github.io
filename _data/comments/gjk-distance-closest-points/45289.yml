@@ -1,0 +1,6 @@
+id: 45289
+date: 2015-08-13 14:11:46 -0400
+author: Riv
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/30fe49e683fcbcd8ce33182356dc9929?s=96&d=mm&r=g
+message: "<p>Isn't it incorrect to simply check which point is further away from the origin and replace it with the new point?</p>\n<p>It is pretty easy to compe up with a case where A is further away than B, yet the closest point on the resulting triangle actually lies on the segment AC, whereas your algorithm will result with the line BC.</p>"

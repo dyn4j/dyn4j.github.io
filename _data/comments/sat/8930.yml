@@ -1,0 +1,6 @@
+id: 8930
+date: 2013-02-16 00:53:45 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>The vectors to test against are the normals of both shapes.  For example, let's say your first shape is a triangle with coordinates: a = (0, 3), b = (0, 1) and c = (1, 2).  From this we can define the edge vectors:</p>\n<pre>\nab = b - a = (0, 1) - (0, 3) = (0, -2)\nbc = c - b = (1, 2) - (0, 1) = (1, 1)\nca = a - c = (0, 3) - (1, 2) = (-1, 1)\n</pre>\n<p>Now that we have the three edge vectors we can get their normals (in 2D) by switching the x-y coordinates and negating one (There are two normals to an edge, one that points inward and one that points outward; you will want the one that points outward. Depending on the winding of the shape you will negate either the y or x. In the example here, I have anti-clockwise winding, so I negate the y.):</p>\n<pre>\nnormal1 = ab.perp() = (ab.y, -ab.x) = (-2, 0)\nnormal2 = bc.perp() = (bc.y, -bc.x) = (1, -1)\nnormal3 = ca.perp() = (ca.y, -ca.x) = (1, 1)\n</pre>\n<p>Hope this clears things up,<br />\nWilliam</p>"

@@ -1,0 +1,6 @@
+id: 8887
+date: 2011-12-02 19:34:14 -0500
+author: Sunada
+parent: sat
+avatar: http://1.gravatar.com/avatar/d19f92117740e2e3f02fbb71cb1c9c29?s=96&d=mm&r=g
+message: "<p>Hi William</p>\n<p>No I am not assuming circle shape for each particle. Initially I just inscribe the polygon within circles to give me some the centers of the polygons( All polygons are regular polygons). Yes I do have the collision detection and everything working. And you are right to some extend that I may not be applying the gravity enough. But even if I do that, I am implementing rigid boundary conditions at the corners of the box to push any particle that tries to leave the box. This might also be affecting the solution. But overall what I have observed is most of the particles touch each other, but there are say around 4-5 % of hexagonal particles in the system that do not contact anything..... If you have a mail ID or something I can send you the picture of my ensemble for you to have a look at ?<br />\nTHanks for the reply</p>"

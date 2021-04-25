@@ -1,0 +1,6 @@
+id: 9312
+date: 2015-02-05 17:52:32 -0500
+author: William Bittle
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Anon</p>\n<p>Depending on what you are doing when you rotate the shape, yes, you should recompute the edge normals.  I'm assuming you are computing the edge normals from the vertices, (b &#8211; a).left() or something?  I'm not sure what you mean by the projections move up and down, but they will certainly change as the shape(s) rotate.  Are you testing the normals of both shapes?  If you are saying the MTV is wrong, check to make sure your normals are normalized.</p>\n<p>William</p>"

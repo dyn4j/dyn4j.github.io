@@ -1,0 +1,6 @@
+id: 9102
+date: 2011-02-07 01:13:33 -0500
+author: Ray Zong
+parent: gjk-distance-closest-points
+avatar: http://2.gravatar.com/avatar/5f0e12478dba74d5cf03385efa0a6d85?s=96&d=mm&r=g
+message: "<p>I notice that in this post, you first find the new point P = AB.mult(t).add(A), then the search in the direction of -P. While in the previous post, the direction is found by doing the triple cross product. What's the reason for this? Thanks.</p>"

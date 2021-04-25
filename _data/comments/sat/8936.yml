@@ -1,0 +1,6 @@
+id: 8936
+date: 2013-04-23 10:01:45 -0400
+author: Bas
+parent: sat
+avatar: http://0.gravatar.com/avatar/ffa6321c115c34c279d6a21731bdb222?s=96&d=mm&r=g
+message: "<p>You've been a great help William, i only got one problem.</p>\n<p>My code does recognize intersection perfectly, but when looking at the MTV i sometimes get some weird results. For example, on one side of a rectangle i collide perfectly and i gives me the correct MTV, but when i'm on the other side of the rectangle (which is 20px thick), it gives me and MTV of > 20, as if it is colliding on the other side. When i invert my Perpendicular function for my vectors, the problem is also inverted. Any idea what the problem could be? I'm at a dead end.</p>\n<p>Cheers,<br />\nBas</p>"

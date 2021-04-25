@@ -1,0 +1,6 @@
+id: 166057
+date: 2018-05-30 20:09:32 -0400
+author: Sean
+parent: contact-points-using-clipping
+avatar: http://1.gravatar.com/avatar/4dbf90ba36b325c04f4ac020a0c9ce90?s=96&d=mm&r=g
+message: "<p>Hey Peter. Just wondering how you managed to figure it out? I'm in the same position as you were, where when using the cross product examples 1 and 3 would work and 2 would fail. If i changed the way I did the cross product to as described by William then 2 works and 1 and 3 fails.</p>"

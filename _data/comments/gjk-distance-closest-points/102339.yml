@@ -1,0 +1,6 @@
+id: 102339
+date: 2016-07-20 22:16:11 -0400
+author: Asher
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/f7e7593f8a2508fbd65d3fe0786ca7a0?s=96&d=mm&r=g
+message: "<p>This is a very helpful tutorial, however I'm having problems with the 3D algorithm. I implemented it exactly as you did, and it works, however not all the time. I've found that it doesn't always calculate the correct point, as I can move one of my objects on an axis perpendicular to the closest face on the other, and the calculated closest point will move, which it obviously shouldn't be doing. Upon closer inspection, I found that the direction that I initiate with actually causes this point to be in different locations, and occasionally crashes my program. Is there an initial direction that I should use? I've already used the center of one set of points minus the center of the other set.</p>"

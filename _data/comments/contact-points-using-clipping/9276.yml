@@ -1,0 +1,6 @@
+id: 9276
+date: 2014-07-25 18:30:11 -0400
+author: William
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Nithin</p>\n<p>Given valid input from the collision detector, it should never hit that condition.  The only way to return less than 2 points from the Clip method would be if both points were behind the clipping plane.  For example, in Figure 3, imagine if both of the incident edge's vertices were behind the clipping plane.  This would mean that the two edges don't intersect and we have a problem at some earlier stage in the collision processing pipeline.</p>\n<p>That said, it is possible that you still get here in some cases (like touching contact) due to finite precision floating point.</p>\n<p>William</p>"

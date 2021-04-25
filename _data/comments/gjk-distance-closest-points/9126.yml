@@ -1,0 +1,6 @@
+id: 9126
+date: 2014-07-31 22:01:05 -0400
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@aadne</p>\n<p>Yes, Ray Zong is asking the same question.  In 3D you'll need to keep a triangle rather than a line segment as the simplex.  From there, the algorithm is mostly the same:</p>\n<p>1. Get the normal of the simplex in the direction of the origin.  NOTE: A triangle has two normals in 3D, you want the one that points towards the origin.<br />\n2. Get a support point in the direction of the origin.<br />\n3. Check if the point from #2 is farther along the direction from #1 as compared with any point of the simplex.<br />\n  a. If yes, then remove a point from the simplex, add the point from #2 to the simplex, and go back to #1.  NOTE: you want to keep the two points from the simplex that are closest to the origin.  If there's a tie, you'd want to keep the points whose area is the largest.<br />\n  b. If no, then we have a triangle on the closest face to the origin.</p>\n<p>From here you just need to find the distance from the face to the origin. This could get tricky since you need the distance to the closest point on the Minkowski Sum's face which may not be the same as the distance to the closest point on the simplex.</p>\n<p>William</p>"

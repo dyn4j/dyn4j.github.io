@@ -1,0 +1,6 @@
+id: 9018
+date: 2012-03-05 08:47:23 -0500
+author: Wes
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/2d757e63582b9c304c856f377591fbba?s=96&d=mm&r=g
+message: "<p>d = c2 &#8211; c1 = (9, 5) &#8211; (5.5, 8.5) = (3.5, -3.5) = (1, -1);<br />\np1 = support(A, B, d) = (9, 9) &#8211; (5, 7) = (4, 2);<br />\nSimplex.add(p1);<br />\nd.negate() = (-1.5, 1);</p>\n<p>When I'm looking at this code, why is d.negate() = -1.5, 1? Intuitively I would expect negate to simply flip the signs of the direction, not change the direct itself. Since d started as 1,-1, how does negate change it to -1.5, 1?</p>\n<p>By the way, super useful explanation otherwise. Just some minor confusion here.</p>"

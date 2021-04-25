@@ -1,0 +1,6 @@
+id: 9005
+date: 2011-04-21 12:24:49 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Maybe these images will help.</p>\n<p>Imagine the vectors a and b in the xy-plane.  The cross product of those vectors, in a right handed coordinate system, yields the vector a x b along the positive z-axis.</p>\n<table width=\"90%\">\n<tr>\n<td style=\"text-align: center;\" width=\"50%\">\n<img src=\"http://www.dyn4j.org/wp-content/uploads/2010/04/cross-product2.png\" alt=\"a x b\" />\n</td>\n<td style=\"text-align: center;\" width=\"50%\">\n<img src=\"http://www.dyn4j.org/wp-content/uploads/2010/04/cross-product3.png\" alt=\"(a x b) x b\" />\n</td>\n</tr>\n</table>\n<p>For the next image we imagine that the a x b vector is the new a vector.  So we line up our right hand index finger along a x b and our middle finger along b and we get the final vector (a x b) x b which lies in the xy-plane.</p>"

@@ -1,0 +1,6 @@
+id: 57092
+date: 2015-10-09 22:51:46 -0400
+author: William Bittle
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>The cross product is an operation performed on vectors to obtain another vector perpendicular to the input vectors.  So for example, a set of two vectors in 3D represent a plane.  The cross product of those vectors will yield the normal of the plane.  In 3D, <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/en.wikipedia.org/wiki/Cross_product#Mnemonic');\"  href=\"https://en.wikipedia.org/wiki/Cross_product#Mnemonic\" target=\"_blank\" rel=\"nofollow\">it's pretty straight forward</a>.  In 2D the cross product is defined as (right-handed coordinate system):</p>\n<p>a = (ax, ay)<br />\nb = (bx, by)<br />\na x b = ax * by &#8211; ay * bx</p>\n<p>This doesn't yield a vector but rather a scalar since there doesn't exist a vector perpendicular to two linearly independent vectors in 2 dimensions.</p>\n<p>William</p>"

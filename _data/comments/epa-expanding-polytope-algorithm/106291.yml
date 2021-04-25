@@ -1,0 +1,6 @@
+id: 106291
+date: 2016-08-04 19:30:31 -0400
+author: shome
+parent: epa-expanding-polytope-algorithm
+avatar: http://2.gravatar.com/avatar/89d0fc92514f172bdab3e4f57496dfa1?s=96&d=mm&r=g
+message: "<p>The EPA algorithm  takes the terminating polygon from GJK algorithm to initialize itself. Does the EPA give correct distance for non intersecting convex hulls?</p>"

@@ -1,0 +1,6 @@
+id: 9122
+date: 2014-02-18 03:44:50 -0500
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@karim</p>\n<p>I've updated these sections to better reflect the concept being used: a Convex Combination.</p>\n<p>To explain a little further: we obtained the final simplex [A,B], which is a line segment in 2D, at the termination of the algorithm.  The line segment can be considered a convex hull.  We can find any point inside or on the edge of the hull by using a convex combination of any of the points within the hull (in our case we use all the vertices which make up the convex hull).  Since the simplex is within the Minkwoski Difference, which is a linear combination of two convex shapes, the lambda scalars can be used in the same manner on the individual shape's closest edges [A1,B1] and [A2,B2] to find the closest points.</p>\n<p>William</p>"

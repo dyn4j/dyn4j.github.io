@@ -1,0 +1,6 @@
+id: 8917
+date: 2012-09-07 23:16:43 -0400
+author: Ilya Radchenko
+parent: sat
+avatar: http://0.gravatar.com/avatar/9807852d7a4883b1bc996416e47a703f?s=96&d=mm&r=g
+message: "<p>I've implemented your version of the SAT in 3D space with AABB (voxel, so it's a cube) and triangles. For the axes, I get 6 normals for all the faces of the AABB, which might not be needed, but it works right now, and for the triangle I have one surface normal, which I think is wrong, should it be 4 normals?</p>\n<p>So now my collision detection works so-so, what I mean is that I get false positives when the triangles that are tested make up a convex curve.. so AABB's that are in the curve but not touching the triangles are marked as colliding. Furthermore, I also get false positives on triangles that make up a diagonal rectangle. So imagine a forward slash, and I get false positives on the top left and bottom right.</p>\n<p>So for both cases, it's almost as if I'm testing against the bounding box of the object. Since I'm breaking down the object into triangles and then testing for collisions with the AABB's (voxels). What could be my problem?</p>"

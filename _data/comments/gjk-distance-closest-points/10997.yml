@@ -1,0 +1,6 @@
+id: 10997
+date: 2015-02-17 03:38:18 -0500
+author: William Bittle
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Alex</p>\n<p>Correct, the first code block is to check for touching collision.  </p>\n<p>No, the second code block is to determine when we have found the closest edge on the Minkowski Difference (when we can terminate).  So this should always return true when the shapes are separated.</p>\n<p>The algorithm, as presented here, does not include a check for collision.  Specifically, the post says:</p>\n<blockquote><p>One more problem that this algorithm can run into is if the shapes are actually intersecting. If they are intersecting the algorithm will never terminiate. This isn’t as big of a problem since most of the time you will determine if the shapes are colliding first anyway. If not, then we must add a check in the while loop for the simplex containing the origin. This can be done by a simple point in triangle test (2D).</p></blockquote>\n<p>William</p>"

@@ -1,0 +1,6 @@
+id: 9270
+date: 2014-03-11 23:49:59 -0400
+author: William
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Dylan</p>\n<p>This may depend on what you are using the results for.  For example, in my collision detection code I have a check at the end that makes sure the normal is always pointing from convex A to convex B.  The same applies here in that, if the reference edge was B, then I need to negate the front normal so that the normal is still pointing from A to B.</p>\n<p>William</p>"

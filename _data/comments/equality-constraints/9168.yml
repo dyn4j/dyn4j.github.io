@@ -1,0 +1,6 @@
+id: 9168
+date: 2011-11-07 14:50:27 -0500
+author: William
+parent: equality-constraints
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Thanks!</p>\n<p>Great question!  You are right if we left multiply of J^{-1} on both sides we could eliminate J.  It's funny too because, at first I was like, \"wow why did I not see this earlier\", but alas, there is a problem with this:</p>\n<p>The Matrix inverse is only defined for square matrices.  The Jacobian is not always square and therefore doesn't always have an inverse.  This is why we cannot reduce the equation further until we actually know the dimensions of J.  In the later posts about specific equality constraints we see that many, if not all (I didn't go back and look at all of them), are 1x4s or 2x4s.</p>\n<p>William</p>"

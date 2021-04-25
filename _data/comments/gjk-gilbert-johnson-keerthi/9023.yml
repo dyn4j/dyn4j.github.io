@@ -1,0 +1,6 @@
+id: 9023
+date: 2012-04-20 20:45:55 -0400
+author: Grieverheart
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/5f71426da6340603613339a5ab6fe938?s=96&d=mm&r=g
+message: "<p>I'm a bit confused about one thing. If the origin lies on the line AB, why is it a contact point? Or are you talking about the bounding line of the Minkowski sum? If the latter is the case, how is that handled? I.e you get a null direction and terminate although the point resides in the Minkowski sum.</p>"

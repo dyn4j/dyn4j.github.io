@@ -1,0 +1,6 @@
+id: 9119
+date: 2014-02-11 13:26:51 -0500
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Vishal</p>\n<p>I think that I was answering too many questions in that response, so its a bit confusing.  I have updated it to make more sense.</p>\n<p>What we are doing is testing the projections of the current simplex points and the new simplex point we just found.  So dc represents the projection of the new simplex point onto the support direction.  da represents the projection of one of the current simplex points onto the support direction (it doesn't matter which).  These projections tell us how far away from the origin they are.  Doing dc &#8211; da tells us if we are getting closer or farther away from the origin as we are iterating.  Eventually, the projections, dc and da, will be near equal which indicates that we've found the closest edge (feature in your case) to the origin.</p>\n<p>William</p>"

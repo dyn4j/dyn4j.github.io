@@ -1,0 +1,6 @@
+id: 9012
+date: 2011-11-19 15:49:39 -0500
+author: steven
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/be6e15b5f93e0bea753898b96ca2a3e4?s=96&d=mm&r=g
+message: "<p>hi william:</p>\n<p>  for this section of code, i'm not quite understand</p>\n<pre>\nif (Simplex.getLast().dot(d) <= 0) {\n  // if the point added last was not past the origin\n  // in the direction of d\n  // then the Minkowski Sum cannot possibly \n  // contain the origin since the last point \n  // added is on the edge of the Minkowski Difference\n  return false;\n}\n</pre>\n<p>why this is the exit criteria?</p>"

@@ -1,0 +1,6 @@
+id: 9179
+date: 2012-12-12 13:04:00 -0500
+author: roehit
+parent: point-to-point-constraint
+avatar: http://2.gravatar.com/avatar/2b0bdff3518af39097a87ce13e415840?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>In the step where we want to isolate velocities, you have converted a vector into its corresponding skew-symmetric matrix.</p>\n<p>For two vectors a and b, and a skew symmetric matrix [A] of a,<br />\nwill b X a = [A] X b<br />\nor will b X a = (transpose of [A]) X b</p>\n<p>Such a formula would change the Jacobian to contain transposes of the skew symmetric matrices, instead of the skew symmetric matrices. Which one is right?</p>\n<p>Thanks</p>"

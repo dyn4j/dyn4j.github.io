@@ -1,0 +1,6 @@
+id: 23845
+date: 2015-05-11 01:48:05 -0400
+author: Chase
+parent: contact-points-using-clipping
+avatar: http://1.gravatar.com/avatar/aceac849693e271f62aaa8156eb88c0a?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>Thanks for writing up this article, it's helped me a ton.</p>\n<p>One thing I'm a little confused about is in the first block of code for finding the closest edge. The return value of the function is of the form Edge(v0, v1, v2). What is the purpose of v0? It doesn't look to me like it's ever used in the succeeding code when accessing various properties of the edges.</p>"

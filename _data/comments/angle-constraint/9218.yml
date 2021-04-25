@@ -1,0 +1,6 @@
+id: 9218
+date: 2013-02-08 05:32:14 -0500
+author: c0der
+parent: angle-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>Thanks William, I have got the hinge constraint to work, however I have a question about the derivation for an angle joint. You have started off with a matrix, then used the angular velocity to solve for lambda. However to compute the bias to prevent drift, the equation is as follows:</p>\n<p>bias = beta/dt * C where C is a rotation matrix in this case and the bias required is a vector, due to the angular velocities being vectors.</p>\n<p>Given C = Ra &#8211; Rb &#8211; Ri and the equation to solve for the impulse is:</p>\n<p>JM^-1JT*lambda = -Jvi &#8211; bias</p>\n<p>lambda = (-wa+wb-bias) (Ia^-1 + Ib^-1)^-1</p>\n<p>So we are subtracting a matrix from vectors (-wa+wb-[bias]) and this is undefined. I am definitely missing something, any thoughts?</p>"

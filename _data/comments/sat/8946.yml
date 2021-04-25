@@ -1,0 +1,6 @@
+id: 8946
+date: 2013-12-10 23:32:28 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Sam</p>\n<p>You can do collision detection against arbitrary curves, just not using SAT.  SAT is designed for polygonal shapes.  One option would be to implement a line segment shape that you then string together to make a piece-wise curve.  Another option is just to implement a collision detection routine specifically for curves.  <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/gamedev.stackexchange.com/questions/37802/collision-detection-with-curves');\"  href=\"http://gamedev.stackexchange.com/questions/37802/collision-detection-with-curves\" target=\"_blank\" rel=\"nofollow\">For example</a>.</p>\n<p>William</p>"

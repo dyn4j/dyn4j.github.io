@@ -1,0 +1,6 @@
+id: 8959
+date: 2014-05-18 11:26:10 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Aborysa</p>\n<p>In short, yes.  You need to make sure that the projections of both shapes onto <em>all axes</em> are overlapping to conclude that they are intersecting.  That said, the first axis that you find where the projections <em>do not</em> overlap, you can immediately exit since you know they do not overlap.</p>\n<p>You can, for example skip any <em>identical</em> axes.  For example, a rectangle has 4 normals, one for each edge.  However, the opposing edges have the same normal (just in the opposite direction) so you really only need to test with 2 of the normals.  This means, that for any shape that has parallel edges, only one of the parallel edge's normals needs to be tested.  By extension, if the two shapes you are testing have parallel edges, only one of those normals needs to be tested as well.  For example, if you have two axis aligned rectangles, that would be 8 normals to test (4 from each).  However, since you only need 2 from each, due to parallel edges, we would only test 4.  However, since both are axis aligned, we only need to test 2 since the shapes edges are parallel to each other.</p>\n<p>William</p>"

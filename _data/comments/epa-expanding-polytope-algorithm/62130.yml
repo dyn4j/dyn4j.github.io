@@ -1,0 +1,6 @@
+id: 62130
+date: 2015-11-03 20:11:12 -0500
+author: William Bittle
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Harry</p>\n<p>I'm not comparing <em>n</em> with <em>a</em>, I'm comparing <em>d</em> with <em>closest.distance</em>.  This compares the distance of current edge with the distance of the closest edge I've found so far.</p>\n<p>The dot product is a projection of the vector a onto the vector n.  This gives us the <em>perpendicular</em> distance from the edge to the origin, which will be different for every edge.</p>\n<p>William</p>"

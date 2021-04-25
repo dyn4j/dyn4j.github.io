@@ -1,0 +1,6 @@
+id: 100831
+date: 2016-07-15 08:29:43 -0400
+author: hong
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/57844d38363b6b20b7dd642588ef8bce?s=96&d=mm&r=g
+message: "<p>William<br />\nThank you for sharing this great articles.<br />\nCurrently i try to implement GJK in particles in 3D space, but i'm really an abecedarian and I have some questions.<br />\nI want to know that how can you know which direction the perpendicular of AB should point? Should i use the righthand law in a 3D space for two times?<br />\nI don't understand the meaning to calculate Simplex.getLast().dot(d).<br />\nI can' find the vidio you mentioned at the beginning.</p>"

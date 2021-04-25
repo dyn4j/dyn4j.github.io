@@ -1,0 +1,6 @@
+id: 8980
+date: 2014-12-26 01:32:52 -0500
+author: Evan
+parent: sat
+avatar: http://2.gravatar.com/avatar/87c6507459f0f61669201fccd9206531?s=96&d=mm&r=g
+message: "<p>Excuse me but is this usable for 3d? I havent read through the comments list to see if this is addressed, but I attempted to implement this in my 3d world and it didnt work. I was using vector3fs and I wasnt sure if I should skip the whole normalization process with vector3f.normalise() which is built in.</p>"

@@ -1,0 +1,6 @@
+id: 8993
+date: 2010-12-02 14:24:24 -0500
+author: mikewolf
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/5d9f8f136432fee0a9e1dac59999ccd6?s=96&d=mm&r=g
+message: "<p>hi, william</p>\n<p>Vector d = // choose a search direction  </p>\n<p>02 // get the first Minkowski Difference point  </p>\n<p>03 Simplex.add(support(A, B, d));  </p>\n<p>04 // negate d for the next point  </p>\n<p>05 d.negate();  </p>\n<p>for the first point in simplex, we should add </p>\n<p> if (Simplex.getLast().dot(d) <= 0)</p>\n<p>determination. I think</p>\n<p>such as : two tetrahedron</p>\n<p>	tetra.AppendVertex(VECTOR3D(0, 10, 0));<br />\n	tetra.AppendVertex(VECTOR3D(-10, 0, 10));<br />\n	tetra.AppendVertex(VECTOR3D(10, 0, 10));<br />\n	tetra.AppendVertex(VECTOR3D(0, 0, -10));</p>\n<p>	tetra1.AppendVertex(VECTOR3D(20, 5, 0));<br />\n	tetra1.AppendVertex(VECTOR3D(12, 0, 5));<br />\n	tetra1.AppendVertex(VECTOR3D(15, 0, 0));<br />\n	tetra1.AppendVertex(VECTOR3D(13, 0, -5));<br />\ninitial direction is mass center vector.</p>"

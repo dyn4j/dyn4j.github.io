@@ -1,0 +1,6 @@
+id: 9182
+date: 2012-12-15 10:55:32 -0500
+author: c0der
+parent: point-to-point-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>Sorry forgot to mention, even if we have a 3&#215;3 mass matrix, multiplying the inverse mass of each matrix by the identity, we'd still end up with a 3&#215;1 vector lambda, when there are two linear and two angular velocities. Maybe I am going wrong somewhere</p>"

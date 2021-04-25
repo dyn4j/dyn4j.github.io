@@ -1,0 +1,6 @@
+id: 9071
+date: 2013-11-25 14:29:17 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>I think you meant O(n) where n is the number vertices in the shape.  Typically, your number of vertices should be fairly low, but if you do have high vertex count polygons you have a couple of options.  Here are a few I can think of:</p>\n<ol>\n<li>Start at any vertex in the polygon.  Test which vertex, either the left or right vertex of the vertex we are on, gives you a larger dot product.  Loop in that direction until you find a vertex whose dot product is less than the last.  Then you are done.  We can do this because the shape is convex (2D).  On average it should reduce down to O(n/2).</li>\n<li>Another option is perform some caching of the getFarthestPointInDirection method's input and output.  You'll see that some direction vectors show up often.  This may also be useful information to pass to the EPA algorithm as well.</li>\n</ol>\n<p>William</p>"

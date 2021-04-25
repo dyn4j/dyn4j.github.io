@@ -1,0 +1,6 @@
+id: 9125
+date: 2014-07-31 14:01:43 -0400
+author: aadne
+parent: gjk-distance-closest-points
+avatar: http://1.gravatar.com/avatar/a187f1c664f89298f5fbdd19ac86358a?s=96&d=mm&r=g
+message: "<p>Hi William,<br />\nThanks for a great post!</p>\n<p>I want to find the distance between two cubes (3D). The cubes are oriented bounding boxes. Can I follow the same procedure as you are doing in this post to find the minimum distance? My first thought is that I will also need to include the cube faces somehow. It is not enough to only check distance against line segments. I look over all replies and found the one you wrote to Ray Zong 8.feb 2011 but I am not sure if he is talking about checking for origo inside the rectangles and not finding the distance.<br />\nAppreciate all help you can provide. Thanks again!<br />\nBR<br />\naadne</p>"

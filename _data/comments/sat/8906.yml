@@ -1,0 +1,6 @@
+id: 8906
+date: 2012-04-30 21:14:34 -0400
+author: nutter
+parent: sat
+avatar: http://1.gravatar.com/avatar/7c996e2ae344eb0f26b4b23c3bd4f293?s=96&d=mm&r=g
+message: "<p>Hello, this is an amazing article!</p>\n<p>i,ve implemented most of it. but i geht stuck with the axes:</p>\n<p>let's say i have a rectangle with the four normals<br />\n0/1, -1/0, 0/-1, 1/0<br />\nnow i remove duplicates and end with these two normals to test:<br />\n0/1, -1/0<br />\nwhen there is a colision  i get the right overlap value, but i dont understand how the get the right direction of the offset translation?</p>"

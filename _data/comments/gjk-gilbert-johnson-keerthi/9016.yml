@@ -1,0 +1,6 @@
+id: 9016
+date: 2012-02-27 16:06:36 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Actually, I'm really glad you asked this because the center for shape1 was wrong.  I fixed it and thankfully the flow of the post remains unchanged.</p>\n<p>Finding the center of a 2D polygon can be done a number of ways.  In this post I just picked a point that looked like the center to make the math easier.  Typically you would do this using some algorithm.  In <a href=\"http://www.dyn4j.org\" rel=\"nofollow\">dyn4j</a> there are two algorithms used to calculate the center:</p>\n<p>1. Average Method &#8211; Add all the x values of the vertices and divide by the number of them; likewise with the y values.  See <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/en.wikipedia.org/wiki/Centroid#Of_a_finite_set_of_points');\"  href=\"http://en.wikipedia.org/wiki/Centroid#Of_a_finite_set_of_points\" rel=\"nofollow\">here</a></p>\n<p>2. Area Weighted Method &#8211; See <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/en.wikipedia.org/wiki/Centroid#Centroid_of_polygon');\"  href=\"http://en.wikipedia.org/wiki/Centroid#Centroid_of_polygon\" rel=\"nofollow\">here</a></p>\n<p>William</p>"

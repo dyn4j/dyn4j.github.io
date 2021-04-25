@@ -1,0 +1,6 @@
+id: 9156
+date: 2014-05-24 13:52:01 -0400
+author: alleysark
+parent: epa-expanding-polytope-algorithm
+avatar: http://1.gravatar.com/avatar/41368d39d32159583b4fc68393b65eae?s=96&d=mm&r=g
+message: "<p>Hello, and thank you for this awesome article!!<br />\nWell, I had a same question with @ng, but I've understood it when I write my question :D<br />\nCould you please modify your comment at line 15 of findClosestEdge (\"get the vector from the edge towards the origin\"). I think it got me and @ng mixed up.<br />\nThanks a lot!!</p>"

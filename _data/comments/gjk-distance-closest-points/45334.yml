@@ -1,0 +1,6 @@
+id: 45334
+date: 2015-08-13 19:51:55 -0400
+author: William Bittle
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Riv</p>\n<p>Correct. That should instead be:</p>\n<pre class=\"lang:default decode:true\">\np1 = findClosestPoint(origin, a, c);\np2 = findClosestPoint(origin, c, b);\n// basically, which segment is closer\nif (p1.magnitude() < p2.magnitude()) {\n  b = c;\n} else {\n  a = c;\n}\n</pre>\n<p>I've fixed it in the post.</p>\n<p>William</p>"

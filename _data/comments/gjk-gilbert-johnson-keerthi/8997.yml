@@ -1,0 +1,6 @@
+id: 8997
+date: 2011-02-06 02:07:21 -0500
+author: Ray Zong
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/5f0e12478dba74d5cf03385efa0a6d85?s=96&d=mm&r=g
+message: "<p>We can start from any point in the Minkowski difference, but how do you choose the point added on later in the direction we're searching? I mean how to numerically determine one point on the edge is the farthest in the direction we're looking for? Should I just use all the vertices on the boundary?</p>\n<p>I'm trying to do a 3D collision model. So if contact happens, doing the Minkowski difference of all the vertices on object A and object B will generate a polyhedron. So, can I divide this polyhedron into several tetrahedrons and check if the origin lies in one of them? This sounds like involving some more unnecessary calculation.</p>\n<p>Thanks,</p>"

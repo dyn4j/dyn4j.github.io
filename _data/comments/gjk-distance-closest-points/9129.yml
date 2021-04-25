@@ -1,0 +1,6 @@
+id: 9129
+date: 2014-08-12 12:27:05 -0400
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@aadnevik</p>\n<p>You can get the normal of triangle in the direction of the origin by first getting either normal of the triangle.  Then project the vector from any point on the triangle to the origin onto the normal.  If the projection is negative, then negate the normal.</p>\n<pre>\nsimplex = // has 3 vertices since its a triangle\nv1 = simplex[2] - simplex[1]; // vertex 1 to vertex 2\nv2 = simplex[0] - simplex[1]; // vertex 1 to vertex 0\nnormal = v1.cross(v2);\n\n// project the origin and any of the simplex vertices\n// onto the normal.  If the origin is behind the plane\n// then just negate all the components\nvo = origin - simplex[1];\nif (normal.dot(vo) < 0) {\n  normal.negate();\n}\n</pre>\n<p>William</p>"

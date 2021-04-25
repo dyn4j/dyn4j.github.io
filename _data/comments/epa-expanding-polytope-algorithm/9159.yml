@@ -1,0 +1,6 @@
+id: 9159
+date: 2014-07-20 18:43:27 -0400
+author: Asylum
+parent: epa-expanding-polytope-algorithm
+avatar: http://2.gravatar.com/avatar/2b4e2bedcf809b10d793d5ac0775cf29?s=96&d=mm&r=g
+message: "<p>Hi!</p>\n<p>Yes, I'm debugging it at the moment. The test case is two 1&#215;1 boxes sitting exactly on eachother.</p>\n<p>Initial simplex is:<br />\n0: (0, 0, 0)<br />\n1: (0, 1, 1)<br />\n2: (-1, 1, 0)<br />\n3: (-1, 0, 1)</p>\n<p>The algorithm finds the first face to be the best (0, 1, 2). Normal vector is (-1, -1, 1), therefore the support vertex obtained in this direction will be vertex 4 -> redundancy.</p>\n<p>I added a condition, so in the next iteration the algorithm will detect the infinite loop (it didn't get closer to the origin), however the terminating triangle is not on the surface of the CSO -> contact normal will be bad.</p>\n<p>I take a look at your code.</p>"

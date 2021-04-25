@@ -1,0 +1,6 @@
+id: 9198
+date: 2012-07-12 13:07:25 -0400
+author: William
+parent: distance-constraint
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Yes, you are exactly right, lambda will be a scalar in this case.  Once lambda (the scalar impulse) is found, we can use the equation from the <a href=\"http://www.dyn4j.org/2010/07/equality-constraints/\" title=\"Equality Constraints\" target=\"_blank\" rel=\"nofollow\">Equality Constraints</a> post to find the change in velocity:</p>\n<p><img src=\"http://www.dyn4j.org/wp-content/uploads/2010/07/distance_2_1.png\" alt=\"\" /><br />\n<img src=\"http://www.dyn4j.org/wp-content/uploads/2010/07/distance_2_2.png\" alt=\"\" /></p>\n<p>Now if we plug in the mass matrix, J<sup>T</sup> and lambda we get 4 equations to find the change in velocity for the two bodies (note in 2D the mass matrix entries are scalars and as you pointed out lambda is a scalar):</p>\n<p><img src=\"http://www.dyn4j.org/wp-content/uploads/2010/07/distance_2_3.png\" alt=\"\" /><br />\n<img src=\"http://www.dyn4j.org/wp-content/uploads/2010/07/distance_2_4.png\" alt=\"\" /></p>\n<p>As a side note, the above explains how to apply the impulse to the bodies.  The impulse is simply (in this case):</p>\n<p><img src=\"http://www.dyn4j.org/wp-content/uploads/2010/07/distance_2_5.png\" alt=\"\" /></p>\n<p>William</p>"

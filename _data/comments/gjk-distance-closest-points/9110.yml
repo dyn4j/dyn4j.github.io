@@ -1,0 +1,6 @@
+id: 9110
+date: 2012-04-11 06:30:19 -0400
+author: Ernst
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/c2af557cb3840617db0ccb7fbf98cc75?s=96&d=mm&r=g
+message: "<p>Thanks for your reply! By drifting I mean that the points leave the polygon and lag behind if you move the polygon around. It's perhaps a bit difficult to explain in text but it looks as if the closest points have a smaller radius of action.</p>\n<p>That's a good suggestion and thanks for your offer. I'll check if the points fall onto the sum shape. Maybe there is an error I can spot. </p>\n<p>I'll let you know!</p>\n<p>thanks,<br />\nErnst</p>"

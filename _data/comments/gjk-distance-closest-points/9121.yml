@@ -1,0 +1,6 @@
+id: 9121
+date: 2014-02-16 07:01:56 -0500
+author: karim
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/69bb4d218e88a846c696df26bb2b395c?s=96&d=mm&r=g
+message: "<p>i think convex hull is a set of point and no more.<br />\ni don't really what is lambda :-?</p>\n<p>CH(S) = ∑i=1…n λiPi = λ1P1 + … + λnPn</p>"

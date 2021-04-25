@@ -1,0 +1,6 @@
+id: 8935
+date: 2013-03-10 05:54:05 -0400
+author: jwilliams
+parent: sat
+avatar: http://0.gravatar.com/avatar/3dcdee8f416bcbe67ceae3a04e11d872?s=96&d=mm&r=g
+message: "<p>found the issue!</p>\n<p>had a bug in my get axes.. should be i + 1 not 1 in the ternary</p>"

@@ -1,0 +1,6 @@
+id: 72130
+date: 2016-01-23 06:10:42 -0500
+author: Rob
+parent: sat
+avatar: http://1.gravatar.com/avatar/7a0fff553b050d63ea30479c8fc90629?s=96&d=mm&r=g
+message: "<p>Thanks for the great post!</p>\n<p>> SAT can only handle convex shapes, but this is OK because non-convex shapes can be represented by a combination of convex shapes</p>\n<p>I'm kind of confused here. If I draw a donut shape, how can I break it down into convex shapes? It seems as if the edge around the inside of the donut can't be broken down into convex shapes.</p>\n<p>> 'If two convex objects are not penetrating, there exists an axis for which the projection of the objects will not overlap.'</p>\n<p>This is really cool! Do you know where I can read a proof about this result?</p>"

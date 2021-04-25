@@ -1,0 +1,6 @@
+id: 106336
+date: 2016-08-05 01:09:44 -0400
+author: William Bittle
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@shome</p>\n<p>No.  EPA is only for the collision case.  Take a look at the <a href=\"http://www.dyn4j.org/2010/04/gjk-distance-closest-points/\" target=\"_blank\">GJK – Distance &#038; Closest Points</a> post for the separation case.</p>\n<p>Some collision detection engines drop EPA and instead use smaller \"core\" shapes (imagine a shrunken version of the shape) and then do the GJK distance method to handle both separation and penetration.</p>\n<p>William</p>"

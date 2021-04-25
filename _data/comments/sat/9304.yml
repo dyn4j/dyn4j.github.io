@@ -1,0 +1,6 @@
+id: 9304
+date: 2015-02-05 04:01:11 -0500
+author: Anon
+parent: sat
+avatar: http://1.gravatar.com/avatar/a1e3f0d8ea1941b52277a06753e39579?s=96&d=mm&r=g
+message: "<p>Great tutorial, I somehow got it to work. However, it seems not to like rotations. I'm testing 2 squares, one is rotated and the other is not. I'm suppose to re-calculate the edge normals every iteration correct? By doing so, if I rotate my square in place, my projections move up and down falsely detecting collisions. Sorry I don't have my code readily available right now but I was wondering if you could think of anything on top of your head why this might be occurring because its working great otherwise without rotation, maybe my edges are not getting rotated correctly? I know the vertices are being rotated correctly because my square is rendered using them and I'm testing all vertices.</p>"

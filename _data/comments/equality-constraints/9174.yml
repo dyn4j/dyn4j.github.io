@@ -1,0 +1,6 @@
+id: 9174
+date: 2014-07-12 03:48:40 -0400
+author: Nick
+parent: equality-constraints
+avatar: http://0.gravatar.com/avatar/f6fa4987b21958a42e4b3162d57c5484?s=96&d=mm&r=g
+message: "<p>Hi William,<br />\nI think your site is the best resource on the net for this topic, and was so glad when I finally found it. Thanks a lot for putting it together!</p>\n<p>You mention solving for lambda using a linear equation solver, but I see in Erin Catto's Box2D papers that he uses an iterative method.<br />\nI just wanted to ask, for the constraints where the Jacobian is a matrix rather than a scalar, is it possible to solve for lambda by treating each Jacobian row as a separate constraint? Otherwise I don't understand how an iterative method would work with these Jacobians.</p>"

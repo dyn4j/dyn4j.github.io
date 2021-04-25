@@ -1,0 +1,6 @@
+id: 8893
+date: 2011-12-15 08:18:00 -0500
+author: Jeff
+parent: sat
+avatar: http://0.gravatar.com/avatar/f593a7401ef82a2f84ec0ce6681d41e2?s=96&d=mm&r=g
+message: "<p>Very cool, I got it figured out.  Thanks for your help!  However, while I'm at it, do you know how to find the point where the rectangles collide and therefore the rotation necessary to further resolve the collision.  For instance, say one rectangle is headed at another stationary rectangle at an angle.  When they collide, the first rectangle will rotate flat against the second rectangle and slide off.  Do you know or have any tutorials that explain how to carry out this calculation?  I found this:<br />\n<a onclick=\"javascript:pageTracker._trackPageview('/outgoing/www.myphysicslab.com/collision.html');\"  href=\"http://www.myphysicslab.com/collision.html\" rel=\"nofollow ugc\">http://www.myphysicslab.com/collision.html</a><br />\nwhich is really cool but I find it difficult to follow and even more difficult to put to code.  I've tried a bunch of different stuff on my own but can't seem to get anything that works under any circumstance.  Sorry if I'm asking too much, but you're a really good resource and I'm eager to learn.  Thanks again!</p>"

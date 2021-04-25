@@ -1,0 +1,6 @@
+id: 72176
+date: 2016-01-23 22:04:01 -0500
+author: William Bittle
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Rob</p>\n<p>I should have clarified more.  SAT isn't suited for shapes with curved edges since they have an infinite number of separating axes.  We can get around this limitation with circular curves like circles, <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/www.metanetsoftware.com/technique/tutorialA.html#section3');\"  href=\"http://www.metanetsoftware.com/technique/tutorialA.html#section3\" target=\"_blank\" rel=\"nofollow\">half circles and even non-convex circluar sections</a>.  However, most curved shapes will <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/upload.wikimedia.org/wikipedia/commons/4/4b/Hexagonal_torus.png');\"  href=\"https://upload.wikimedia.org/wikipedia/commons/4/4b/Hexagonal_torus.png\" target=\"_blank\" rel=\"nofollow\">be discretized into a finite number of straight edges</a>, in which case you can decompose it into convex parts.</p>\n<p>As for a proof, <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/en.wikipedia.org/wiki/Hyperplane_separation_theorem');\"  href=\"https://en.wikipedia.org/wiki/Hyperplane_separation_theorem\" target=\"_blank\" rel=\"nofollow\">wikipedia has one</a>.</p>\n<p>William</p>"

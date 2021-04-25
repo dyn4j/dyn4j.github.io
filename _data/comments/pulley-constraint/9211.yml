@@ -1,0 +1,6 @@
+id: 9211
+date: 2013-09-01 04:54:24 -0400
+author: seeanvit
+parent: pulley-constraint
+avatar: http://0.gravatar.com/avatar/f3d3fb9d1364908a196c799b08f8e6d6?s=96&d=mm&r=g
+message: "<p>Oops, I was making a silly mistake somewhere else in the code. It is working fine now :) .<br />\njacobianderivative in  the case of my solver is the time-derivative of the jacobian matrix .  Deriving it is simple       ( after I gave it some clear thinking )  , simply take each term of the jacobian-matrix and find its time-derivative.           </p>\n<p>Thanks for such descriptive post William, It helped me a lot in understanding  how the constraint deriving works, (specially the part where you find the &#8216;jacobian'  from &#8216;C_dot'  by separating the velocities)  :)</p>\n<p>I am also trying add friction-force to  STEP .  Could you help me out in deriving  the values of  &#8216;C' ,  &#8216;C_dot',   and  &#8216;J' for that?</p>"

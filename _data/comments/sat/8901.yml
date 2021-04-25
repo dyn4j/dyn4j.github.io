@@ -1,0 +1,6 @@
+id: 8901
+date: 2012-04-08 01:09:05 -0400
+author: bruce wayne
+parent: sat
+avatar: http://2.gravatar.com/avatar/2033a17c3b7b7a990f30dd7b9ef5b81a?s=96&d=mm&r=g
+message: "<p>You are a LEGEND!!!<br />\nI can't believe I actually have this (sort of) working!<br />\nI was almost ready to give up on SAT. Thanks a lot.</p>\n<p>Just one question:<br />\nWhen checking if they overlap, should it be as follows:</p>\n<pre>\nfunction overlap(V1,V2){\n  if( (V1.min>V2.min \n   AND V1.minV2.min\n   AND V1.max<V2.max ))\n  {return true;}\n  return false;\n}\n</pre>\n<p>and if so,<br />\nwill I need to do some extra coding to see if the collision should affect the y or x axis on the colliding polygon?</p>\n<p>Thanks again!</p>"

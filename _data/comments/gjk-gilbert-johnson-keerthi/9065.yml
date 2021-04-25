@@ -1,0 +1,6 @@
+id: 9065
+date: 2013-11-06 01:34:03 -0500
+author: Futurecoming
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/b514703dd3528c7bff8281a55397817d?s=96&d=mm&r=g
+message: "<p>Dear William:<br />\nIn 3D , is the following simple process right?<br />\n(1) first we check whether the point we got through a certain direction pass the origin, which equals to check if the point is in the point VR of the MK Difference;<br />\n    if it doesn't then return false, meaning collision doesn't exist.<br />\n    if it does then we add it to the simplex;<br />\n   * redo the above until the simplex have 4 points, making up a tetrahedron.<br />\n(2)then we go to check if the origin lies in the 4 face VR by using the perps and dot product;<br />\n    if it lies in one of them, then we use the perp of that face as our new searching direction and get rid of the present useless point of the simplex and rebuild the simplex and do the same thing from * .<br />\n    if it doesn't then the origin is surely inside the simplex and we get the collision detected.</p>\n<p>end</p>"

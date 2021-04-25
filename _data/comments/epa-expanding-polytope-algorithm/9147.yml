@@ -1,0 +1,6 @@
+id: 9147
+date: 2012-06-07 13:05:57 -0400
+author: Quentin
+parent: epa-expanding-polytope-algorithm
+avatar: http://2.gravatar.com/avatar/e9ee16999373da7e48e37add841a2b6a?s=96&d=mm&r=g
+message: "<p>Hi and first of all thank you four your guides ! It is really the best I found on the subject (GJK &amp; EPA).</p>\n<p>I have yet a little problem:<br />\nI have a particular case where the origine belongs to the edge formed by the two first point of my simplex (in GJK). In this case the algorithm find that the shape are not colliding even if they are...<br />\nI tried to fix this by returning a colision if the origin belongs to an edge of the simplex but then I have a problem in the EPA who seems unable to find the closest edge (infinite loop).</p>\n<p>English is not my first language so I'm not sure if I &#8216;m clear enough.</p>\n<p>Here is my example :</p>\n<p>Shape 1 points: (2,2),(2,5),(4,5),(4,2)<br />\nShape 2 points: (3,3),(5,4),(5,2)<br />\nFirst d : center shape 1 &#8211; center shape 2<br />\nFirst edge in my simplex formed by :(-3,3), (1,-1)<br />\nepsilon chosen: 0.01</p>"

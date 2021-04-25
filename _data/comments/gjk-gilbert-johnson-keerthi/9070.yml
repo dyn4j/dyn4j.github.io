@@ -1,0 +1,6 @@
+id: 9070
+date: 2013-11-24 08:28:44 -0500
+author: Francois
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/c1c396df07f20ee59fe980d7f658a1a1?s=96&d=mm&r=g
+message: "<p>Hello William,</p>\n<p>This is a wonderful tutorial, thank you very much!<br />\nAbout the function getFarthestPointInDirection(), this seems to require O(n) time for a convex hull composed of n polygons. Are you aware of any algorithms that could speed up this process? Perhaps by partitioning the vertices in some \"directional\" boundaries? I am just wondering what is the best approach for searching for this farthest point? </p>\n<p>Thanks again!<br />\nFrancois</p>"

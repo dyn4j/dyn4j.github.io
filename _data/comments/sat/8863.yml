@@ -1,0 +1,6 @@
+id: 8863
+date: 2011-05-06 12:53:47 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>If I understand you correctly, you are asking what to do when rectangles are aligned and they produce the same penetration but opposing directions.  Like this:</p>\n<p><img src=\"http://www.dyn4j.org/wp-content/uploads/2010/01/sat-problem1.png\" /></p>\n<p>Where</p>\n<p>a = (1, 0) with a depth of 1 unit</p>\n<p>And as you point out the blue rectangle will have nearly the same</p>\n<p>b = (-1, 0) with a depth of 1 unit</p>\n<p>What I would suggest is that you always return a vector that is pointing from shape A to shape B from SAT.  This way you don't have to worry about which way the vector is pointing.</p>\n<pre>\nv = // the separation vector\nca = // shape a's center\ncb = // shape b's center\ncacb = cb - ca // the vector from ca to cb\nif (v.dot(cacb) < 0) {\n  // if the separation vector is in the opposite direction\n  // of the center to center vector then flip it around\n  // by negating it\n  v.negate();\n}\n</pre>"

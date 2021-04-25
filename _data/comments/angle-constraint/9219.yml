@@ -1,0 +1,6 @@
+id: 9219
+date: 2013-02-08 13:12:23 -0500
+author: William
+parent: angle-constraint
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>I'm not sure I understand your question completely, but let me take a stab at answering.</p>\n<p>If you have solved the velocity constraint as shown above, you will experience drift at the limits.  If you want to cancel out the drift you need to solve the position constraint:</p>\n<p>Solve the following (so C will be a matrix,<br />\nbasically the relative rotation):<br />\nC = Ra &#8211; Rb &#8211; Ri</p>\n<p>Then solve using the K matrix (from the<br />\nvelocity constraint derivation):<br />\nJ = C * K<sup>-1</sup></p>\n<p>Then apply to the bodies:<br />\nBa.R += J * Ia<sup>-1</sup><br />\nBb.R -= J * Ib<sup>-1</sup></p>\n<p>This will feed the error in the rotation back into the bodies which will be taken care of in the next velocity constraint solving iteration on the next world step.</p>\n<p>If you are computing this before solving the velocity constraint (is that what you mean by \"bias\"?), just apply it to the bodies first, then solve the velocity constraint.</p>\n<p>Hope that helps,<br />\nWilliam</p>"

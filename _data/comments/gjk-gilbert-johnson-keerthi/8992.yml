@@ -1,0 +1,6 @@
+id: 8992
+date: 2010-11-24 13:13:32 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Thanks!  It's good to hear that someone is getting some use out of it.</p>\n<p>I would suggest you try to implement it yourself first (like you are trying to do), but if you get stuck you can continue to ask me questions and/or reference my 2D implementation <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/collision/narrowphase/Gjk.java');\"  href=\"https://github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/collision/narrowphase/Gjk.java\" rel=\"nofollow\">here</a>.  It's part of a larger project called <a href=\"http://www.dyn4j.org\" rel=\"nofollow\">dyn4j</a>, so if you see me use some other classes, just browse up to find their implementation within that same project.</p>\n<p>You will be most interested in the detect method that returns a boolean, since its the simplest.</p>\n<p>William</p>"

@@ -1,0 +1,6 @@
+id: 10062
+date: 2015-02-10 08:52:29 -0500
+author: Herman
+parent: sat
+avatar: http://1.gravatar.com/avatar/7f03e7e769dce25311f91f1db4afa2a0?s=96&d=mm&r=g
+message: "<p>I also seem to be getting an enormous value on the overlap variable, it's often around 2000. All the other collision seems to be working correctly as i can see that the rectangles that are colliding are being painted red. I haven't used this example for the sat coding but it should still work.</p>"

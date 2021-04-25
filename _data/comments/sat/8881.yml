@@ -1,0 +1,6 @@
+id: 8881
+date: 2011-09-06 12:32:35 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>The reason we care is only when we want to do something with the collision information.  For instance, if you wanted to push the shapes apart after detecting a collision you need the normal and depth.  You could do something like move the first shape half of the depth along the normal and move the second shape half of the depth in the opposite direction.  The problem is, you need to know which direction to move the first one.  If you have the opposite direction normal (i.e. pointing inward instead of outward) then you will move the shapes closer together instead of apart.</p>\n<p>In general, however, it doesn't really matter which ones you use because at the end you will probably check the direction of the normal anyway by doing something like this:</p>\n<pre>\nVector n = // the normal from SAT;\nVector c1 = // the center point of the first shape;\nVector c2 = // the center point of the second shape;\nVector c1c2 = c2 - c1;\n// check if the normal is in the direction of the center to center vector\nif (c1c2.dot(n) < 0) {\n  // if its in the opposite direction then flip it\n  n.negate();\n}\n</pre>"

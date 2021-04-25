@@ -1,0 +1,6 @@
+id: 9303
+date: 2015-02-04 23:05:39 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Jerry</p>\n<p>Looking at your project method again, it doesn't look like you are keeping track of the min.  You only set it to the first projection.  Was this because it was cut off in the comment?</p>\n<p>The MTV is the axis with the smallest penetration, so as long as your projections, overlap calculation, and normalization is correct, you should be getting the right values.</p>\n<p>William</p>"

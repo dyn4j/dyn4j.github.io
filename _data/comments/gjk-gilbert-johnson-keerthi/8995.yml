@@ -1,0 +1,6 @@
+id: 8995
+date: 2011-02-05 16:46:04 -0500
+author: Ray Zong
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/5f0e12478dba74d5cf03385efa0a6d85?s=96&d=mm&r=g
+message: "<p>I'm a bit confused. If all I need is to detect if the collision is happening and NOT care about the distance between the two objects A and B, does it mean, with the Minkowski difference giving the boundary of the set(A-B), I only need to determine is the origin is located in side that boundary by doing some dot and cross product of vectors?</p>\n<p>Thanks a lot.</p>"

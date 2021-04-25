@@ -1,0 +1,6 @@
+id: 9059
+date: 2013-11-02 13:40:16 -0400
+author: Saad Taame
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://1.gravatar.com/avatar/70e51748cddcc7a80615b2b910393e7e?s=96&d=mm&r=g
+message: "<p>Hello William,</p>\n<p>I watched the video tutorial and read through. In the video, the third line of initialization should negate D (it reads D = -S in the video but his explanation is correct). I'm implementing a 2D version of GJK and have a question.</p>\n<p>I think that the cross product direction update can be made faster by just rotating the vector AB in the direction of the origin. What do you think?</p>"

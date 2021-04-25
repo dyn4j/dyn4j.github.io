@@ -1,0 +1,6 @@
+id: 9167
+date: 2011-11-05 05:30:56 -0400
+author: juhl
+parent: equality-constraints
+avatar: http://0.gravatar.com/avatar/605b671c864723bc829520d9ebe18bee?s=96&d=mm&r=g
+message: "<p>Thanks for great posting</p>\n<p>Btw I got a question about Ax=b form.<br />\nCould it be cancel J matrix out on the left on both side ?<br />\nWhat I mean is M^{-1} J^T = -v_i instead of J M^{-1} J^T = -J v_i.</p>"

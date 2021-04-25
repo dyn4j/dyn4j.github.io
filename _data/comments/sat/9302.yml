@@ -1,0 +1,6 @@
+id: 9302
+date: 2015-02-04 18:00:45 -0500
+author: Jerry
+parent: sat
+avatar: http://1.gravatar.com/avatar/1c73d107cf77da79183f5d687d8ba154?s=96&d=mm&r=g
+message: "<p>I need to clarify that the collision check seems to work fine but I'm wondering if I should complement the code somehow to get the correct information for calculating the MTV. Now the overlap value seems to be somewhat off.</p>\n<blockquote><p>\ndouble overlap = // really large value;<br />\nAxis smallest = null;</p>\n<p>Axis[] axes1 = shape1.getAxes();</p>\n<p>for (int i = 0; i < axes1.length; i++)<br />\n{<br />\nAxis axis = axes1[i];</p>\n<p>Projection p1 = shape1.project(axis);<br />\nProjection p2 = shape2.project(axis);</p>\n<p>if (!p1.overlap(p2))<br />\n{<br />\nreturn false;<br />\n}<br />\nelse<br />\n{<br />\ndouble o = p1.getOverlap(p2);</p>\n<p>if (o < overlap)<br />\n{<br />\noverlap = o;<br />\nsmallest = axis;<br />\n}<br />\n}</p>\n<p>return true;\n</p></blockquote>\n<p>Jerry</p>"

@@ -1,0 +1,6 @@
+id: 9035
+date: 2012-11-12 12:38:01 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Yes.  You can create a line segment and make sure its past the origin before beginning the while loop for a slight performance improvement.  </p>\n<p>The goal of this post was to introduce the topic and explain the algorithm.  I tend to leave small improvements like this out because they tend to lose the reader.  Once the reader understands the algorithm, these types of improvements are usually obvious.</p>\n<p>William</p>"

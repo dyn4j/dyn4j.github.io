@@ -1,0 +1,6 @@
+id: 33220
+date: 2015-06-24 22:14:15 -0400
+author: William Bittle
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Mike</p>\n<p>I'm doing the cross product of the edge (ref.v2 &#8211; ref.v1) and the z-axis (0, 0, 1).</p>\n<p>Thanks,<br />\nWilliam</p>"

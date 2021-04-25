@@ -1,0 +1,6 @@
+id: 8870
+date: 2011-07-11 12:23:06 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Thanks, you are exactly right.  I actually changed the code to initialize the min/max with the projection of the first vertex since that will be more robust anyway.  Can't believe I missed that...</p>\n<p>The else if on line 8 is actually required, otherwise the max would not be the max, it would be the last value that was not less than the min.</p>\n<p>William</p>"

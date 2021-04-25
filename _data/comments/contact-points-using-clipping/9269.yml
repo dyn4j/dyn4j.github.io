@@ -1,0 +1,6 @@
+id: 9269
+date: 2014-03-11 23:47:04 -0400
+author: William
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Dylan</p>\n<p>You can certainly do that as a precaution, but since we have both edge vectors (l and r) pointing towards the farthest point and pointing in the same direction as n, then the projections will always be positive or zero.</p>\n<p>William</p>"

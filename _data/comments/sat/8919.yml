@@ -1,0 +1,6 @@
+id: 8919
+date: 2012-09-10 13:57:53 -0400
+author: Ilya Radchenko
+parent: sat
+avatar: http://0.gravatar.com/avatar/9807852d7a4883b1bc996416e47a703f?s=96&d=mm&r=g
+message: "<p>I've implemented two different versions of the getAxes, one for a triangle and one for the AABB.</p>\n<p>The axes code: <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/gist.github.com/3691081');\"  href=\"https://gist.github.com/3691081\" rel=\"nofollow ugc\">https://gist.github.com/3691081</a></p>\n<p>The project method code: <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/gist.github.com/3691088');\"  href=\"https://gist.github.com/3691088\" rel=\"nofollow ugc\">https://gist.github.com/3691088</a></p>"

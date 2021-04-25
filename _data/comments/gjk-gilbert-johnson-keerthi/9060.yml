@@ -1,0 +1,6 @@
+id: 9060
+date: 2013-11-04 14:17:27 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>I'm not sure, I think it depends on the implementation of the trigonometric functions.</p>\n<p>My implementation of the triple product has 8 multiplies, 2 adds, and 2 subtractions for a total of 12 operations.  If the trigonometric functions are implemented using CORDIC or Taylor series, I think the triple product will win out.  If I'm not missing anything, you would need 3 trigonometric function calls to perform the rotation: 1 (arctan2 probably) to obtain the angle of rotation and 2 (sin/cos) to perform the rotation?</p>\n<p>William</p>"

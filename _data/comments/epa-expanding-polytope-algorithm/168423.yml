@@ -1,0 +1,6 @@
+id: 168423
+date: 2018-10-06 12:57:48 -0400
+author: William
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/3e97336e66e133ba019feb50f9c1046e?s=96&d=mm&r=g
+message: "<p>@damien</p>\n<p>GJK can detect collision regardless of depth.  The issue is that the depth can be wrong when the penetration is large.  On the flip side EPA continues to collect vertices that must be iterated on each iteration.  This is especially true when the minkowski sun has curved edges.</p>\n<p>As for a comparison, I’m not sure.  In my experience EPA performance is acceptable, but I’m only speaking for 2D.  If your set of shapes doesn’t include curved shapes, then I’d expect EPA to be very close to GJK.</p>"

@@ -1,0 +1,6 @@
+id: 9274
+date: 2014-07-24 12:26:22 -0400
+author: William
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Nithin</p>\n<p>I think you are asking what does Edge.dot(Vector) do?  It takes the edge vector of the Edge object and returns the dot product:</p>\n<pre>\n// the edge vector is the vector from the first\n// vertex to the second vertex\nedgeVector = (edge.p2 - edge.p1);\nreturn edgeVector.dot(n);\n</pre>\n<p>William</p>"

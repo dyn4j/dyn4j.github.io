@@ -1,0 +1,6 @@
+id: 9085
+date: 2014-04-08 12:37:51 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@NL</p>\n<p>Yeah, I can see how this could be confusing.  Since the cross product is not commutative and we technically have (AC X AB) X AB then we need to use the triple product expansion:</p>\n<pre>(A X B) X C = -A(C &middot; B) + B(C &middot; A) = B(C &middot; A) - A(C &middot; B)</pre>\n<p>It's a little hard to tell since both B and C in this case are AB.  I've added parentheses to the triple products and added some text that shows the triple product expansion I'm using.</p>\n<p>William</p>"

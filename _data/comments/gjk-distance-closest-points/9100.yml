@@ -1,0 +1,6 @@
+id: 9100
+date: 2011-02-06 18:43:08 -0500
+author: Ray Zong
+parent: gjk-distance-closest-points
+avatar: http://2.gravatar.com/avatar/5f0e12478dba74d5cf03385efa0a6d85?s=96&d=mm&r=g
+message: "<p>In iteration 3, after finding the new direction d(0.62, -0.78), then the point in that direction should be (-4,-1). It is the same with the point added in the iteration 2. My reason is (-4,-1) dot (0.62,-0.78)=-1.7. It is larger than the dot product of (1,3) and (0.62,-0.78)=-1.72. Would you please tell me why you choose (1,3) here? Thanks very much.</p>"

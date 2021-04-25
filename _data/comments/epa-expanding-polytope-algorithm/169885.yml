@@ -1,0 +1,6 @@
+id: 169885
+date: 2018-11-08 23:44:30 -0500
+author: Atia
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/6c8abcee9596f6361bc08ed505817248?s=96&d=mm&r=g
+message: "<p>Also,<br />\nfor implementing EPA in 3D, since first we have 4 points coming from GJK<br />\nsgould we check all four faces?or only three is enough?</p>"

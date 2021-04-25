@@ -1,0 +1,6 @@
+id: 8852
+date: 2010-07-29 22:48:15 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Checking what voronoi region a point lies in can be performed by a number of side of line tests.  For instance the GJK algorithm uses this to determine where the origin is relative to the simplex.  See my GJK post to get an idea.</p>\n<p>It may not even be worth it if your polygons have a small number of vertices, especially in 2D.  In fact, in my dyn4j project I use the brute force method and it never shows up on the profiler (mostly because you don't compare the distance, but instead the squared distance).  This is only 5 operations per vertex (2 subtraction, 2 multiplication, and one addition).  It would be difficult to beat this in the general case.</p>"

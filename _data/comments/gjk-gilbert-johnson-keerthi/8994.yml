@@ -1,0 +1,6 @@
+id: 8994
+date: 2010-12-03 13:45:25 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Yes, you can do the check that is performed within the while loop for the first point as a performance/robustness improvement.  In my implementation I have this, however, for the purpose of this post I wanted to focus more on understanding the algorithm.  That initial check can also be added to the 2D version as well.</p>\n<p>The algorithm will still terminate, but maybe after a few more iterations (performance).  In addition to this, it may also cause some zero vectors when using the vector triple product (robustness).</p>\n<p>You can reference my <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/collision/narrowphase/Gjk.java');\"  href=\"https://github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/collision/narrowphase/Gjk.java\" rel=\"nofollow\">implementation</a> in the project <a href=\"http://www.dyn4j.org\" rel=\"nofollow\">dyn4j</a>.</p>"

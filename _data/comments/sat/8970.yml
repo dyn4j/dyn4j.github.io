@@ -1,0 +1,6 @@
+id: 8970
+date: 2014-06-23 16:49:51 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Aviv</p>\n<p>1. Your shapes should have either clockwise or anti-clockwise vertex ordering.  As long as your shapes are all anti-clockwise, then your getPerp method should always return the correct normal.  I'm not sure how you are generating the edge array, but you'd want to loop over the vertices and do something like edge[i] = vertices[i+1] &#8211; vertices[i].</p>\n<p>2. This depends on what you are trying to achieve.  If you want to just separate the entities, (assume that the collision normal is pointing from A to B) then you could move A along the normal -depth/2 and move B along the normal depth/2.  This isn't very realistic, but its pretty simple.  If you were looking for a realistic physical reaction of the collision, then the entities would need a concept of mass, velocity, and possibly more which would then be used to perform some math to determine how to move/effect the entities (which is an entirely different subject).</p>\n<p>William</p>"

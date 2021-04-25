@@ -1,0 +1,6 @@
+id: 158796
+date: 2017-09-30 21:41:28 -0400
+author: Daniel
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/923b3315719227335cbd51b435e29069?s=96&d=mm&r=g
+message: "<p>I have two questions, which are both related to coordinate systems:<br />\n1. What coordinate system do all the operations happen in? Is it each objects' local coordinates, or in world coordinates?<br />\n2. Will everything work in normal screen coordinates, or is this in standard Cartesian space?</p>\n<p>Sorry if this stuff should be obvious, as I'm new to making physics engines.</p>"

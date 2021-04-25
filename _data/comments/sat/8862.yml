@@ -1,0 +1,6 @@
+id: 8862
+date: 2011-05-05 14:57:19 -0400
+author: heishe
+parent: sat
+avatar: http://1.gravatar.com/avatar/15ca0d8471100d12247a315d66f91206?s=96&d=mm&r=g
+message: "<p>I hope the author still somehow receives this comment:</p>\n<p>Naturally, when I have two rectangles, this algorithm spits out the same overlaps+axis of the smallest displacement vector (since the two opposing edges of a rectangle are of course mathematically identical). </p>\n<p>This creates a problem where the algorithm detects the optimal distance that one rectangle needs to be pushed in order to move it out of the rectangle that it's colliding with, but in one of two cases it finds the wrong direction in which it needs to be pushed ( namely the exact opposite from the direction in which it needs to be pushed).</p>\n<p>Is there a way to fix that \"bug\" or is that a mathematical limitation that I need to accept in order to use this algorithm on rectangles?</p>"

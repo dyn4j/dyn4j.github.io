@@ -1,0 +1,6 @@
+id: 9279
+date: 2014-12-21 20:33:14 -0500
+author: Bas
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/590d5bb17373c7fcf2bc016d5bbed91b?s=96&d=mm&r=g
+message: "<p>Hey William,</p>\n<p>How do you handle cases where one box is completely inside another?<br />\nOr actually maybe that would work, but in my case I have a triangle inside a box (in 3d actually). And the clipping ends up without any vertices.<br />\nIt's a bit like this:<br />\n&#8212;&#8212;&#8212;-<br />\n|            |<br />\n|       |>  |<br />\n|            |<br />\n&#8212;&#8212;&#8212;-</p>\n<p>Thanks!</p>"

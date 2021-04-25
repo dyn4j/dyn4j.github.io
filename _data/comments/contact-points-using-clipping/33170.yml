@@ -1,0 +1,6 @@
+id: 33170
+date: 2015-06-24 17:28:47 -0400
+author: Mike
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/b18619bf4b968656405dabafafef6ea6?s=96&d=mm&r=g
+message: "<p>Hi,</p>\n<p>Can you please tell me what you are crossing in:</p>\n<p>Vector2 refNorm = ref.cross(-1.0);</p>\n<p> ref.max?<br />\nref.v1?<br />\nref.v2?<br />\nref.v2-ref.v1?</p>\n<p>Thanks,</p>\n<p>Mike</p>"

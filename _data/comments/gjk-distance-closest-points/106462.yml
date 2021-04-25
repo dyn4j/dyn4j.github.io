@@ -1,0 +1,6 @@
+id: 106462
+date: 2016-08-05 23:35:59 -0400
+author: William Bittle
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@shome</p>\n<p>It's been a while since I've looked into it. The only ones I remember coming across are Lin-Canny Closest Features Algorithm and another that was based off of it.  There was some question of one of those being patented so I didn't look too deep into those.</p>\n<p>In my experience, GJK will only slow down near convergence for rounded or ill-conditioned shapes.  If your shapes are all polytopes, then it should be lightning fast.</p>\n<p>William</p>"

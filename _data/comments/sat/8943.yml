@@ -1,0 +1,6 @@
+id: 8943
+date: 2013-12-07 08:46:38 -0500
+author: Sam
+parent: sat
+avatar: http://0.gravatar.com/avatar/96dd4a8a1ff6c0a3939ba1492b5ae80a?s=96&d=mm&r=g
+message: "<p>Amazing article, I learnt a lot from this, however I am having some trouble with detecting collision with a polygon and a curved shape, what I am trying to achieve is collsion detection with a shape that is simliar to a hill or a curved ramp (if you can imagine a right hand triangle with a hypotenuse that is curved inwards towards the right angle). I'm just not really sure which of the above methods would work, I presume I would break the shape down into many smaller triangles and use SAT on each one but I'm not so confident that it would work, any advice would be great, thanks!</p>"

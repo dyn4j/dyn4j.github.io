@@ -1,0 +1,6 @@
+id: 9107
+date: 2011-02-08 14:25:56 -0500
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Yes, you are correct.</p>\n<p>For the 3D case you can build a triangle (after building the line segment) by obtaining a normal of the line segment in the direction of the origin:</p>\n<pre>\nd = // choose some direction\n// get the first point\nSimplex.add(support(A, B, d);\n// get the second point\nSimplex.add(support(A, B -d);\n// now we have a line segment\n// perform the triple product to obtain a new search direction\na = Simplex[0];\nb = Simplex[1];\nab = b - a;\nao = -a; // same thing as ORIGIN - a\nd = tripleProduct(ab, ao, ab); // be careful here because if the origin lies on the line ab then this will yield the zero vector\n// now get the last point to make the triangle\nSimplex.add(support(A, B, d);\n// now you can start the loop\n</pre>\n<p>Now that you have a triangle your next search direction would be the surface normal of the triangle in the direction of the origin.  Then obtain a support point, then reduce the 4 points to 3.</p>"

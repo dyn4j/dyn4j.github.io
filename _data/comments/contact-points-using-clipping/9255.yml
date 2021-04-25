@@ -1,0 +1,6 @@
+id: 9255
+date: 2013-09-26 19:52:39 -0400
+author: John
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/24254a0c205572b9a888b38ef69b8c6b?s=96&d=mm&r=g
+message: "<p>Great tutorial!</p>\n<p>I do have one question to William, though. Is there anything significantly different or anything to watch out for in implementing this contact manifold method in 3D? I'm asking, becasue I followed the tutorial and implemented this method, but it does not seems to behave right in 3 dimensional space. Is there something I'm missing? The only part which strikes my suspicion is:</p>\n<pre>  \n// get the reference edge normal\nVector2 refNorm = ref.cross(-1.0);\n</pre>\n<p>The way I'm doing it in 3d is pretty much this:</p>\n<pre>\n// get the reference edge normal\nVector3 refNorm = ref.cross(Vector3(-1.0, 0.0, 0.0));\n</pre>\n<p>Everything else is identical to the tutorial.<br />\nThanks in advance, and once again, amazing tutorial!</p>"

@@ -1,0 +1,6 @@
+id: 9062
+date: 2013-11-05 15:36:11 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>How will know which direction to rotate (90 or -90)?  Can you give the full details on what you intend to replace?</p>\n<p>I'm answering under the assumption you are trying to replace the triple products (you said cross product, can you clarify this?) inside the triangle simplex case with a rotation of the edge.  Given that assumption, I think you would need to know the winding of the simplex to know which direction to rotate (the winding can change each iteration).</p>\n<p>William</p>"

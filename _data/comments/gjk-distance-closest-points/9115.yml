@@ -1,0 +1,6 @@
+id: 9115
+date: 2014-01-01 13:44:50 -0500
+author: John
+parent: gjk-distance-closest-points
+avatar: http://1.gravatar.com/avatar/46f887ebf3dc0caae71a2816a79ee16b?s=96&d=mm&r=g
+message: "<p>Hey, I recently implemented SAT for 3d collision detection. I'm just wondering what the benefits are of SAT and GJK. Thanks!</p>"

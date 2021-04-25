@@ -1,0 +1,6 @@
+id: 8958
+date: 2014-05-16 22:10:25 -0400
+author: Aborysa
+parent: sat
+avatar: http://1.gravatar.com/avatar/77fa32f60a6ce02bf819661b231237dc?s=96&d=mm&r=g
+message: "<p>Do you need to test all the normal axis of both objects?<br />\nWouldn't it work to just test the normal axis of the shape with the lowest vertex count or does that only work in some cases?</p>"

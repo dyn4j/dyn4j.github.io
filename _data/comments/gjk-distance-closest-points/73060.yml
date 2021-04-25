@@ -1,0 +1,6 @@
+id: 73060
+date: 2016-02-15 14:17:12 -0500
+author: William Bittle
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Jordan</p>\n<p>The value of 1.72 is still correct (well mostly, the rounding was off).  </p>\n<p>The problem was that c.dot(d) isn't the distance because d isn't normalized.  We can improve performance by avoiding the normalization until we've found the closest edge to the origin.</p>\n<p>I've added some comments and fixed the code to reflect this.  I've also updated the Distance section to reflect the correct values (by using the same precision).</p>\n<p>William</p>"

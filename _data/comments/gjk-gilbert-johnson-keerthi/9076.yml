@@ -1,0 +1,6 @@
+id: 9076
+date: 2014-02-16 01:16:12 -0500
+author: Saad Taame
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/0bd576e8af58b1f9b59af28fb11921fc?s=96&d=mm&r=g
+message: "<p>Right. You kicked off by mentioning that the advantage of GJK over other algorithms (e.g., SAT) is that it works for any shape that implements a support mapping. For a random convex polygon, the support takes time linear in the vertex count; for a circle it takes constant time. Intuition says that there are shapes for which the support takes time proportional to <strong>log n</strong> or something. My intuition tells me that there should be a fast way of computing the support for a regular convex polygon (in part because the more vertices it contains the better it approximates a circle). I should probably formalize this and come up with a formula for doing so.</p>"

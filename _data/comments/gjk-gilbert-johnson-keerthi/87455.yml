@@ -1,0 +1,6 @@
+id: 87455
+date: 2016-04-19 13:46:18 -0400
+author: Matthias
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://1.gravatar.com/avatar/aeb7f500cf2590f92ce30a951e61d404?s=96&d=mm&r=g
+message: "<p>Hello,<br />\nthank you for this great articles.<br />\nCurrently i try to implement GJK in 3D.<br />\nNow i got the the problem, if u use input data which are completely in 2d(for example in the xy-plane). I am not able to built a right thetrahedon(i need one for my eda). Have u any idea how i could solve this problem nicely ?</p>\n<p>Thanks</p>"

@@ -1,0 +1,6 @@
+id: 9037
+date: 2013-01-02 12:53:28 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>I am normalizing the vectors. You can normalize a vector by doing the following:</p>\n<pre>\nx = vector.x;\ny = vector.y;\n// z = vector.z;\n// get the length of the vector\n// just add a \"+ z<sup>2</sup>\" if you are\n// in 3D\nl = sqrt(x<sup>2</sup> + y<sup>2</sup> /* + z<sup>2</sup> */)\n// then normalize the vector by dividing by\n// the length\nvector.x /= l\nvector.y /= l\n// vector.z /= l;\n</pre>\n<p><a onclick=\"javascript:pageTracker._trackPageview('/outgoing/en.wikipedia.org/wiki/Euclidean_vector#Length');\"  href=\"http://en.wikipedia.org/wiki/Euclidean_vector#Length\" title=\"Vector Normalization\" target=\"_blank\" rel=\"nofollow\">Here's a wikipedia link</a></p>\n<p>This process turns an arbitrary length vector into a vector of length 1.</p>\n<p>The GJK algorithm as described here doesn't require normalization however (the GJK distance algorithm does). But it was done in the computations to aid the reader in plotting/visualizing the computed vectors.</p>\n<p>William</p>"

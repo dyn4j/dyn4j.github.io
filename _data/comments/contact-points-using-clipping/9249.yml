@@ -1,0 +1,6 @@
+id: 9249
+date: 2012-03-31 20:40:32 -0400
+author: Peter
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/060e92ac8ff47c0f9ae1a114f6d71f29?s=96&d=mm&r=g
+message: "<p>Mind sharing what you did to fix your issue Haubna? I'm having an issue with example number 2. Everything matches up until the cross product and then it differs.</p>\n<p>In the example it says:</p>\n<pre>\nref.normalize() = (-1, 0)\n\n// 2 clips...\n\nrefNorm = (0, 1)\n</pre>\n<p>How does that work? According to an above comment the 2D cross product we want is:</p>\n<pre>\nVector2 refNorm = Vector2 (ref.Y * -1.0, ref.X * -(-1.0));\n</pre>\n<p>Thus this would mean refNorm = (-1.0 * 0.0, -1.0 * -(-1.0)) = (0.0, -1.0).</p>\n<p>If just get an orthogonal vector using refNorm = (ref.Y, -ref.X) (which I've seen refered to as another form of the 2d cross product elsewhere), example 2 works but the other two fail.</p>\n<p>If anyone has any advice to offer it would be greatly appreciated!</p>\n<p>Also, thanks for the wonderful tutorial William!</p>"

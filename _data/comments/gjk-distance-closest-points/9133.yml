@@ -1,0 +1,6 @@
+id: 9133
+date: 2014-10-28 15:17:13 -0400
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Yize</p>\n<p>If I remember correctly, that was put there to handle some issues with finite precision and <em>touching</em> collisions (in dyn4j I don't consider touching a collision).  If two shapes are touching, the origin will lie on an edge of the Minkowski Difference.  When this happens, p1 or p2 could be the zero vector, which could cause some serious problems if the algorithm continued.</p>\n<p>William</p>"

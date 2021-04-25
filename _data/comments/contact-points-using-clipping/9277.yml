@@ -1,0 +1,6 @@
+id: 9277
+date: 2014-10-22 20:43:48 -0400
+author: Andrei
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/03eff99f347fa4e926d6e7d71cde1556?s=96&d=mm&r=g
+message: "<p>William,</p>\n<p>// the edge that is most perpendicular<br />\n// to n will have a dot product closer to zero<br />\nif (r.dot(n) <= l.dot(n)) {<br />\nWhen finding the most perpendicular edge in the code above, shouldn&#039;t you first normalize r and l? The length of the vectors should not matter if you looking at angles only. And also shouldn&#039;t you be looking at absolute values of dot products? You want closest to 0 irrelevant of the sign</p>"

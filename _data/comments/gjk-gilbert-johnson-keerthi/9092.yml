@@ -1,0 +1,6 @@
+id: 9092
+date: 2014-09-04 04:53:36 -0400
+author: LeCoder
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/59f7ce47ca9688b89bf41e70f43dbd3d?s=96&d=mm&r=g
+message: "<p>Hello Willian,</p>\n<p>do you have any tips on what kind of modifications I will have to make on the code to, not to include edge to edge collisions. I feel I will only have to replace some > with >= but I am still not able to make the algorithm work.</p>\n<p>Best Regards.</p>"

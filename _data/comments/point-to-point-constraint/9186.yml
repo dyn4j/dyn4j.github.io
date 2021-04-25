@@ -1,0 +1,6 @@
+id: 9186
+date: 2012-12-17 12:36:28 -0500
+author: William
+parent: point-to-point-constraint
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>The Jacobian's <em>row</em> count may differ depending on the type of constraint you are creating.</p>\n<p>Because we are creating a <em>pair-wise</em> constraint (involving only two bodies) then we will always have 4 <em>columns</em> in the Jacobian.  As you point out, column 2 and 4 are 3&#215;3, but column 1 and 3 are scalars.</p>\n<p>They are getting a 3&#215;12 because you can write the scalar elements as a matrix of the same size by multiplying by the identity matrix (sometimes this makes things easier):</p>\n<pre>1 = | 1 0 0 | \n    | 0 1 0 |\n    | 0 0 1 |</pre>\n<p>So the Jacobian would look something like:</p>\n<pre>J = [ | 1 0 0 |  | sra sra sra |  | -1  0  0 |  | -srb -srb -srb | ]\n    [ | 0 1 0 |  | sra sra sra |  |  0 -1  0 |  | -srb -srb -srb | ]\n    [ | 0 0 1 |  | sra sra sra |  |  0  0 -1 |  | -srb -srb -srb | ]</pre>\n<p>Where sra and srb are the elements of skew[ra or rb] respectively.</p>\n<p>William</p>"

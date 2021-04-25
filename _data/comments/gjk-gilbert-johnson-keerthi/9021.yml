@@ -1,0 +1,6 @@
+id: 9021
+date: 2012-03-06 13:44:56 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>I'm both glad that the post helped and sorry that it cause you some debugging grief.  I added a note early in the post clearly stating the definition of AB.  This is actually the accepted notation for a vector that goes from point A to point B.  Mathematically however, the evaluation of that vector is done is opposite order using the difference operator.</p>"

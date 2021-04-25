@@ -1,0 +1,6 @@
+id: 72942
+date: 2016-02-13 13:35:00 -0500
+author: Jordan
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/0f3d55fd986c4917be53c17a17e8639f?s=96&d=mm&r=g
+message: "<p>Iteration 2 isn't making sense to me.<br />\ndc and da should not be equal to -3 and -8 respectively, correct?<br />\nMy understanding here is that is:<br />\nd = (0.8, -2.4)<br />\nFirst point on the simplex at this stage is (1, 3)<br />\nSupport C is calculated successfully as (-4, -1)<br />\ndc = (0.8, -2.4).dotProd(-4, -1) = -3.2 + 2.4 = -0.8<br />\nda = (0.8, -2.4).dotProd(1, 3) = 0.8 &#8211; 7.2 = -6.4</p>\n<p>This numerical difference is throwing off my distance calculation between the two objects.<br />\nCan you please explain how you determined the values of dc and da in this iteration?</p>"

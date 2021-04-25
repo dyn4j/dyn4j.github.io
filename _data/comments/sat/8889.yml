@@ -1,0 +1,6 @@
+id: 8889
+date: 2011-12-12 09:07:16 -0500
+author: Jeff
+parent: sat
+avatar: http://0.gravatar.com/avatar/f593a7401ef82a2f84ec0ce6681d41e2?s=96&d=mm&r=g
+message: "<p>Hello,<br />\nGreat tutorial, I've been studying it and some others for a few days now.  I've got almost everything figured out except when it comes to projecting a shape onto an axis.<br />\nIn the section \"Projecting A Shape Onto An Axis\", on line 12 your wrote</p>\n<p>Projection proj = new Projection(min, max);</p>\n<p>What would that code entail?  Do you now project the minimum onto the maximum value?  But I suppose that wouldn't work since min and max are both doubles.  I think this is the part thats getting me.<br />\nThanks a lot!</p>"

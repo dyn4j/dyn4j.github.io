@@ -1,0 +1,6 @@
+id: 9187
+date: 2012-12-18 11:44:42 -0500
+author: c0der
+parent: point-to-point-constraint
+avatar: http://1.gravatar.com/avatar/d7f2ee1dd5d2d313242ca7e0986d46a7?s=96&d=mm&r=g
+message: "<p>Thanks for you help! I have implemented this constraint in 3D with drift correction, so it's working 100%.</p>\n<p>For the distance constraint, I am having some problems:</p>\n<p>I have dp = xa + ra  &#8211; xb &#8211; rb<br />\nC = |dp| &#8211; L = 0</p>\n<p>Initially, for example, I set the bodies to xa = (35,0,0) xb = (-35,-10,0) and the anchor point at (0,0,0)</p>\n<p>So ra = (0,0,0) &#8211; (35,0,0) = (-35,0,0) and rb =  (0,0,0) &#8211; (-35,-10,0) = (35,10,0)</p>\n<p>L = |ra &#8211; rb| = 70.71</p>\n<p>So C = | (35,0,0) + (-35,0,0) &#8211; (-35,-10,0) &#8211; (35,10,0) | &#8211; 70.71<br />\nC = 0 &#8211; 70.71 which is non-zero and causing me problems</p>\n<p>I have tried different combinations and it seems like x and r cancel each other out in any case. In which cases are relative positions non-zero?</p>\n<p>Also, as relative position is zero JM^-1JT is zero since the normal vector is dp/|dp| which causes a divide by zero for lambda. It makes sense in a point-point constraint that dp  should always be zero so that C=0 but I am definitely missing something for the distance constraint. </p>\n<p>Please help!</p>"

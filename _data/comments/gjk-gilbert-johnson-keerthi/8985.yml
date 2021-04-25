@@ -1,0 +1,6 @@
+id: 8985
+date: 2010-11-10 13:51:36 -0500
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Yeah, I can see how that's a little confusing.  You are correct that there are only shape1.vertices.size * shape2.vertices.size number of <strong>vector</strong> subtractions.  Since I'm working in 2D here its 2 subtractions per vector subtraction:</p>\n<p>[code=\"java\"]<br />\n(3, 2) &#8211; (2, 0) is really<br />\nv.x = 3 &#8211; 2;<br />\nv.y = 2 &#8211; 0;<br />\n[/code]</p>\n<p>William</p>"

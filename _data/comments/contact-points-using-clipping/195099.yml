@@ -1,0 +1,6 @@
+id: 195099
+date: 2019-06-15 20:41:22 -0400
+author: tankerpat
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/5899931d725dd47513cc54d9c79e16e0?s=96&d=mm&r=g
+message: "<p>Re,</p>\n<p>Sorry, my vertices initialization was wrong. I have forgotten the coordinate of the \"v\" vector.</p>\n<p>And so, if I use my normal collision found by the SAT, I don't need to flip ;)</p>\n<p>Sorry for myenglish.<br />\nTk</p>"

@@ -1,0 +1,6 @@
+id: 67448
+date: 2015-11-29 22:35:24 -0500
+author: William Bittle
+parent: epa-expanding-polytope-algorithm
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Harry</p>\n<p>Right, that wouldn't be the correct normal even though that's what EPA would find.  This is because the objective of the algorithm.  The algorithm's objective is NOT to find the penetration normal of two moving convex shapes, but rather to find the <em>minimum</em> penetration normal of the two shapes.  Clearly, these don't mean the same thing and its obvious from your example.</p>\n<blockquote><p>Note that the SAT algorithm will suffer from this as well since its objective is the same.  In addition, if you've ever heard of the \"internal edge\" problem, this is the cause.</p></blockquote>\n<p>Now with that said, you wouldn't typically <em>create</em> your shapes overlapping in that manner and hopefully your simulation would run fast enough that a penetration of that sort wouldn't happen.</p>\n<p>William</p>"

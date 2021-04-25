@@ -1,0 +1,6 @@
+id: 8849
+date: 2010-05-20 13:47:29 -0400
+author: Greg Atkinson
+parent: sat
+avatar: http://2.gravatar.com/avatar/2099a957d39fc5838ea5e149921dcf9e?s=96&d=mm&r=g
+message: "<p>Hi I am very interested in your post on SAT. I found the post to be very clear and informing as I am currently trying to implement a SAT based collision test between a rectangle and a circle. My question has to do with projecting a shape on an axis, you  made a note in your pseudo code that the axis should be normalized. How would you achive this? </p>\n<p>In my case I am finding the axis that I want to project onto by taking the vector between the rectangles closest corner and the circles center (I only do this if the circles center is not directly over or next to the rectangle). This vector should define the axis that I want to project onto but how do I Normalize this? Am I just over complicating the issue, and should I normalize the vector by making it a unit vector?</p>\n<p>Cheers Greg</p>"

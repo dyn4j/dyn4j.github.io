@@ -1,0 +1,6 @@
+id: 60634
+date: 2015-10-26 21:42:52 -0400
+author: Olof Andersson
+parent: version-3-2-0
+avatar: http://1.gravatar.com/avatar/7868d9f231713ae3d68107a2f284bf73?s=96&d=mm&r=g
+message: "<p>Under the section Creating Joints on the Getting Started page<br />\n<a href=\"http://www.dyn4j.org/documentation/getting-started/#Creating_Joints\" rel=\"nofollow ugc\">http://www.dyn4j.org/documentation/getting-started/#Creating_Joints</a><br />\nthere is a link in \"See the Joints page for more details about each Joint.\"<br />\nbut the link leads to the outdated wiki page (<a onclick=\"javascript:pageTracker._trackPageview('/outgoing/code.google.com/p/dyn4j/wiki/Joints');\"  href=\"https://code.google.com/p/dyn4j/wiki/Joints\" rel=\"nofollow ugc\">https://code.google.com/p/dyn4j/wiki/Joints</a>) when it should really lead to the new Joints article (<a href=\"http://www.dyn4j.org/documentation/joints/\" rel=\"nofollow ugc\">http://www.dyn4j.org/documentation/joints/</a>)</p>\n<p>The link to the article about</p>"

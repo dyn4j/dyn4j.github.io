@@ -1,0 +1,6 @@
+id: 9275
+date: 2014-07-24 14:15:01 -0400
+author: Nithin
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/8863203700c0a1755f3758a2e8046f65?s=96&d=mm&r=g
+message: "<p>Thank you very much! It makes more sense now! </p>\n<p>I have one more question. When we use the if statement to check if there are less than two clipped points, you said we have failed if true. Are we really returning nothing in that case or did I miss something?</p>\n<p>Nithin</p>"

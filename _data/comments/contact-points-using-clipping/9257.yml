@@ -1,0 +1,6 @@
+id: 9257
+date: 2013-09-29 23:27:12 -0400
+author: Jamie
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/805c60bf8bd814085444322f6bbfc0e2?s=96&d=mm&r=g
+message: "<p>First, I would like to thank you for this tutorial.  Been a great help implementing my physics engine.<br />\nBut I was a bit confused at the Edge. How is the edge structured?<br />\nDoes it contain 2 Vector3 that holds the data of the 2 vertices that forms the edge? or is it a vector from A to B?</p>"

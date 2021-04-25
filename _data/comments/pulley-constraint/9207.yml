@@ -1,0 +1,6 @@
+id: 9207
+date: 2013-08-18 10:35:22 -0400
+author: seeanvit
+parent: pulley-constraint
+avatar: http://0.gravatar.com/avatar/f3d3fb9d1364908a196c799b08f8e6d6?s=96&d=mm&r=g
+message: "<p>Hi, I am trying to implement Pulley joint in a physics simulator. This post has been very helpful.<br />\nCould you derive the expression for (del_J / del_t) i.e. the time derivative of the jacobian matrix.<br />\nMy implementation is giving very erratic behaviour which I suspect is because of the incorrect value of<br />\ntime-derivative of the jacobian-matrix.</p>"

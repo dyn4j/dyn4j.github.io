@@ -1,0 +1,6 @@
+id: 9199
+date: 2012-07-13 14:02:32 -0400
+author: roehit
+parent: distance-constraint
+avatar: http://2.gravatar.com/avatar/2b0bdff3518af39097a87ce13e415840?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>Are Vf and Vi velocities about the pivot or about the COM?</p>\n<p>If they are about the pivot, shouldn't Vf be 0 after every frame(for Pin Constraint of a body with the world[very heavy static object])?</p>\n<p>Thanks</p>"

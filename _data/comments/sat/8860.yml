@@ -1,0 +1,6 @@
+id: 8860
+date: 2011-03-07 18:06:44 -0500
+author: simpler
+parent: sat
+avatar: http://0.gravatar.com/avatar/0aaa2d5cd71028bf7b5d65594e9d1a64?s=96&d=mm&r=g
+message: "<p>Thanks alot for the fast reply! I had alot of strugglings with understanding when the coordinate system where the top left corner is (0,0), but when you say that it only matters when drawing things really gets clearer.</p>\n<p>I create my polygons in a counter clockwise order and after some figuring that left me with this</p>\n<pre>\n// side is the current side handled\n// for a square side 1 = the left etc\naxis.x = -(polygonA->pointList[side-1].y - polygonA->pointList[side].y);\naxis.y = polygonA->pointList[side-1].x - polygonA->pointList[side].x;\n</pre>\n<p>What I don't understand from your example is this:</p>\n<pre>\n// for p2 will be 0.5 instead of 1.5\nVector p2 = new Vector(2, 0.5);\n</pre>\n<p>Why?</p>\n<p>Thanks for a great guide and great replies btw!:)</p>"

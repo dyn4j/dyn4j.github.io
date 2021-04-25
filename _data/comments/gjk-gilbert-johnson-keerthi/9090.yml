@@ -1,0 +1,6 @@
+id: 9090
+date: 2014-08-26 20:10:08 -0400
+author: Vic
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://1.gravatar.com/avatar/1ce3a38760f56e121067a999d3e51cad?s=96&d=mm&r=g
+message: "<p>Hi willian,</p>\n<p>I wrote a 3d GJK algorithm in 3d and I wonder if you could help with some problems on the code. Basically, I am checking the collision of objects with a large size difference (i.e: cube with side 1 and cubes with size .1 to .001). This is causing a lot of problems especially on partial collisions.</p>\n<p><a onclick=\"javascript:pageTracker._trackPageview('/outgoing/stackoverflow.com/questions/25436050/gjk-algorithm-does-not-work-close-to-edges');\"  href=\"http://stackoverflow.com/questions/25436050/gjk-algorithm-does-not-work-close-to-edges\" rel=\"nofollow ugc\">http://stackoverflow.com/questions/25436050/gjk-algorithm-does-not-work-close-to-edges</a></p>\n<p>There is also the problem that the perp vector sometimes get really close to zero, or even zero. Do you have any advice on how to deal with this problems?</p>"

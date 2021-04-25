@@ -1,0 +1,6 @@
+id: 208627
+date: 2020-12-05 23:04:03 -0500
+author: Roy
+parent: epa-expanding-polytope-algorithm
+avatar: http://2.gravatar.com/avatar/5d2bc150d5cfdf1bb78ad8a9afde10dd?s=96&d=mm&r=g
+message: "<p>Hi William,</p>\n<p>I think he referred to the calculation of n in findClosestEdge(), using the triple product abxoaxab.<br />\ncorrect me if I'm wrong, but I think you get a reversed n pointing away from the origin.<br />\nYou can see it in line 10 of iteration 1, n=(-32, 96), would point away.<br />\nperhaps you should have used ao instead of oa.</p>\n<p>Roy</p>"

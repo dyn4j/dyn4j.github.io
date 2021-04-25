@@ -1,0 +1,6 @@
+id: 9008
+date: 2011-07-25 21:46:03 -0400
+author: Brandon P.
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://1.gravatar.com/avatar/1778342b10f9f254f5e71c4b2449b504?s=96&d=mm&r=g
+message: "<p>Awesome tutorial! I have a question about the AB x AO x AB.</p>\n<p>First of all, I'm not a huge mathematician, so I'm wondering how to find the cross product of two unit vectors.</p>\n<p>But more importantly, I don't understand how this helps. I understand that it will give us a vector on the xy plane that is perpendicular to AB, and I get that. But how does it get which direction it should point? I mean, won't a vertical vector x AB always result in the same vector, no matter which way AO was pointing to create the vertical vector?</p>\n<p>And even if it does do that somehow, would it not just be easier to get a perpendicular vector to AB, and then negate it if necessary? (AKA, if the projection of A (or B) on to the vector is greater than or less than the origin projected onto it.)</p>"

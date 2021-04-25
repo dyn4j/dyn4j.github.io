@@ -1,0 +1,6 @@
+id: 9003
+date: 2011-04-19 12:33:26 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>That's funny because I'm the exact same way.  If I don't understand it, I wont use it either.  Using the cross product requires you to define the \"handedness\" of your coordinate system.  A right handed system is typically chosen.</p>\n<p>If we look at the image below the cross product of the two vectors a and b yield another vector that is perpendicular to both of these vectors.  We have to define the handedness because there are actually two vectors that meet that criteria.  One points out from the plane and the other points into the plane.</p>\n<p><img src=\"http://www.dyn4j.org/wp-content/uploads/2010/04/cross-product1.png\" alt=\"Cross Product Handedness\" /></p>\n<p>If we choose a right handed system, we literally line up our <strong>right hand</strong> index finger with the first vector, a, and then line up our middle finger with the second vector, b.  Your thumb points in the direction of the result, in this case out from the plane.</p>\n<p>So if we wanted to get the normal of an edge, we can take the cross product to get a vector perp to both vectors, then cross product one more time to get a vector perp to the result and the original edge.</p>"

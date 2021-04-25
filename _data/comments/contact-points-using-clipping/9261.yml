@@ -1,0 +1,6 @@
+id: 9261
+date: 2013-09-30 12:12:37 -0400
+author: William
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Yep, that was a typo.  Thanks for pointing that out.  I have fixed it in the post.</p>\n<p>Of course, you can structure your Edge class however you want, but in this post an Edge is represented by the start and end vertex (the winding direction is important) and the maximum vertex.</p>\n<p>Specifically, the first parameter is the maximum vertex, the second parameter is the first vertex of the edge, and the last parameter is the second vertex of the edge.</p>\n<p>William</p>"

@@ -1,0 +1,6 @@
+id: 8974
+date: 2014-08-26 15:14:33 -0400
+author: Raol
+parent: sat
+avatar: http://0.gravatar.com/avatar/9933f3881023a5209af6de2b6cf6c7fb?s=96&d=mm&r=g
+message: "<p>Does anybody know how to calculate MTV in 3D case? By projecting two overlapping polyhedra on their separation axes we might get more than one MTV for each projection, so which one would resolve the collision?</p>"

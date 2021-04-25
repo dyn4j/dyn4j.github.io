@@ -1,0 +1,6 @@
+id: 9104
+date: 2011-02-07 13:32:32 -0500
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>That's a good observation.  The reason they are done differently is because of the assumptions.  In the first post we are making the assumption that the origin lies within the Minkowski sum, terminating when we verify this (or cannot verify).  Because we need to know where the origin lies (by voronoi regions) and find a new search direction, we just put the two together.</p>\n<p>Finding the distance is similar but slightly different.  No longer are we checking if the simplex contains the origin since the assumption is that the Minkowski sum does not contain the origin.  In addition, the simplex is a line segment, instead of a triangle, and therefore cannot contain the origin (if we ignore cases where the origin is on the line segment).  Because of this we don't need to worry about voronoi regions or where the origin lies.  The search direction is always the normal of the line segment in the direction of the origin.</p>\n<p>Given that, I chose to use P = AB.mult(t).add(A) which obtains the point on the line segment that is closest to the origin so that when the loop terminates I'll be able to get the separation distance by simply getting the magnitude of P.</p>"

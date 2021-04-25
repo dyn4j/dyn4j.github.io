@@ -1,0 +1,6 @@
+id: 9200
+date: 2012-07-13 15:32:13 -0400
+author: William
+parent: distance-constraint
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>v<sub>f</sub> and v<sub>i</sub> are the linear velocities of the bodies at their center of mass.</p>\n<p>The velocity of the pivot point would be:<br />\n<img src=\"http://www.dyn4j.org/wp-content/uploads/2010/07/distance_4_1.png\" alt=\"\" /></p>\n<p>This is seen in the derivation of the distance constraint.  However, the formulation we have setup here is to find the velocities at the center of mass for the bodies.</p>\n<p>William</p>"

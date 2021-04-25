@@ -1,0 +1,6 @@
+id: 9118
+date: 2014-02-11 11:23:38 -0500
+author: Vishal
+parent: gjk-distance-closest-points
+avatar: http://1.gravatar.com/avatar/1f47ac89fcc86ffbc09c9ed60f047b6d?s=96&d=mm&r=g
+message: "<p>Also, I am using the same terminating condition for 3D case and so far there are no problems. Is the terminating condition which you have stated here valid for 3D case as well?</p>"

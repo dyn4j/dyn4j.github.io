@@ -1,0 +1,6 @@
+id: 8890
+date: 2011-12-12 13:37:11 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Great to hear its helped!  The Projection structure/class in this case is simply a storage structure, so something like this:</p>\n<pre>\npublic class Projection {\n  public double min;\n  public double max;\n  public Projection(double min, double max) {\n    this.min = min;\n    this.max = max;\n  }\n  public boolean isOverlapping(Projection p) {\n    // test the overlap between this and \n    // p using their min and max properties\n  }\n}\n</pre>\n<p>Once we have the projection for shape A and shape B, say p1 and p2, we compare the two to see if they are overlapping.</p>\n<pre>\np1.isOverlapping(p2);\n</pre>\n<p>See the comments above for more detail on how to know if two projections are overlapping.</p>"

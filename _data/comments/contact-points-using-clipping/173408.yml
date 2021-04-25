@@ -1,0 +1,6 @@
+id: 173408
+date: 2019-01-10 21:20:02 -0500
+author: Nicolas
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/0d1e2557d7b1ce876e1b2f12af68dd05?s=96&d=mm&r=g
+message: "<p>Hi William, I know this has been more than 7 years since you posted the article but it's still being used.<br />\nIt seems Peter was correct when saying only example 2 worked when you use (y, -x) to orthogonalize the ref vector. If you are using the right-hand rule as you say, it should be (-y, x). But then example 2 doesn't work.<br />\nI found that by using the inverted reference face normal (pointing inside the polygon), I get correct results for all three examples, the correct points are getting clipped. This also removes the need for the flip flag.</p>"

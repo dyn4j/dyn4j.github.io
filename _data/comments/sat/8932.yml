@@ -1,0 +1,6 @@
+id: 8932
+date: 2013-03-07 13:15:31 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>I didn't read it all but it seems well constructed and easy to follow.  I especially like the first half of the paper that explains some preliminaries.  I think this is really useful to those just getting into the field.</p>\n<p>If I understand correctly, the inequality is basically equivalent to what is done in most engines today.  They take the vector from the center of body1 to the center of body2 and project (dot product) the MTV's normal onto it.  If the projection is negative then the normal is reversed, otherwise its left alone.  The difference is that you are using the already computed projections to do the same thing (saving one or two operations).  The thing I like about this the most is simply: it's actually mentioned (details like this often trip up those new to the subject).</p>\n<p>William</p>"

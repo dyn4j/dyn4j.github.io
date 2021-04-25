@@ -1,0 +1,6 @@
+id: 9046
+date: 2013-10-10 12:28:13 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>You can see my implementation of various shapes in dyn4j <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/github.com/dyn4j/dyn4j/tree/master/src/main/java/org/dyn4j/geometry');\"  href=\"https://github.com/dyn4j/dyn4j/tree/master/src/main/java/org/dyn4j/geometry\" title=\"dyn4j - source\" rel=\"nofollow\">here</a> (look at each shape's \"getFarthestPoint\" method).</p>\n<p>You can also look at those same shapes to see the implementation of a \"contains\" method.  Just ignore any stuff with Transform if its confusing.</p>\n<p>Each shape type has its own implementation (or inherits the implementation of its super class) of the farthest point.</p>\n<p>William</p>"

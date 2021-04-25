@@ -1,0 +1,6 @@
+id: 8963
+date: 2014-05-21 11:51:00 -0400
+author: saadne
+parent: sat
+avatar: http://1.gravatar.com/avatar/a187f1c664f89298f5fbdd19ac86358a?s=96&d=mm&r=g
+message: "<p>Thanks for quick reply, William. It helped me to understand the basic concept of SAT on 3D rectangles. But I am still struggling figuring out how to project onto a plane. I know, as you explained, that I have to start with projecting rectangle 1 onto one of its planes (plane 1). This will give me a 2D shape of rectangle 1 on plane 1. I will do the same for rectangle 2 on plane 1. Then I have two 2D shapes where I can use the method explained on top of article. But in order to get this far I need to do the projection onto the plane first. How do I find the plane? Are the face normal vectors, refered to in your last answer to me, the planes that I will produce the 2D shapes on? I really hope you can help me out with this one:) Thanks again for a great article/post.</p>\n<p>Br<br />\nSaadne</p>"

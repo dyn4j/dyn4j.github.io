@@ -1,0 +1,6 @@
+id: 136616
+date: 2016-12-11 11:59:25 -0500
+author: Bubu
+parent: gjk-distance-closest-points
+avatar: http://2.gravatar.com/avatar/5cbd1fbda858a97dde7d1509a42d9e30?s=96&d=mm&r=g
+message: "<p>I think you made a mistake in the section \"The distance\". If the t parameter is greater  than 1 or smaller that 0, which can happen with the dot product, you'll end up with a point that doesnt lie on the segment. The solution to that problem would be to clamp t to [0;1], in order to only get a point on the segment.</p>"

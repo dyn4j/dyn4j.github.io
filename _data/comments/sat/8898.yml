@@ -1,0 +1,6 @@
+id: 8898
+date: 2012-01-29 13:20:01 -0500
+author: haoyuan
+parent: sat
+avatar: http://0.gravatar.com/avatar/f90de2327289718f6a1462b89fa8798a?s=96&d=mm&r=g
+message: "<pre>\nVector[] axes = new Vector[shape.vertices.length];\n// loop over the vertices\nfor (int i = 0; i  (-y, x) or (y, -x)\n  axes[i] = normal;\n}\n</pre>\n<p>what i meant is that for this part, Vector normal is actually a \"normalized normal vector\"(which is equivalent to saying\"unit normal vector\". thus the perp method should actually return a unit vector of (-y,x) or (y,-x), there is a little bit of confusion here.</p>"

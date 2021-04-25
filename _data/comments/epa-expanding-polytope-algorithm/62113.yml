@@ -1,0 +1,6 @@
+id: 62113
+date: 2015-11-03 18:39:46 -0500
+author: Harry
+parent: epa-expanding-polytope-algorithm
+avatar: http://2.gravatar.com/avatar/bd78c51db658a875b4415a372838140a?s=96&d=mm&r=g
+message: "<p>Since Vector a in findClosestEdge will change each loop, how does comparing Vector n with it (with the dot product) give an accurate comparison?</p>"

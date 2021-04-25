@@ -1,0 +1,6 @@
+id: 8965
+date: 2014-05-23 12:49:53 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@saadne</p>\n<p>Take a look at <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf');\"  href=\"http://geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf\" target=\"_blank\" rel=\"nofollow\">this link</a> section 4.  This should get you going.  Notice that you don't actually have to create a 2D projection of the 3D shape.</p>\n<p>William</p>"

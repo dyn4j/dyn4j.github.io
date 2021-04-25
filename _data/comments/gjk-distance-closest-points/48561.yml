@@ -1,0 +1,6 @@
+id: 48561
+date: 2015-08-30 01:25:26 -0400
+author: Monty
+parent: gjk-distance-closest-points
+avatar: http://1.gravatar.com/avatar/a1bec66842685a70c8c9ccd86470291d?s=96&d=mm&r=g
+message: "<p>How did you get a direction = (1, -3) in the beginning of second iteration?<br />\nThe closest point to origin from line segment (-11, -1) to (1, 3) is (-1.8, 2.4) so shouldn't this be the new direction?</p>\n<p>And to get a point on Minkowski difference that is closer to the origin shouldn't this be negated?<br />\nThe pseudo-code doesn't seem to do so, just takes the closest point on line segment as direction itself.</p>"

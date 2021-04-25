@@ -1,0 +1,6 @@
+id: 9264
+date: 2014-03-09 11:13:00 -0400
+author: Dylan
+parent: contact-points-using-clipping
+avatar: http://2.gravatar.com/avatar/5d6acc0dc7e2148ec433f9befd19fd55?s=96&d=mm&r=g
+message: "<p>Great tutorial but I'm having a bit of a doubt on one part.</p>\n<p>Edge e1 = A.best(n)<br />\nEdge e2 = B.best(-n);</p>\n<p>You do the above to find the most perpendicular edge for each polygon, which makes sense.  Then later on to find the reference edge you compare (e1.dot(n) <= e2.dot(n)).  Shouldn&#039;t you be comparing e1.dot(n) <= e2.dot(-n) instead?</p>\n<p>Thanks.</p>"

@@ -1,0 +1,6 @@
+id: 9263
+date: 2014-01-22 17:42:29 -0500
+author: William
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Karl</p>\n<p>Yeah, you'd want to initialize it to the largest negative number possible (-Double.MAX_VALUE in Java).  That way if the projections were negative, imagine the shapes in the 3rd quadrant, you'd still get the maximum.</p>\n<p>William</p>"

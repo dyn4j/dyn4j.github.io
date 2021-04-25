@@ -1,0 +1,6 @@
+id: 8861
+date: 2011-03-08 03:12:11 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Glad to hear that this helped you!</p>\n<p>The reason p2 would change is because (assuming you used the window coordinate system, where (0, 0) is in the top left corner) is because y decreases instead of increases when you go \"up.\"</p>\n<p>p2 was (2, 1.5) in a normal coordinate system, but in this other one it would have been (2, 0.5) since we went up by 1 and up is in the negative direction.</p>\n<p>But like I said, this isn't really important if you use a coordinate system you are comfortable with and then transform when drawing.  The comment was only to show that the math still works, its just not as intuitive.</p>\n<p>I also found some mistakes in my images for the winding, I fixed them.</p>"

@@ -1,0 +1,6 @@
+id: 9130
+date: 2014-10-01 10:47:42 -0400
+author: aadne
+parent: gjk-distance-closest-points
+avatar: http://1.gravatar.com/avatar/a187f1c664f89298f5fbdd19ac86358a?s=96&d=mm&r=g
+message: "<p>Hello again William,<br />\nI would like to find the point (on the closest face of Minkowski Sum) closest to origin. The problem is that the point found might not be inside the face. It will be on the plane, but outside its face. So I will need a check whether the point found is inside or outside. This should be easy to figure out if I only knew the fourth (4) minkowski sum point on this face. (I get a triangle on closest face from GJK). Since I am dealing with OBBs (find minimum distance between 2 OBBs in 3D) my minkowski sum shape will also be an OBB. So how can I find this last point for the current closest face? I get a triangle from GJK (3 points in minkowski sum) but I actually need all 4 points in order to know if the closest point found is actually inside the rectagle based face. I hope you understand my question and could give some help. Thanks!</p>"

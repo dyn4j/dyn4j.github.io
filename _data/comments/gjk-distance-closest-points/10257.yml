@@ -1,0 +1,6 @@
+id: 10257
+date: 2015-02-11 02:50:04 -0500
+author: Andrew
+parent: gjk-distance-closest-points
+avatar: http://1.gravatar.com/avatar/1da593fea690ff0a5332c32a4b2b3ed1?s=96&d=mm&r=g
+message: "<p>Hi William, In one of your comments, you said GJK was \"Harder to get numerically stable\" than SAT. what does that mean? Also, for the termination simplex, is that the same simplex we get from the GJK code when testing for intersection between two shapes?</p>"

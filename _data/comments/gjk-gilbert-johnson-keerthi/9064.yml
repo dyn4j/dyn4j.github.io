@@ -1,0 +1,6 @@
+id: 9064
+date: 2013-11-05 17:35:17 -0500
+author: Saad Taame
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://1.gravatar.com/avatar/70e51748cddcc7a80615b2b910393e7e?s=96&d=mm&r=g
+message: "<p>Spaces were trimmed from last post so I'll re-post with points to mark indentation:</p>\n<p>if CA is to the left of CO (det(CA CO) > 0):<br />\n..if CA and CO point to the same direction (dot > 0):<br />\n....D = rotateRight(CA) // D.x = -CA.y; D.y = CA.x (depends on coords-system)<br />\n....simplex = [A, C]<br />\n..else<br />\n....D = CO<br />\n....simplex = [C]<br />\nelse if CB is to the right of CO (= CO is to the left of CB):<br />\n..if CB and CO point to the same direction:<br />\n....D = rotateLeft(CB) // D.x = CA.y; D.y = -CA.x<br />\n....simplex = [B, C]<br />\n..else<br />\n....D = CO<br />\n....simplex = [C]<br />\nelse<br />\n..return true // Simplex contains origin</p>"

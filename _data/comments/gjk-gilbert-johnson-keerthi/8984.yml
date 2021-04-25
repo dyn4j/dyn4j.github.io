@@ -1,0 +1,6 @@
+id: 8984
+date: 2010-11-10 08:51:53 -0500
+author: mikwolf
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://2.gravatar.com/avatar/5d9f8f136432fee0a9e1dac59999ccd6?s=96&d=mm&r=g
+message: "<p>Why is shape1.vertices.size * shape2.vertices.size * 2 subtractions?<br />\nI feel shape1.vertices.size * shape2.vertices.size  is enough.</p>"

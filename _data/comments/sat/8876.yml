@@ -1,0 +1,6 @@
+id: 8876
+date: 2011-08-06 04:56:48 -0400
+author: Shaw
+parent: sat
+avatar: http://0.gravatar.com/avatar/9455f32614e734fea3f4528c67020557?s=96&d=mm&r=g
+message: "<p>I am trying to implement a SAT for triangles only and in 2D only, and this as a part of another assignment. I am a complete newbie in this area and I have been told to code in C.</p>\n<p>This examples given here are pretty clear, although I am not sure what structures I would need in C.</p>\n<p>For starters I thought,</p>\n<pre>\ntypedef struct vertex {\nint x, y;\n}Vertex;\n\nstruct triangle {\nVertex v1, v2, v3;\n};\n</pre>\n<p>would suffice. Is that correct? How can I define the axes structure?</p>\n<p>Thanks...</p>"

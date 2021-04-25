@@ -1,0 +1,6 @@
+id: 8945
+date: 2013-12-10 11:55:34 -0500
+author: Sam
+parent: sat
+avatar: http://0.gravatar.com/avatar/96dd4a8a1ff6c0a3939ba1492b5ae80a?s=96&d=mm&r=g
+message: "<p>Thanks for the quick reply! I have actually read that article you linked but I couldn't seem to work out how they had done it.<br />\nSo from what I understand, if I have a shape like the one I described in the last comment, I take the axis from the center of the curve to each vertex of the other shape, as well as all of the axis's of the other shape?<br />\nI was mainly interested in this type of collision for games that would have terrain such as hills and slopes that aren't straight, but I assume it would be easier to just use many covex shapes such as rotated rectangles to form the outer part of the hill and just test against all of them, since the types of terrain I am thinking of would not be circular?</p>"

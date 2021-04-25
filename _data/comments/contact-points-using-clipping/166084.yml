@@ -1,0 +1,6 @@
+id: 166084
+date: 2018-05-31 13:04:43 -0400
+author: William Bittle
+parent: contact-points-using-clipping
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Sean<br />\nI'm not sure at what point yours is failing, but if you can supply more details about the problem you have I could assist more.  Alternatively, you can also look at my implementation of this algorithm <a onclick=\"javascript:pageTracker._trackPageview('/outgoing/github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/collision/manifold/ClippingManifoldSolver.java');\"  href=\"https://github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/collision/manifold/ClippingManifoldSolver.java\" rel=\"nofollow\">here</a>.</p>\n<p>William</p>"

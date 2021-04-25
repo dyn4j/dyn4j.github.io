@@ -1,0 +1,6 @@
+id: 9305
+date: 2015-02-05 05:24:46 -0500
+author: Anon
+parent: sat
+avatar: http://1.gravatar.com/avatar/a1e3f0d8ea1941b52277a06753e39579?s=96&d=mm&r=g
+message: "<p>My problem could also be that when I rotate my shape, the shapes normals are changing and being projected to an axis that's different than the shape that is not rotated? The normals of both shapes have to be equal to test collision accurately, no?</p>"

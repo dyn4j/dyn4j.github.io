@@ -1,0 +1,6 @@
+id: 9101
+date: 2011-02-06 19:41:32 -0500
+author: William
+parent: gjk-distance-closest-points
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>The other point could have been chosen as well.  If we use better precision than in the examples above the choice to use the point (9, 9) or (4, 5) becomes apparent:</p>\n<p>d.dot(4, 5) = -1.405563856997454589716925831015<br />\nd.dot(9, 9) = -1.405563856997454589716925831017</p>\n<p>You'll notice that (9, 9) is insignificantly smaller than (4, 5) and if in your code you use floating point variables, they will be identical.  This is the case because the direction vector is the normal of the edge (9, 9) to (4, 5) and therefore the projection of both points should be the same.</p>\n<p>In these cases, you can use either one, it doesn't matter, you'll get the same result!</p>"

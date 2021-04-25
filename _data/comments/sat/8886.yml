@@ -1,0 +1,6 @@
+id: 8886
+date: 2011-11-29 13:26:49 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>I may not be able to fix the floating particle problem without some source code.  I'm assuming you are using a Circle shape for each particle?  It sounds like you have the collision detection working, but the gravity isn't being applied to some of the particles?  What are you doing when the particles collide with something?</p>"

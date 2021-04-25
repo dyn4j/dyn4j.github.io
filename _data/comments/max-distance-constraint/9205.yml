@@ -1,0 +1,6 @@
+id: 9205
+date: 2012-12-22 01:24:25 -0500
+author: William
+parent: max-distance-constraint
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>The key to angular limits is to use a reference angle.  The reference angle should be the original angle between the two bodies when the joint is created.</p>\n<p>refAngle = b1.angle &#8211; b2.angle;<br />\nangleDiff = b1.angle &#8211; b2.angle &#8211; joint.refAngle;</p>\n<p>The reference angle allows the 2 body system to rotate <em>together</em> without it affecting the joint.</p>\n<p>Another thing to look at is the way you represent the body angles.  For example, math functions like arctan2 give an angle in the range [-pi, pi] which could cause problems at those limits (since joint will all of the sudden think its way far from being solved).  Let's say your limits are 30 to 270, when the angle reaches 180 it will flip to a negative (-170 for example).  This could explain the locking that you see.</p>\n<p>William</p>"

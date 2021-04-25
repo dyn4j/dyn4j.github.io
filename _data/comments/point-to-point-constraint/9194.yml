@@ -1,0 +1,6 @@
+id: 9194
+date: 2014-07-12 15:06:53 -0400
+author: William
+parent: point-to-point-constraint
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Jiang Jin hao</p>\n<p>Yes, this may seem strange.  The angular velocity is a scalar in 2D because the the other two coordinates of the vector will always be zero.  In other words, the angular velocity is always perpendicular to the 2D plane.  Its 3D vector would look like [0 0 av].  Likewise, an arbitrary 2D vector in 3D would look like [x y 0].  If we take the cross product of these we get:</p>\n<pre>[ 0 * 0 - av * y\nav * x - 0 * 0\n0 * y - 0 * x ]\n</pre>\n<p>which gives</p>\n<pre>[-av*y av*x 0]\n</pre>\n<p>and we can drop the z coordinate because it will always be zero for 2D.  So we can reduce this to say that the cross product of a scalar (really a 3D vector with only a z component) and a 2D vector (really a 3D vector with only x and y components) is the following:</p>\n<pre>scalar x vector = [-scalar * vector.y  scalar * vector.x]</pre>\n<p>In summary, we are technically doing a true cross product, but we can avoid a lot of work (and storage space) if we ignore the vector components who will always be zero.</p>\n<p>William</p>"

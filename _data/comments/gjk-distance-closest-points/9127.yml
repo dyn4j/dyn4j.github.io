@@ -1,0 +1,6 @@
+id: 9127
+date: 2014-08-04 12:25:31 -0400
+author: aadne
+parent: gjk-distance-closest-points
+avatar: http://1.gravatar.com/avatar/a187f1c664f89298f5fbdd19ac86358a?s=96&d=mm&r=g
+message: "<p>@William</p>\n<p>Ok. Thanks for your reply. So I guess I can use a \"Distance between a plane (closest face) and a point (origin)\" calculation. I guess I also should include calculation of the distance from the closest point(vertex) and maybe line segment(edge) to origin. This will cover distances from the vertices and edges of my cube. Then when I have all three distances (face, point (vertex) and line segment, edge) to origin, I can pick the one with the shortest distance. This will be the minimum distance between the two cubes.<br />\nSo to conclude GJK &#8211; Distance algo seems to be a solution to find the closest face between two cubes and from here I will have the closest point (vertex) and edge.</p>"

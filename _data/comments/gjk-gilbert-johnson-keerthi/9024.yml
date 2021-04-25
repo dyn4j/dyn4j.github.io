@@ -1,0 +1,6 @@
+id: 9024
+date: 2012-04-21 17:02:31 -0400
+author: William
+parent: gjk-gilbert-johnson-keerthi
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>Good question.  My comment in the post about this problem was a bit misleading.  There are two places where the origin can lie on the edge of the simplex which can cause problems:</p>\n<ol>\n<li>The origin lies on the edge of the simplex inside the Minkowski Sum.</li>\n<li>The origin lies on the edge of the simplex on the edge of the Minkowski Sum.</li>\n</ol>\n<p>The latter case indicates touching contact and my intention was to point out this implication.  It's up to the developer to decide whether to call this a collision.</p>\n<p>The former case just causes problems altogether.  The fix I described in the comment in the post should work for both cases.  Just get the left or right normal of the simplex AB and use that as the next direction.</p>\n<p>I also fixed the comment in the post to help others.<br />\nWilliam</p>"

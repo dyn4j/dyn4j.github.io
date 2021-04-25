@@ -1,0 +1,6 @@
+id: 8873
+date: 2011-07-18 12:48:08 -0400
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>That's right, i changed my code to set the min and max to the value of the first dot product on line 1 and 2.  This allows the if/else to work as is.</p>"

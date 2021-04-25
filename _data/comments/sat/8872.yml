@@ -1,0 +1,6 @@
+id: 8872
+date: 2011-07-17 01:47:56 -0400
+author: Severin
+parent: sat
+avatar: http://2.gravatar.com/avatar/8c096ff25742662ba9917821ebe3315a?s=96&d=mm&r=g
+message: "<blockquote><p>\n08	 } else if (p > max) { else is not needed<br />\n…\n</p></blockquote>\n<p>That's right, it should be:</p>\n<p>if (p  max) {<br />\n    max = p;<br />\n}</p>\n<p>Therefore an \"if\" but without an else. If the first value is the biggest value, he will be stored in min and would not be stored in max (because of the \"else if\").</p>"

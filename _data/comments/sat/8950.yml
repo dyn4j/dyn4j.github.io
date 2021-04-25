@@ -1,0 +1,6 @@
+id: 8950
+date: 2014-01-21 13:14:44 -0500
+author: William
+parent: sat
+avatar: http://0.gravatar.com/avatar/9abfec71f4798ded76d242c8df48067e?s=96&d=mm&r=g
+message: "<p>@Maynza</p>\n<p>Depending on the reason for getting the center of the overlap area, you might just try to get the collision points by doing <a href=\"http://www.dyn4j.org/2011/11/contact-points-using-clipping/\" title=\"Contact Points Using Clipping\" target=\"_blank\" rel=\"nofollow\">Sutherland-Hodgman clipping</a>.  You may be able to modify this to get what you need.</p>\n<p>You could also try and do Constructive Area Geometry to find this out as well (do an intersection) and then compute the area weighted centroid using the vertices of the intersection shape.</p>\n<p>William</p>"

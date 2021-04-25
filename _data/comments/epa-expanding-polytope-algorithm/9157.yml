@@ -1,0 +1,6 @@
+id: 9157
+date: 2014-07-20 14:29:12 -0400
+author: Asylum
+parent: epa-expanding-polytope-algorithm
+avatar: http://2.gravatar.com/avatar/2b4e2bedcf809b10d793d5ac0775cf29?s=96&d=mm&r=g
+message: "<p>Hi!</p>\n<p>I have a little problem with the 3D EPA algorithm. Considering a box-box collision, there are cases when the algorithm doesn't terminate ever: the polytope is just getting bigger with redundant vertices.</p>\n<p>Is there any way to detect this? (besides limiting the number of iterations/vertices)</p>"

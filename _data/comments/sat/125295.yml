@@ -1,0 +1,6 @@
+id: 125295
+date: 2016-10-15 04:29:55 -0400
+author: Cory Efird
+parent: sat
+avatar: http://2.gravatar.com/avatar/2decc9f278eae4e40f83104ae9f29934?s=96&d=mm&r=g
+message: "<p>I found a nice way of handling containment/overlap all at once by getting the displacement between two intervals.</p>\n<p>[code]<br />\n//returns the minimum distance required to move p2 out of p1. Will be +/- depending if it needs to be moved up/down.<br />\n//if p1 and p2 are not overlapping it returns 0<br />\nfloat displacement = p1.getDisplacement(p2); </p>\n<p>if (!displacement)<br />\n    return false;<br />\nelse<br />\n{<br />\n    if (abs(displacement)  other.max || other.min > max) //This is the basically just the overlap() method<br />\n        return 0;<br />\n    else<br />\n    {<br />\n        float mid = (max+min)/2;<br />\n        if (abs(mid-max) > abs(mid-min))<br />\n            return max &#8211; other.min;<br />\n        else<br />\n            return other.max &#8211; min;<br />\n    }<br />\n}<br />\n[/code]</p>"
