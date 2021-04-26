@@ -1,7 +1,7 @@
 ---
 id: 372
 title: Point-to-Point Constraint
-date: 2010-07-24 21:47:38 -0500
+date: 2010-07-24 00:47:38 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=225

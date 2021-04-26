@@ -10,6 +10,13 @@ layout: main
         </div>
         <div class="col-lg-7 offset-lg-1">
           {{ content }}
+
+          <div class="mt-3 mb-3 text-muted fst-italic">
+            <small>
+            {% capture pagePath %}{{ page.title | slugify }}.md{% endcapture %}
+            Found an issue with this page? <a href="{{ site.jekyll_source_url }}/edit/main/pages/{{ pagePath }}">suggest edit</a>
+          </small>
+          </div>
         </div>
         <div class="col-lg-3">
             {% include blog-right-nav.html %}

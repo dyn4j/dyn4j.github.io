@@ -1,7 +1,7 @@
 ---
 id: 941
 title: New Getting Started Video
-date: 2020-01-10 23:40:08 -0500
+date: 2020-01-10 00:40:08 -0500
 author: William Bittle
 layout: post
 guid: http://www.dyn4j.org/?p=941

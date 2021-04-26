@@ -1,7 +1,7 @@
 ---
 id: 416
 title: dyn4j Project Setup Video
-date: 2011-12-29 18:16:52 -0500
+date: 2011-12-29 00:16:52 -0500
 author: William Bittle
 layout: post
 guid: http://www.codezealot.org/?p=416
