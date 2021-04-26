@@ -99,6 +99,15 @@ function CommentFormSubmitter() {
     };
 }
 
+function canSubmitComment() {
+    if (document.getElementById('commentsNewComment').value &&
+        document.getElementById('commentNewName').value) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 addEventListener('load', function() {
     setupGravitarOnCommentEmailField();
 
@@ -110,13 +119,9 @@ addEventListener('load', function() {
     });
 
     var messageField = document.getElementById('commentsNewComment');
-    messageField.addEventListener('keyup', function() {
-        if (document.getElementById('commentsNewComment').value) {
-            commentSubmitButton.disabled = false;
-        } else {
-            commentSubmitButton.disabled = true;
-        }
-    });
+    messageField.addEventListener('keyup', canSubmitComment);
+    var nameField = document.getElementById('commentNewName');
+    messageField.addEventListener('keyup', canSubmitComment);
 
     var commentConfirmSubmitButton = document.getElementById('commentConfirmSubmit');
     commentConfirmSubmitButton.addEventListener('click', function() {
