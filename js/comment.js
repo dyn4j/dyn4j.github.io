@@ -99,12 +99,12 @@ function CommentFormSubmitter() {
     };
 }
 
-function canSubmitComment() {
+function updateSubmitEnableState() {
     if (document.getElementById('commentsNewComment').value &&
         document.getElementById('commentNewName').value) {
-        return true;
+        commentSubmitButton.disabled = false;
     } else {
-        return false;
+        commentSubmitButton.disabled = true;
     }
 }
 
@@ -119,9 +119,9 @@ addEventListener('load', function() {
     });
 
     var messageField = document.getElementById('commentsNewComment');
-    messageField.addEventListener('keyup', canSubmitComment);
+    messageField.addEventListener('keyup', updateSubmitEnableState);
     var nameField = document.getElementById('commentNewName');
-    messageField.addEventListener('keyup', canSubmitComment);
+    messageField.addEventListener('keyup', updateSubmitEnableState);
 
     var commentConfirmSubmitButton = document.getElementById('commentConfirmSubmit');
     commentConfirmSubmitButton.addEventListener('click', function() {
