@@ -100,6 +100,7 @@ function CommentFormSubmitter() {
 }
 
 function updateSubmitEnableState() {
+    var commentSubmitButton = document.getElementById('commentNewSubmit');
     if (document.getElementById('commentsNewComment').value &&
         document.getElementById('commentNewName').value) {
         commentSubmitButton.disabled = false;
