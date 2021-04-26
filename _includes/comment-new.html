@@ -1,0 +1,77 @@
+<form action="{{ site.comments.receiver }}" method="POST">
+    <input name="redirect" type="hidden" value="{{site.url}}/thanks">
+    <input name="post_id" type="hidden" value="{{ page.slug }}" id="commentNewPostId">
+    <input name="comment-site" type="hidden" value="{{ site.url }}" id="commentNewCommentSite">
+    <input name="avatar" type="hidden" id="avatarInput" />
+
+    <div class="row g-3">
+        <div class="col-2">
+            <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y&s=96" style="max-width: 100%;" id="avatarImage" />
+        </div>
+        <div class="col-10">
+            <div class="row mb-3">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="commentNewName" placeholder="Name">
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="commentNewEmail" placeholder="Email/@twitter/github">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="commentsNewComment" style="height: 200px"></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 text-end">
+                    <button type="button" class="btn btn-primary" id="commentNewSubmit" disabled>Submit comment</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="alert alert-info fade show" role="alert">
+        <strong>NOTE:</strong> All comments are moderated before becoming visible.
+    </div>
+</form>
+
+<div class="modal fade" tabindex="-1" id="commentFormConfirmModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Are you sure?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="commentFormConfirmModalCloseButton"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to add the comment?  You can't edit your comment after this point.</p>
+                <div class="alert alert-info fade show" role="alert">
+                    <strong>NOTE:</strong> All comments are moderated before becoming visible.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="commentConfirmSubmit">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="submitSpinner" style="display: none;"></span>
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toast-container position-fixed top-0 end-0 p-3">
+    <div class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" id="commentFormSuccessToast">
+        <div class="d-flex">
+        <div class="toast-body">
+            Comment submitted successfully! Please wait for moderation for it to show.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="toast align-items-center text-white bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true" id="commentFormFailureToast">
+        <div class="d-flex">
+        <div class="toast-body">
+            Failed to submit the toast - see console for more details.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+  </div>

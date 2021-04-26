@@ -25,6 +25,9 @@ layout: blog
     {% endif %}
   </div>
 
+  <h2 class="mb-3">Comments</h2>
+  {% include comment-new.html %}
+
   {% capture default_slug %}{{ page.slug | default: page.title | slugify }}{% endcapture %}
   {% capture slug %}{{ page.slug  }}{% endcapture %}
   {% assign comments_map = site.data.comments[slug] %}
@@ -36,18 +39,20 @@ layout: blog
   {% assign comments = cmts | sort: 'date' %}
 
   {% if comment_count > 0 %}
-  <h4 class="mt-4">Comments <span class="badge bg-primary">{{ comments.size }}</span></h4>
+  <h5 class="mt-5">{{ comments.size }} responses</h5>
   <hr class="mb-4" />
   
   {% for comment in comments %}
   <a id="{{ comment.id }}"></a>
   <div class="row mb-3">
-    <div class="col" style="width: 150px; max-width: 150px;">
-      <div><img src="{{ comment.avatar }}"/></div>
-      <div><strong>{{ comment.author }}</strong></div>
-      <div><small><a href="#{{ comment.id }}">{{- comment.date | date: site.date_format -}}</a></small></div>
+    <div class="col-2">
+      <img src="{{ comment.avatar }}" style="max-width: 100%;" />
     </div>
     <div class="col-10">
+      <div class="row">
+        <div class="col-6"><strong>{{ comment.author }}</strong></div>
+        <div class="col-6 text-end"><small><a href="#{{ comment.id }}">{{- comment.date | date: site.date_format -}}</a></small></div>
+      </div>
       {{ comment.message }}
     </div>
     <div class="col-12"><hr class="comment-divider" /></div>
