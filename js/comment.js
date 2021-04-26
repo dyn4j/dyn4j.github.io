@@ -75,7 +75,10 @@ function CommentFormSubmitter() {
             },
             body: params,
             method: 'POST',
-        }).then(function() {
+        }).then(function(response) {
+            if (!response.ok) {
+                throw Error(response.statusText);
+            }
             // clear the form fields
             document.getElementById('commentNewName').value = '';
             document.getElementById('commentNewEmail').value = '';
