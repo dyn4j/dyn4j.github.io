@@ -110,22 +110,25 @@ function updateSubmitEnableState() {
 }
 
 addEventListener('load', function() {
-    setupGravitarOnCommentEmailField();
-
-    var submitter = new CommentFormSubmitter();
-
     var commentSubmitButton = document.getElementById('commentNewSubmit');
-    commentSubmitButton.addEventListener('click', function() {
-        submitter.confirmSubmission();
-    });
 
-    var messageField = document.getElementById('commentsNewComment');
-    messageField.addEventListener('keyup', updateSubmitEnableState);
-    var nameField = document.getElementById('commentNewName');
-    messageField.addEventListener('keyup', updateSubmitEnableState);
+    if (commentSubmitButton) {
+        setupGravitarOnCommentEmailField();
 
-    var commentConfirmSubmitButton = document.getElementById('commentConfirmSubmit');
-    commentConfirmSubmitButton.addEventListener('click', function() {
-        submitter.submitComment();
-    });
+        var submitter = new CommentFormSubmitter();
+        
+        commentSubmitButton.addEventListener('click', function() {
+            submitter.confirmSubmission();
+        });
+
+        var messageField = document.getElementById('commentsNewComment');
+        messageField.addEventListener('keyup', updateSubmitEnableState);
+        var nameField = document.getElementById('commentNewName');
+        messageField.addEventListener('keyup', updateSubmitEnableState);
+
+        var commentConfirmSubmitButton = document.getElementById('commentConfirmSubmit');
+        commentConfirmSubmitButton.addEventListener('click', function() {
+            submitter.submitComment();
+        });
+    }
 });

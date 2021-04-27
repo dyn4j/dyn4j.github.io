@@ -9,13 +9,15 @@
             {%- for post in posts limit: 3 -%}
 
             {%- assign delay = {{forloop.index0} | times: 100 -%}
-            <div class="col-lg-4 mb-4">
+            <div class="col-md-6 col-lg-4 offset-lg-0 mb-4 {% if forloop.index0 == 2 %}d-md-none d-lg-block{% endif %}">
             <div class="card h-100" data-aos="flip-left" data-aos-once="true" data-aos-delay="{{ delay }}">
-                <img src="{{ post.image }}" class="card-img-top" height="400" />
+                <div class="card-img-top" style="height: 300px; overflow: hidden;">
+                    <img src="{{ post.image }}" class="card-img-top" />
+                </div>
+                
                 <div class="card-body">
                   <h5 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h5>
                   <p class="card-text">{{ post.excerpt }}</p>
-                  <!-- <a href="{{ post.url | relative_url }}" class="btn btn-primary">{{ post.title | downcase }}</a> -->
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">{{- post.date | date: site.date_format -}}</small>
