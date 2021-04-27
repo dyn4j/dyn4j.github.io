@@ -216,7 +216,6 @@ For additional help see the following links:
 * [Samples]({{ site.samples_url }})
 * [Advanced]({{ site.pages_url }}/advanced/)
 * [Joints]({{ site.pages_url }}/joints/)
-* [Performance]({{ site.pages_url }}/performance/)
 * [Javadocs]({{ site.javadoc_url }})
 * [Release Notes]({{ site.release_notes_url }})
 * [License]({{ site.license_url }})
