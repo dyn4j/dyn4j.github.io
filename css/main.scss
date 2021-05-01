@@ -118,8 +118,17 @@ hr.post-end {
 }
 
 .post-list-item .card-img-top {
-        object-fit: cover;
+        object-fit: contain;
         height: 100%;
+        width: 100%;
+        object-position: 50% 50%;
+}
+
+.post-list-item {
+        border: none;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
 }
 
 article .comment-divider {
