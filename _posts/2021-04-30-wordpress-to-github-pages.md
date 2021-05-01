@@ -209,6 +209,21 @@ The first step is to configure your GitHub repo with the custom domain name.  It
 
 > See [here](https://github.community/t/does-github-pages-support-https-for-www-and-subdomains/10360/75) for more help with custom domain setup.
 
+This was the final setup (not sure if I needed both the @ and dyn4j.org `A` records, but I was pretty frustrated at this point and decided to leave it alone since it was working)
+
+| Type  | Source | Destination |
+|-------|--------|---------|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| A | dyn4j.org | 185.199.108.153 |
+| A | dyn4j.org | 185.199.109.153 |
+| A | dyn4j.org | 185.199.110.153 |
+| A | dyn4j.org | 185.199.111.153 |
+| CNAME | www | dyn4j.github.io |
+{: .table}
+
 ## Accepting New Comments
 Like I've mentioned before, the whole point of Jekyll is to produce a lightning fast static site generated from non-static data (like posts, comments, pages, templates, etc.)  So how can we accept new comments?  It was a great question and I found a [solution](https://haacked.com/archive/2018/06/24/comments-for-jekyll-blogs/).  It's actually quite straight forward:
 
