@@ -13,7 +13,7 @@ tags:
   - dyn4j
 ---
 
-In my last post where I talked about the reasons for moving the dyn4j site to GitHub Pages and off of WordPress, I mentioned another post to describe the technical details of the move - this is it!  Seriously though, it wasn't exactly trivial, but that's in part due to some self-imposed (inflicted) constraints.  
+In my last post where I talked about the reasons for moving the dyn4j site to GitHub Pages and off of WordPress, I mentioned another post to describe the technical details of the move - this is it!  Seriously though, it wasn't trivial, but that's in part due to some self-imposed (inflicted?) constraints.  
 
 {% include figure.html name="wordpress.png" caption="WordPress" credit="https://wordpress.org/" %}
 
@@ -24,7 +24,7 @@ Full disclosure - I've been a web developer for 15 years so a lot of the basic c
 > The dyn4j.org website is a [public repo](https://github.com/dyn4j/dyn4j.github.io) on GitHub.  Reference the source for an additional resource when going through your conversion.
 
 ## Getting Started
-To get started you'll need to [install the jekyll tooling](https://jekyllrb.com/docs/) which includes ruby.  For development of the site I went with Visual Studio Code which has good support for markdown, yml, css, sass, JavaScript, and so on.  I ended up using all of these in some way and having syntax highlight was really important.
+To get started you'll need to [install the jekyll tooling](https://jekyllrb.com/docs/) which includes ruby.  For development of the site I went with Visual Studio Code which has good support for markdown, yml, css, sass, JavaScript, and so on.  I ended up using all of these in some way and having syntax highlighting was really important.
 
 {% include figure.html name="jekyll.png" caption="Jekyll" credit="https://jekyllrb.com/" %}
 
@@ -37,18 +37,18 @@ I also followed the [GitHub guides](https://docs.github.com/en/pages) to get a r
 > Refer to the GitHub Page documentation to understand what things are not supported. For example, not all Jekyll plugins are supported.
 
 ## Build the Skeleton
-My first goal was to build the basic skeleton of the site and the landing page.  I wanted to choose an existing template, but they all seemed OK - nothing really wrong with them, just not what I wanted so I decided to download a few example jekyll themes ([no-style-please](http://jekyllthemes.org/themes/no-style-please/) and [creative theme](http://jekyllthemes.org/themes/creative-theme/)) as references.  I also decided on [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) for the basic UI components and then set after it.
+My first goal was to build the basic skeleton of the site and the landing page.  I wanted to choose an existing template, but they all seemed OK - nothing really wrong with them, just not what I wanted so I decided to download a few example jekyll themes: ([no-style-please](http://jekyllthemes.org/themes/no-style-please/) and [creative theme](http://jekyllthemes.org/themes/creative-theme/)) as references.  I also decided on [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) for the basic UI components and then set after it.
 
 {% include figure.html name="bootstrap.png" caption="Bootstrap 5" credit="https://getbootstrap.com/" %}
 
 This stage quickly devolved into fixing all the things I didn't like about the old site and feverishly testing on all different screen sizes.  I spent a lot of time here.  I cleaned up verbiage, images, links, pretty much everything.  I'm happy I spent the time there, but it was a huge time suck.
 
-For the animation I used [AOS](https://michalsnik.github.io/aos/) since it had the capability to wait for the user to scroll before animating.  I also included the [MathJax](http://docs.mathjax.org/en/latest/index.html) library since I have a few blog posts that are math heavy.  Finally, 
+For the animation I used [AOS](https://michalsnik.github.io/aos/) since it had the capability to wait for the user to scroll before animating.  I also included the [MathJax](http://docs.mathjax.org/en/latest/index.html) library since I have a few blog posts that are math heavy.
 
 So at this point I had the landing page done and a decent pattern to follow for the rest of the site.
 
 ## Build the Blog
-The next step was to get the blog portion of the site going. For that I referenced the no-style-please theme to understand how to display them, where to put the posts, and so on.  I made it my own and modeled it after the existing site with a [tag cloud](https://superdevresources.com/tag-cloud-jekyll/), [grouped by year](https://stackoverflow.com/questions/24191711/archive-jekyll-posts-by-year), and [category links](https://gist.github.com/Phlow/a0e3fa686eb259fe7f76).  There are some limitations here that I didn't really like, but it was a small price to pay.  For example, to create a link to a specific tag or category - not possible - instead you can create a page with all your posts grouped by tag/category and link to that page with an anchor to the correct location on the page.  Not huge deal - no one reads these anyway do they?  The other thing that wasn't straight forward was the [paging](https://jekyllrb.com/docs/pagination/) for the main blog landing page - I didn't want a hundred blog posts to all be on the same page that the user lands on, but instead the last 10 or something. 
+The next step was to get the blog portion of the site going. For that I referenced the no-style-please theme to understand how to display them, where to put the posts, and so on.  I made it my own and modeled it after the existing site with a [tag cloud](https://superdevresources.com/tag-cloud-jekyll/), [grouped by year](https://stackoverflow.com/questions/24191711/archive-jekyll-posts-by-year), and [category links](https://gist.github.com/Phlow/a0e3fa686eb259fe7f76) sections.  There are some limitations here that I didn't really like, but it was a small price to pay.  For example, to create a link to a specific tag or category - not possible - instead you can create a page with _all_ your posts grouped by tag/category and link to that page with an anchor to the correct location on the page.  Not huge deal - no one reads these anyway do they?  The other thing that wasn't straight forward was the [paging](https://jekyllrb.com/docs/pagination/) for the main blog landing page - I didn't want a hundred blog posts to all be on the same page that the user lands on. 
 
 I built it out while using the same posts from the no-style-please theme first to get all the includes and layouts the way I wanted them.
 
@@ -57,20 +57,20 @@ I built it out while using the same posts from the no-style-please theme first t
 ## Moving the Blog Posts
 For this step, I needed something to export all the posts from the WordPress site and convert them to Jekyll markdown.  For that I installed the [Jekyll Exporter](https://wordpress.org/plugins/jekyll-exporter/) plugin into my WordPress site.  A couple of good things about this is that it also exported pages and assets (images).  The conversion was pretty good too.  
 
-That said there were some problems.  The first was the date front matter data point.  It was in the format ISO format that you'd expect, but Jekyll needs the date formatted like [YYYY-MM-DD HH:MM:SS +/-TTTT](https://jekyllrb.com/docs/front-matter/#predefined-variables-for-posts).  This only matters if you want your posts sorted properly...  We'll, anyway. The second problem was that the exported/converted posts left a lot of HTML in them and I really wanted to move to entirely markdown for posts and pages.  For this last bit, I understand why I couldn't convert it, it was complex HTML code, so I decided to take the jump and update all the posts.  This was very time consuming and I was very VERY bored.  I decided while I was modifying each post to review them as well.  This, while still boring, was very satisfying.  For example, going back through the constrained dynamics posts, I found a number of minor mistakes and added more context.  I also decided to change all the hard coded images to Latex for better maintainability.  Another issue was that the exported didn't properly change the path to some images and those needed to be updated and migrated to the site's assets folder manually.  There are [couple of things you can do here](https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll) to make it easier to references images.  I also reviewed all links and cleaned those up.
+That said there were some problems.  The first was the `date` front matter data point.  It was in the format ISO format that you'd expect, but Jekyll needs the date formatted like [YYYY-MM-DD HH:MM:SS +/-TTTT](https://jekyllrb.com/docs/front-matter/#predefined-variables-for-posts).  This only matters if you want your posts sorted properly... (lot's of eyerolling ensued). The second problem was that the exported/converted posts left a lot of HTML in them and I really wanted to move to entirely markdown.  I understand why it couldn't convert those parts, they were complex HTML code, so I decided to roll my sleeves up and update all the posts.  This was very time consuming and I was very VERY bored.  I decided while I was modifying each post to review them as well.  This, while still boring, was very satisfying.  For example, going back through the constrained dynamics posts, I found a number of minor mistakes and added more clarifying content.  I also decided to change all the hard coded images of math to Latex for better maintainability.  Another issue was that the exported content didn't properly change the path to images and those needed to be updated and migrated to the site's assets folder manually.  There are [couple of things you can do here](https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll) to make it easier to references images.  I also reviewed all links and cleaned those up.
 
 > **TIP**: The date format from the Jekyll Exporter does not match what [Jekyll is looking for](https://jekyllrb.com/docs/front-matter/#predefined-variables-for-posts).  That said, as far as I can tell, GitHub Pages doesn't care what I put in for the timezone offset - it just completely ignores it and considers the datetime is in UTC...
 
-All in all, I spent WAY too much time here.  I'm happy with the end result, but can't imagine what I would have done if I had more than 60 posts (and most of my posts were short announcements for dyn4j releases - fixing the primary posts was brutal).
+All in all, I spent WAY too much time here.  I'm happy with the end result, but can't imagine what I would have done if I had more than 60 posts (and most of my posts were short announcements for dyn4j releases - fixing the larger posts was brutal).
 
 > **TIP**: There's a gotcha here.  The Jekyll Exporter tool exports your posts as markdown files with front matter.  as part of the front matter there's an `id` field which I'm assuming was the original id from WordPress.  However, when you try to do `post.id` you will get the slugified name of the post - the `id` property of the post object cannot be overridden.
 
 ## Moving the Comments
-I spent a lot of time thinking about whether to move comments over or not.  GitHub Pages being a static site host meant that I wouldn't be able to accept more comments unless I developed a different solution.  I had around 500 comments total - all moderated so they were quality.  I decided to move them over and make the decision whether to accept new comments later.  Jekyll has a way to generate static content from [data](https://jekyllrb.com/docs/datafiles/).  This is the mechanism we'll use for comments.
+I spent a lot of time thinking about whether to move comments or not.  GitHub Pages, being a static site host, meant that I wouldn't be able to accept _more_ comments unless I developed a different solution.  I had around 500 comments total - all moderated so they were quality.  I decided to move them over and make the decision whether to accept new comments later.  Jekyll has a way to generate static content from [data](https://jekyllrb.com/docs/datafiles/).  This is the mechanism we'll use for comments.
 
-> To save you some time, I probably went the long way.  After going through the below I found [this](https://damieng.com/blog/2018/05/28/wordpress-to-jekyll-comments#exporting-comments-from-wordpress).  Somehow I overlooked this, so I don't know what the output is like, but I'd probably start with that tool first if I were to do it over again.
+> To save you some time, I probably went the long way.  What I describe below is what I did.  After all that work I found [this](https://damieng.com/blog/2018/05/28/wordpress-to-jekyll-comments#exporting-comments-from-wordpress).  Somehow I overlooked this, so I don't know what the output is like, but I'd probably start with that tool  if I were to do it over again.
 
-Moving the comments was a lot harder.  There wasn't a nice exporter like there was for posts so I decided to just export them myself using the WordPress APIs.  To do so, I loged into WordPress admin and executed the following script:
+Moving the comments was a lot harder.  There wasn't a nice exporter like there was for posts so I decided to just export them myself using the WordPress APIs.  To do so, I signed into WordPress admin and executed the following script(s):
 
 ```javascript
 let promises = [];
@@ -123,11 +123,13 @@ Promise.all(promises).then(function (dataSets) {
 });
 ```
 
-You'll need to tweak it for your scenario.  For example, I knew how many posts and comments I had so I just hard coded the number of pages of data I needed to get for both the posts and comments calls.  The script generated a nice JSON string in the console which I just copied and pasted into a file.
+> The WordPress APIs have a limit of 100 records per page.
+
+You'll need to tweak it for your scenario.  For example, I knew how many posts and comments I had so I just hard coded the number of API calls I needed to execute.  The script generated a nice JSON string in the console which I just copied and pasted into a file.
 
 > Not shown here, I also exported all posts to JSON in the same way for the next step.
 
-Now, Jekyll acutally supports a few different formats for "data".  One of which is JSON and at first I used the JSON generated in the previous step to feed the posts with the appropriate comments (by filtering them on the post_guid property).  But after making the decision to implement a solution for new comments, I decided to change how I was storing the comments.  I took this JSON file, read it into memory with a C# console application and converted it into a list of yml files, placed in folders named with the slugified name of the parent post (more on the why later).  Here's the code for that:
+Jekyll acutally supports a few different formats for "data".  One of which is JSON and at first I used the JSON generated in the previous step to feed the posts with the appropriate comments (by filtering them on the post_guid property).  But after making the decision to implement a solution for new comments, I decided to change how I was storing the comments.  I took this JSON file, read it into memory with a C# console application and converted it into a list of yml files, placed in folders named with the slugified name of the parent post (more on the why later).  Here's the code for that:
 
 ```csharp
 class Program
@@ -199,7 +201,7 @@ No what's really cool about all this is that you can configure GitHub Pages with
 
 I just realized I went on a rant and you don't care - you just want to know what to do.  The first thing you should do is read the [official GitHub Pages documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) and follow that.  It really is good documentation.
 
-The first step is to configure your GitHub repo with the custom domain name.  It won't work, but that's ok.  You need to do this first so that another repo doesn't steal your domain when you finally point your domain at GitHub IPs.  Once that's complete, then you need to log into the host for your domain and update DNS.  I followed exactly what was in the GitHub Pages documentation and it nearly worked.  For my host, I had to create `A` records ([step 7 of the official docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)) but I also has to create `A` records using "@" as the source.  I also had to use the apex domain in GitHub pages, NOT the `www` prefixed domain.
+The first step is to configure your GitHub repo with the custom domain name.  It won't work, but that's ok.  You need to do this first so that another repo doesn't steal your domain when you finally point your domain at GitHub IPs.  Once that's complete, then you need to log into the host for your domain and update DNS.  I followed exactly what was in the GitHub Pages documentation and it _nearly_ worked.  For my host, I had to create `A` records ([step 7 of the official docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)) but I also had to create `A` records using "@" as the source.  I also had to use the apex domain in GitHub pages, NOT the `www` prefixed domain.
 
 > **TIP**: If you want both the apex domain and `www` subdomain to work with HTTPS, set the repo custom domain to the apex domain.  For example, if you own `example.com`, set the repo's custom domain to `example.com`.  Then setup the `CNAME` and `A` records as defined in the docs.
 
@@ -227,7 +229,7 @@ This was the final setup (not sure if I needed both the @ and dyn4j.org `A` reco
 ## Accepting New Comments
 Like I've mentioned before, the whole point of Jekyll is to produce a lightning fast static site generated from non-static data (like posts, comments, pages, templates, etc.)  So how can we accept new comments?  It was a great question and I found a [solution](https://haacked.com/archive/2018/06/24/comments-for-jekyll-blogs/).  It's actually quite straight forward:
 
-* Create a comment form include that will post data to an Azure Function
+* Create a comment form that will post data to an Azure Function
 * Setup an Azure account ($200 free credit)
 * Create an Azure Function to accept comments
 * Add the necessary code to the function to create a branch on your site repo, create a comment yml file, and submit a pull request

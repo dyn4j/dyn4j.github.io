@@ -31,7 +31,7 @@ First a bit of background.  dyn4j includes a system for detecting collisions bet
 
 Why the 3-phase approach?  The narrowphase algorithms are expensive to run, so if we can reduce the possible set of colliding pairs, then we save a lot of processing time.  If we didn't do this, we'd need to test every object with every other object.  That's $$ O(n^2) $$ tests - very inefficient especially when it's more common to _not_ be colliding than they other way around.
 
-Thus, the broadphase is where we detect all the _potential_ pairs of colliding objects.  More specifically, it returns a set of collision pairs that **may** be colliding.  Those pairs that are not included in this set are **definitely NOT** colliding.  The pairs are handed over to the narrowphase where we find out if they truely are or aren't colliding.  Now, how does it do this?  And how does it do it more efficiently than the narrowphase?
+Thus, the broadphase is where we detect all the _potential_ pairs of colliding objects.  More specifically, it returns a set of collision pairs that **may** be colliding.  Those pairs that are not included in this set are **definitely NOT** colliding.  The pairs are handed over to the narrowphase where we find out if they truly are or aren't colliding.  Now, how does it do this?  And how does it do it more efficiently than the narrowphase?
 
 ## Broadphase Collision Detection
 Broadphase collision detection algorithms center around the idea of choosing a simple bounding shape that encompasses the object.  For example, let's imagine I have a simple square shape and I want to create a bounding shape for it.  I can use any type of shape I want, but clearly the choice will determine the efficiency of the algorithm.  In the below picture you see three different possibilities (these are the more common choices):
@@ -46,20 +46,24 @@ The last is an Oriented Bound Box, or OBB for short.  It's a rectangle that's al
 
 > You may have noticed that the bounding shapes in the image above didn't exactly fit the object.  This was mainly to show the differences in the bounding area, but as we'll see soon, this is actually one of the sources of the performance enhancement being described in the post.
 
-Having an easier collision detection proceedure isn't all the broadphase does - we still need to content with that $$ O(n^2) $$ problem.  We could brute force it by testing everything against everything, but that'll be horribly inefficient.  What can we do?  The answer is to subdivide the problem into smaller and smaller chunks so that when we test the higher level chunk and it's negative, we move on - there's no reason to do any tests against objects inside that chunk.  The image below highlights this hierarchy of chunks:
+Having an easier collision detection proceedure isn't all the broadphase does - we still need to contend with that $$ O(n^2) $$ problem.  We could brute force it by testing everything against everything, but that'll be horribly inefficient.  What can we do?  The answer is to subdivide the problem into smaller and smaller chunks so that when we test the higher level chunk and it's negative, we move on - there's no reason to do any tests against objects inside that chunk.  The image below highlights this hierarchy of chunks:
 
 {% include figure.html name="hierarchy.png" caption="A bounding shape hierarchy" %}
 
-For example, if I'm testing an object's AABB against the purple region in the image above and I detect no collision, there's no reason to test the red, blue, teal, green, and yellow regions since they can't possibly be colliding if the purple region isn't.  If we could build a data structure that would organize the scene in this fashion we could reduce the number of collision tests significantly.  For example, if we could organize the scene into a binary tree structure, the number of tests would then be $$ O(n\log{n}) $$.
+For example, if I'm testing an object's AABB against the purple region in the image above and I detect no collision, there's no reason to test the interior regions since they can't possibly be colliding if the purple region isn't.  If we could build a data structure that would organize the scene in this fashion we could reduce the number of collision tests significantly.  For example, if we could organize the scene into a binary tree structure, the number of tests would then be $$ O(n\log_2{n}) $$.
+
+> There are other partitioning schemes as well: grid-based, quadtree, BSPs, etc.
 
 ## Bounding Shape Expansion
-Generating the data structure to do less collision tests isn't a trivial task, but keep in mind that our scene is constantly changing as objects are moving and rotating over time, so keeping it up-to-date is also going to be a challenge.  It must be efficient at updating so that we don't trade one performance issue for another.  To avoid going down the rabbit hole of describing various data structures that can be used in broadphase collision detection, let's just assume that you have one and updates to that data structure aren't cheap.
+Creating a data structure to do less collision tests isn't a trivial task.  In addition to the creation of the initial state, we also have to keep it up-to-date as those objects move and rotate over time.  It must be efficient at updating so that we don't trade one performance issue for another.  To avoid going down the rabbit hole of describing various data structures that can be used in broadphase collision detection, let's just assume that you have one and updates to that data structure aren't cheap.
 
-Enter bounding shape exapansion.  If you recall from the section above where we laid out a couple of options for bounding shapes.  You may have noticed that the bounding shapes for the square didn't fit snug around the square.  This was primarily to highlight the different bounding shapes, but also to draw attention to the fact that they don't _have_ to fit snug.  Imagine I _expand_ the bounding shape for a square and put that expanded bounding shape into the broadphase.  The effect is that when the square moves/rotates, I don't have to update the expanded bounding shape unless it leaves that expanded region.
+Enter bounding shape exapansion.  If you recall from the section above where we laid out a couple of options for bounding shapes, you may have noticed that the bounding shapes for the square didn't fit around it tightly.  This was primarily to highlight the different bounding shapes, but also to draw attention to the fact that they don't _have_ to fit tightly.  Imagine I _expand_ the bounding shape for a square and put that expanded bounding shape into the broadphase.  The effect is that when the square moves/rotates, I don't have to update the expanded bounding shape unless it leaves that expanded region.
 
 {% include figure.html name="expanded-bounding-shape.png" caption="An object in it's expanded bounding shape in frame 1 and frame 2" %}
 
-Let's try to understand what we're trying to do here - we want to send less pairs to the narrowphase, but we also want to reduce the number of updates to our data structure that's helping use reduce the number of pair-wise tests we need to perform in the broadphase.  If we choose tighly fitting bounding shapes we get smallest number of collision tests in the broadphase, but every one of those objects that's moving/rotating, the tree will need to be updated every frame.  If we choose super fat bounding shapes we end up doing more collision tests in the broadphase, but we don't have to update the broadphase data structure as often (as described above).
+In $$ T = 2 $$, the square only moved one unit to the right and is still fully contained in the bounding AABB.  There's no reason to update the bounding shape because it would not effect the end result.
+
+Let's review what we're trying to do here - we want to send less pairs to the narrowphase, but we also want to reduce the number of updates to our data structure.  Sending less pairs to the narrowphase means the expensive collision detection there is run less often.  Less updates to our broadphase data structure means we do less work per frame.  If we choose tighly fitting bounding shapes we get the smallest number of collision tests in the broadphase, but for every one of those objects that's moving/rotating, the data structure will need to be updated every frame.  If we choose super fat bounding shapes we end up doing more collision tests in the broadphase, but we don't have to update the broadphase data structure as often (as described above).
 
 The key then is to strike a balance between expanding a lot and not expanding at all.  This is a configurable property in dyn4j.
 
@@ -103,13 +107,13 @@ public void simulationStep() {
 }
 ```
 
-This flow would be called for every frame of the simulation.  Thus, for every frame we have to retest everything with everything (reduced by our data structure of course).  this seems like a lot of work, but it make sense - we need to make sure that new collisions are detected and old collisions are no longer handled.  The magic for the improved performance in dyn4j 4.0.x lies in this process.
+This flow would be called for every frame of the simulation.  Thus, for every frame we have to retest everything with everything.  this seems like a lot of work, but it makes sense - we need to make sure that new collisions are detected and old collisions are no longer handled.  The magic for the improved performance in dyn4j 4.0.x lies in this process.
 
 Imagine that we have the following configuration on frame 1 of our simulation:
 
 {% include figure.html name="scene1.png" caption="Frame 1 of our sample scene" %}
 
-We have three squares with expanded bounding shapes (AABBs in this case).  The purple and teal expanded bounding shapes are overlapping.  The orange object's expanded bounding shape is offset because the orange object moved last frame.  Also imagine the purple object is moving as well, but the teal object is stationary.  In this setup we have 3 object and therefore 4 collision tests to do in the worst case (brute-force).  Purple vs. Teal, Purple vs. Orange, Teal vs. Orange.
+We have three squares with expanded bounding shapes (AABBs in this case).  The purple and teal expanded bounding shapes are overlapping.  The orange object's expanded bounding shape is offset because the orange object moved last frame.  Also imagine the purple object is moving as well, but the teal object is stationary.  In this setup we have 3 objects and therefore 3 collision tests to do in the worst case (brute-force).  Purple vs. Teal, Purple vs. Orange, Teal vs. Orange.
 
 > We don't test Purple vs. Teal _and_ Teal vs. Purple as this would give the same result.
 
@@ -186,8 +190,22 @@ public void simulationStep() {
 }
 ```
 
-You might say at this point, "wait a minute, we're doing collision tests with the expanded bounding shapes again - isn't that even worse?"  It turns out no, the key being that we're not doing it for ALL pairs, only those that are currently tracked as potentially overlapping.  We've changed the algorithm from $$ O(n\log{n}) $$, for example, to $$ O(m\log{n}) $$, where $$ m $$ is the number of objects who's expanded AABBs have been updated.
+You might say at this point, "wait a minute, we're doing collision tests with the expanded bounding shapes again - isn't that even worse?"  It turns out no, the key being that we're not doing it for ALL pairs, only those that are currently tracked as potentially overlapping.  We've changed the algorithm from $$ O(n\log_2{n}) $$, for example, to $$ O(m\log_2{n}) $$, where $$ m $$ is the number of objects who's expanded AABBs have been updated.
 
-As a side effect of tracking the collisions from frame to frame, we can reduce allocation by storing the results and reusing those objects for the next frame.  In addition to that we can build APIs that allow a caller to look at all this information outside of the standard listener pattern giving them more opportunity to do things in a simpler manner.
+## Evaluation
+Let's evaluate the improvement with some numbers and assumptions.  Assume we have a scene with 5000 objects.  Of those 5000 objects, 500 are moving every frame.  Of those 500 moving objects, 50 of them need to update their expanded shapes every frame.  Assume that of all 5000 objects we have 1000 collisions.  Finally, assume that our broadphase has complexity $$ n\log_2{n} $$ to do all tests.
 
-In every test with dyn4j, even those with the majority of objects moving and where they were all grouped together, this simple improvement yielded a 30% increase in performance.
+| Scenario | Formula | Tests | % |
+|-----|-----:|-----:|-----:|
+| No enhancement with or without bounding shape expansion. | $$ 5000\log_2{5000} $$ | 61,438 | - |
+| With enhancement but without bounding shape expansion. | $$ 500\log_2{5000} + 1000 $$ | 7,143 | 87% |
+| With enhancement and bounding shape expansion. | $$ 50\log_2{5000} + 1000 $$ | 1,614 | 97% |
+{: .table}
+
+> The $$ + 1000 $$ in the above forumlas account for re-testing of overlap to account for objects moving out of collision (as described in the Frame 3 discussion in previous section).
+
+From scenario 1 to 3 that's nearly a 100% decrease in the number of tests - wow!  Clearly, the numbers I chose were to highlight the improvement, but the gains will be highly dependent on your simulation.  You could think of scenario 2 being the worst case for this enhancement and scenario 3 being the best case.  These numbers are also dependent on the value used to expand the bounding shapes and the ratio of static vs. moving shapes in your scene.  If all 5000 objects were moving and we chose an expansion value that forced an update for all objects every frame, then we're worse off than where we started.  Also keep in mind that the storage and maintenance of the frame to frame collision data has overhead.
+
+> dyn4j saw anywhere between 30-40% _raw performance_ increase implementing this simple enhancement (measuring the same simulations before/after the enhancement)
+
+A positive side effect of tracking the collisions from frame to frame is that we can reduce allocation by storing the results and reusing those objects for the next frame.  In addition, we can build new API surface that enables callers to query this information outside of the standard listener pattern giving them more opportunity to do things in a simpler manner.
