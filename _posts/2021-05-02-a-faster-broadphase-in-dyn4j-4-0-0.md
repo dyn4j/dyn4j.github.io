@@ -165,21 +165,24 @@ List<Pair> pairs = new ArrayList<Pair>();
 public void simulationStep() {
     // get only the NEW broadphase collision pairs
     List<Pair> bpairs = broadphase.getNewPairs();
+    
+    // add them to the set of pairs from the last frame
+    Iterator<Pair> iterator = bpairs.iterator();
+    while (iterator.hasNext()) {
+        pairs.add(pair);
+    }
 
-    // filter out those that are no longer colliding first
+    // filter out those that are no longer colliding
     Iterator<Pair> allIterator = pairs.iterator();
     while (allIterator.hasNext()) {
         Pair pair = allIterator.next();
         if (!pair.isBoundingShapeOverlapping()) {
             // then remove it
             allIterator.remove();
+            continue;
         }
-    }
 
-    // filter broadphase pairs using the narrowphase
-    Iterator<Pair> iterator = bpairs.iterator();
-    while (iterator.hasNext()) {
-        Pair pair = iterator.next();
+        // filter broadphase pairs using the narrowphase
         if (narrowphase.detect(pair)) {
             // then track it in our cross frame set of pairs
             pairs.add(pair);
