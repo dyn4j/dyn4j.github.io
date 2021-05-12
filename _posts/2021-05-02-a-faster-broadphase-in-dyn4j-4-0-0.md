@@ -184,12 +184,9 @@ public void simulationStep() {
 
         // filter broadphase pairs using the narrowphase
         if (narrowphase.detect(pair)) {
-            // then track it in our cross frame set of pairs
-            pairs.add(pair);
+            // then continue processing the collision...
         }
     }
-
-    // ...
 }
 ```
 
