@@ -138,9 +138,7 @@ public void simulationStep() {
     List<Pair> bpairs = broadphase.getNewPairs();
 
     // filter broadphase pairs using the narrowphase
-    Iterator<Pair> iterator = bpairs.iterator();
-    while (iterator.hasNext()) {
-        Pair pair = iterator.next();
+    for (Pair pair : bpairs) {
         if (narrowphase.detect(pair)) {
             // then track it in our cross frame set of pairs
             pairs.add(pair);
@@ -167,9 +165,11 @@ public void simulationStep() {
     List<Pair> bpairs = broadphase.getNewPairs();
     
     // add them to the set of pairs from the last frame
-    Iterator<Pair> iterator = bpairs.iterator();
-    while (iterator.hasNext()) {
-        pairs.add(iterator.next());
+    // obviously you'll need to make sure you don't add
+    // a pair that already exists in the pair list from 
+    // last frame - I'm not doing that here for simplicity
+    for (Pair pair : bpairs) {
+        pairs.add(pair);
     }
 
     // filter out those that are no longer colliding
