@@ -169,7 +169,7 @@ public void simulationStep() {
     // add them to the set of pairs from the last frame
     Iterator<Pair> iterator = bpairs.iterator();
     while (iterator.hasNext()) {
-        pairs.add(pair);
+        pairs.add(iterator.next());
     }
 
     // filter out those that are no longer colliding
