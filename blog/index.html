@@ -23,19 +23,19 @@ title: Blog
         {%-assign max = 8 -%}
         {%-assign hm = 4 | divided_by: 2 -%}
         {% if paginator.total_pages > max %}
-        <li class="page-item"><a class="page-link" href="/blog">1</a></li>
+        <li class="page-item d-block d-sm-none"><a class="page-link" href="/blog">1</a></li>
         {%- for i in (2..hm) -%}
-        <li class="page-item"><a class="page-link" href="/blog/page{{i}}">{{i}}</a></li>
+        <li class="page-item d-block d-sm-none"><a class="page-link" href="/blog/page{{i}}">{{i}}</a></li>
         {%- endfor -%}
-        <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+        <li class="page-item disabled d-block d-sm-none"><a class="page-link" href="#">...</a></li>
         {%-assign sn = paginator.total_pages | minus: hm | plus: 1 -%}
         {%- for i in (sn..paginator.total_pages) -%}
-        <li class="page-item"><a class="page-link" href="/blog/page{{i}}">{{i}}</a></li>
+        <li class="page-item d-block d-sm-none"><a class="page-link" href="/blog/page{{i}}">{{i}}</a></li>
         {%- endfor -%}
         {% else %}
-        <li class="page-item"><a class="page-link" href="/blog">1</a></li>
+        <li class="page-item d-block d-sm-none"><a class="page-link" href="/blog">1</a></li>
         {%- for i in (2..paginator.total_pages) -%}
-        <li class="page-item"><a class="page-link" href="/blog/page{{i}}">{{i}}</a></li>
+        <li class="page-item d-block d-sm-none"><a class="page-link" href="/blog/page{{i}}">{{i}}</a></li>
         {%- endfor -%}
         {% endif %}
         {% if paginator.next_page %}
