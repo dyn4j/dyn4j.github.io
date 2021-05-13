@@ -212,10 +212,10 @@ Most of these exceptions are obvious or documented in the source and [Javadocs](
 #### Extra Help
 For additional help see the following links:
 
-* [FAQ]({{ site.pages_url }}/frequently-asked-questions/)
+* [FAQ]({{ site.pages_url }}/frequently-asked-questions)
 * [Samples]({{ site.samples_url }})
-* [Advanced]({{ site.pages_url }}/advanced/)
-* [Joints]({{ site.pages_url }}/joints/)
+* [Advanced]({{ site.pages_url }}/advanced)
+* [Joints]({{ site.pages_url }}/joints)
 * [Javadocs]({{ site.javadoc_url }})
 * [Release Notes]({{ site.release_notes_url }})
 * [License]({{ site.license_url }})
