@@ -19,29 +19,29 @@ To be clear, with dyn4j.org I was looking for both a nice project website to hig
 
 {% include figure.html name="octojekyll.png" caption="GitHub + Jekyll" credit="https://jekyllrb.com/" %}
 
-## Thorn #1: Hosting
+{% include header-link.html heading="Thorn #1: Hosting" level=2 %}
 Hosting of WordPress should be easy and straight forward.  When I first took the deep dive into the platform, it was.  My host has nice GUI tools to install it and get a domain pointed to it - great!  Overtime, however, is where things went down hill.  
 
 The real nail in the coffin for this move, was more a _host_ problem than a _WordPress_ problem.  They make no attempts to keep you off of aging infrastructure and then charge you to move to equivalent, better supported infrastructure.  In my particular case, I'd just renewed for a few years when I realized that my hosting was on some ancient infrastructure that was stuck on PHP 5.x or something and that I'd have to renew _again_ to move.  What?!  I couldn't believe it.  The whole reason I found out about this was because WordPress was asking me to upgrade, but that upgrade required a newer version of PHP.
 
 Another thing to mention is the ubiquity of more robust solutions and hosting (read: cloud) out there these days.  For example, in my day job I frequently use the Microsoft stack, deploying to [Azure](https://azure.microsoft.com/en-us/) - their tools are really nice to work with.  Want to move to .NET Core 3.1?  No problem, create a new App Service Plan and move everything over - no need to deal with support.
 
-## Thorn #2: Upgrades
+{% include header-link.html heading="Thorn #2: Upgrades" level=2 %}
 It's probably already clear by now, but upgrades were also a nusiance.  Tons of [warnings](https://wordpress.org/support/article/upgrading-wordpress-extended-instructions/) about "Take a backup because everything could be broken after this" never gave me much hope, but generally speaking it worked well.  The issue is that WordPress has moved on past the PHP version supported the infrastructure I was on.  Sticking around on this old infrastructure and old PHP version just gave me the chills.
 
-## Thorn #3: Security
+{% include header-link.html heading="Thorn #3: Security" level=2 %}
 One really strange issue that has occurred, on a number of occasions, has been where someone modified (still not sure how) my [.htaccess files and redirected incoming traffic to _lovely_ pharmaceutical sites](https://www.wordfence.com/learn/removing-malicious-redirects-site/).  As a maintainer, you'd never notice unless you google-searched a page for the site and tried to click the google result - it only redirected in those scenarios.  Needless to say, that was very frustrating and I spent A LOT of time hardening my security setup (changed passwords, added MFA, changed FTP usernames and passwords, etc.).  This isn't how I want to be spending my evenings.
 
-## Thorn #4: SSL
+{% include header-link.html heading="Thorn #4: Security" level=2 %}
 Yet another cost if you host yourself is SSL.  It's not like dyn4j.org needs it for anything (no there aren't any custom made t-shirts or hats for you to buy), but there's been a lot of talk from browsers about showing nasty messages when you navigate to a site without HTTPS.  Paying for this just so a browser doesn't tag my site as a scam, just seemed like an internet tax.
 
-## Thorn #5: Customizability
+{% include header-link.html heading="Thorn #5: Customizability" level=2 %}
 WordPress is super customizable, has tons of OOB themes, free themes, paid themes, plugins, etc. It really is a nice ecosystem.  But this strength is also a great weakness - I really don't want to spend my precious free time trying to understand the internals of WordPress just so I can customize a page or two.  This made it feel very rigid - you either stuck with the plugins/themes you have installed or you learn WordPress development - and I feel like this made it really stagnant.
 
-## Thorn #6: Performance
+{% include header-link.html heading="Thorn #6: Performance" level=2 %}
 This is more a knock on my hosting provider - it just always felt slow for what was really a static site with a few infrequent blog posts.  I was on the basic of basic plans to reduce cost, but even then there really isn't that much going on with this site to warrant the lack of performance.
 
-## Replacement Decision
+{% include header-link.html heading="Replacement Decision" level=2 %}
 I just kept asking myself, "Why do I keep paying for (putting up with) this...?"  The only answer I could think of was a lack of time to make the move.  I finally decided, after my hosting provider told me, "You need to pay up if you want new infrastructure" that now was the time to move - even if I my sleep would suffer.  
 
 Research initially focused on a replacement host, but the thought of doing the same thing, just on a different host, made me start searching for alternatives.  It was then that I discovered GitHub Pages, albeit [much later](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/) than the rest of the internet it seems...

@@ -1,5 +1,5 @@
 ---
-id: 975
+id: 976
 title: A Faster Broadphase in dyn4j 4.0.0
 date: 2021-05-02 00:36:59 -0500
 author: William Bittle
@@ -22,7 +22,7 @@ If you've ever done performance analysis or improvements to a piece of code, you
 
 Specifically, this performance improvement was in the Broadphase collision detection system and how it handles detection from frame to frame.
 
-## Background
+{% include header-link.html heading="Background" level=2 %}
 First a bit of background.  dyn4j includes a system for detecting collisions between objects.  This system is broken down into three main phases:
 
 * Broadphase
@@ -33,7 +33,7 @@ Why the 3-phase approach?  The narrowphase algorithms are expensive to run, so i
 
 Thus, the broadphase is where we detect all the _potential_ pairs of colliding objects.  More specifically, it returns a set of collision pairs that **may** be colliding.  Those pairs that are not included in this set are **definitely NOT** colliding.  The pairs are handed over to the narrowphase where we find out if they truly are or aren't colliding.  Now, how does it do this?  And how does it do it more efficiently than the narrowphase?
 
-## Broadphase Collision Detection
+{% include header-link.html heading="Broadphase Collision Detection" level=2 %}
 Broadphase collision detection algorithms center around the idea of choosing a simple bounding shape that encompasses the object.  For example, let's imagine I have a simple square shape and I want to create a bounding shape for it.  I can use any type of shape I want, but clearly the choice will determine the efficiency of the algorithm.  In the below picture you see three different possibilities (these are the more common choices):
 
 {% include figure.html name="bounding-shapes.png" caption="Example Bounding Shapes" %}
@@ -54,7 +54,7 @@ For example, if I'm testing an object's AABB against the purple region in the im
 
 > There are other partitioning schemes as well: grid-based, quadtree, BSPs, etc.
 
-## Bounding Shape Expansion
+{% include header-link.html heading="Bounding shape Expansion" level=2 %}
 Creating a data structure to do less collision tests isn't a trivial task.  In addition to the creation of the initial state, we also have to keep it up-to-date as those objects move and rotate over time.  It must be efficient at updating so that we don't trade one performance issue for another.  To avoid going down the rabbit hole of describing various data structures that can be used in broadphase collision detection, let's just assume that you have one and updates to that data structure aren't cheap.
 
 Enter bounding shape exapansion.  If you recall from the section above where we laid out a couple of options for bounding shapes, you may have noticed that the bounding shapes for the square didn't fit around it tightly.  This was primarily to highlight the different bounding shapes, but also to draw attention to the fact that they don't _have_ to fit tightly.  Imagine I _expand_ the bounding shape for a square and put that expanded bounding shape into the broadphase.  The effect is that when the square moves/rotates, I don't have to update the expanded bounding shape unless it leaves that expanded region.
@@ -67,7 +67,7 @@ Let's review what we're trying to do here - we want to send less pairs to the na
 
 The key then is to strike a balance between expanding a lot and not expanding at all.  This is a configurable property in dyn4j.
 
-## The New Optimization
+{% include header-link.html heading="The New Optimization" level=2 %}
 At this point, we have a broadphase collision detection algorithm that uses a data structure to avoid the $$ O(n^2) $$ number of collision tests, a collision detection test that is far quicker than the narrowphase, and we've chosen an appropriate bounding shape expansion to avoid rebuilding te data structure every frame.  What more can be done?
 
 To take a step back, think about how a simulation evolves over time:
@@ -192,7 +192,7 @@ public void simulationStep() {
 
 You might say at this point, "wait a minute, we're doing collision tests with the expanded bounding shapes again - isn't that even worse?"  It turns out no, the key being that we're not doing it for ALL pairs, only those that are currently tracked as potentially overlapping.  We've changed the algorithm from $$ O(n\log_2{n}) $$, for example, to $$ O(m\log_2{n}) $$, where $$ m $$ is the number of objects who's expanded AABBs have been updated.
 
-## Evaluation
+{% include header-link.html heading="Evaluation" level=2 %}
 Let's evaluate the improvement with some numbers and assumptions.  Assume we have a scene with 5000 objects.  Of those 5000 objects, 500 are moving every frame.  Of those 500 moving objects, 50 of them need to update their expanded shapes every frame.  Assume that of all 5000 objects we have 1000 collisions.  Finally, assume that our broadphase has complexity $$ n\log_2{n} $$ to do all tests.
 
 | Scenario | Formula | Tests | % |

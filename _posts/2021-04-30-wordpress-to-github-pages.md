@@ -23,7 +23,7 @@ Full disclosure - I've been a web developer for 15 years so a lot of the basic c
 
 > The dyn4j.org website is a [public repo](https://github.com/dyn4j/dyn4j.github.io) on GitHub.  Reference the source for an additional resource when going through your conversion.
 
-## Getting Started
+{% include header-link.html heading="Getting Started" level=2 %}
 To get started you'll need to [install the jekyll tooling](https://jekyllrb.com/docs/) which includes ruby.  For development of the site I went with Visual Studio Code which has good support for markdown, yml, css, sass, JavaScript, and so on.  I ended up using all of these in some way and having syntax highlighting was really important.
 
 {% include figure.html name="jekyll.png" caption="Jekyll" credit="https://jekyllrb.com/" %}
@@ -36,7 +36,7 @@ I also followed the [GitHub guides](https://docs.github.com/en/pages) to get a r
 
 > Refer to the GitHub Page documentation to understand what things are not supported. For example, not all Jekyll plugins are supported.
 
-## Build the Skeleton
+{% include header-link.html heading="Build the Skeleton" level=2 %}
 My first goal was to build the basic skeleton of the site and the landing page.  I wanted to choose an existing template, but they all seemed OK - nothing really wrong with them, just not what I wanted so I decided to download a few example jekyll themes: ([no-style-please](http://jekyllthemes.org/themes/no-style-please/) and [creative theme](http://jekyllthemes.org/themes/creative-theme/)) as references.  I also decided on [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) for the basic UI components and then set after it.
 
 {% include figure.html name="bootstrap.png" caption="Bootstrap 5" credit="https://getbootstrap.com/" %}
@@ -47,14 +47,14 @@ For the animation I used [AOS](https://michalsnik.github.io/aos/) since it had t
 
 So at this point I had the landing page done and a decent pattern to follow for the rest of the site.
 
-## Build the Blog
+{% include header-link.html heading="Build the Blog" level=2 %}
 The next step was to get the blog portion of the site going. For that I referenced the no-style-please theme to understand how to display them, where to put the posts, and so on.  I made it my own and modeled it after the existing site with a [tag cloud](https://superdevresources.com/tag-cloud-jekyll/), [grouped by year](https://stackoverflow.com/questions/24191711/archive-jekyll-posts-by-year), and [category links](https://gist.github.com/Phlow/a0e3fa686eb259fe7f76) sections.  There are some limitations here that I didn't really like, but it was a small price to pay.  For example, to create a link to a specific tag or category - not possible - instead you can create a page with _all_ your posts grouped by tag/category and link to that page with an anchor to the correct location on the page.  Not huge deal - no one reads these anyway do they?  The other thing that wasn't straight forward was the [paging](https://jekyllrb.com/docs/pagination/) for the main blog landing page - I didn't want a hundred blog posts to all be on the same page that the user lands on. 
 
 I built it out while using the same posts from the no-style-please theme first to get all the includes and layouts the way I wanted them.
 
 {% include figure.html name="tagcloud.png" caption="Tag Cloud Example" %}
 
-## Moving the Blog Posts
+{% include header-link.html heading="Moving the Blog Posts" level=2 %}
 For this step, I needed something to export all the posts from the WordPress site and convert them to Jekyll markdown.  For that I installed the [Jekyll Exporter](https://wordpress.org/plugins/jekyll-exporter/) plugin into my WordPress site.  A couple of good things about this is that it also exported pages and assets (images).  The conversion was pretty good too.  
 
 That said there were some problems.  The first was the `date` front matter data point.  It was in the format ISO format that you'd expect, but Jekyll needs the date formatted like [YYYY-MM-DD HH:MM:SS +/-TTTT](https://jekyllrb.com/docs/front-matter/#predefined-variables-for-posts).  This only matters if you want your posts sorted properly... (lot's of eyerolling ensued). The second problem was that the exported/converted posts left a lot of HTML in them and I really wanted to move to entirely markdown.  I understand why it couldn't convert those parts, they were complex HTML code, so I decided to roll my sleeves up and update all the posts.  This was very time consuming and I was very VERY bored.  I decided while I was modifying each post to review them as well.  This, while still boring, was very satisfying.  For example, going back through the constrained dynamics posts, I found a number of minor mistakes and added more clarifying content.  I also decided to change all the hard coded images of math to Latex for better maintainability.  Another issue was that the exported content didn't properly change the path to images and those needed to be updated and migrated to the site's assets folder manually.  There are [couple of things you can do here](https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll) to make it easier to references images.  I also reviewed all links and cleaned those up.
@@ -65,7 +65,7 @@ All in all, I spent WAY too much time here.  I'm happy with the end result, but 
 
 > **TIP**: There's a gotcha here.  The Jekyll Exporter tool exports your posts as markdown files with front matter.  as part of the front matter there's an `id` field which I'm assuming was the original id from WordPress.  However, when you try to do `post.id` you will get the slugified name of the post - the `id` property of the post object cannot be overridden.
 
-## Moving the Comments
+{% include header-link.html heading="Moving the Comments" level=2 %}
 I spent a lot of time thinking about whether to move comments or not.  GitHub Pages, being a static site host, meant that I wouldn't be able to accept _more_ comments unless I developed a different solution.  I had around 500 comments total - all moderated so they were quality.  I decided to move them over and make the decision whether to accept new comments later.  Jekyll has a way to generate static content from [data](https://jekyllrb.com/docs/datafiles/).  This is the mechanism we'll use for comments.
 
 > To save you some time, I probably went the long way.  What I describe below is what I did.  After all that work I found [this](https://damieng.com/blog/2018/05/28/wordpress-to-jekyll-comments#exporting-comments-from-wordpress).  Somehow I overlooked this, so I don't know what the output is like, but I'd probably start with that tool  if I were to do it over again.
@@ -190,13 +190,13 @@ One interesting thing here is that I wanted to convert these to markdown too.  I
 
 I also considered going through all the comments and fixing links, images, formatting, etc. and quickly gave up on that idea.  The output was good enough so I just let it all as is - there are just too many to go through.
 
-## Moving any Pages
+{% include header-link.html heading="Moving Pages" level=2 %}
 In WordPress you can create pages as well as posts/comments.  In dyn4j, there were only a few and these were converted via the Jekyll Exporter tool mentioned earlier, but just like posts, they still had a lot of HTML embeded in them.  Another issue is that they were horribly out of date.  So I decided to build these mostly from the ground up.  I used the existing pages for a good outline for content, but pretty much rewrote all of them in markdown.  I think the result is so much better - up to date documentation, more code samples, better references to classes in the library and so on.  I was also able to consolidate some pages and skip the conversion entirely.  I converted 4 pages of 5.
 
-## Code Highlighting
+{% include header-link.html heading="Code Highlighting" level=2 %}
 One thing I spent a lot of time on was code highlighting. It was very hard to understand how this works.  Basically, you write your code comments in single or triple tick marks and Jekyll parses the content and emits HTML _ready_ for highlighting (using Rouge).  But to actually highlight the code you must add in a CSS file.  You can find a bunch of options.  [The process is described in detail here](https://bnhr.xyz/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html#create-a-css-file-for-the-highlighting-style-you-want), but the key that I kept missing was that you run a command to generate the CSS of choice, then you just include that in your `<head>`.
 
-## Custom Domain
+{% include header-link.html heading="Custom Domain" level=2 %}
 No what's really cool about all this is that you can configure GitHub Pages with a custom domain.  You can even enable HTTPS!  I decided at the start of this process that I would do this, but it turned out to be really frustrating for a number of reasons.  The first reason is due to the way DNS works - you change something and everything is broken for a while (a hour for example) until the change propagates.  I think in total dyn4j.org was probably down for 10 hours while I fiddled with this.  The second reason was due to my host through which I purchased the domain long ago - their tools are just so buggy.  Pages not loading, not allowing me to do things but not telling me why, etc.  A lot of this was trial and error.
 
 I just realized I went on a rant and you don't care - you just want to know what to do.  The first thing you should do is read the [official GitHub Pages documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) and follow that.  It really is good documentation.
@@ -226,7 +226,7 @@ This was the final setup (not sure if I needed both the @ and dyn4j.org `A` reco
 | CNAME | www | dyn4j.github.io |
 {: .table}
 
-## Accepting New Comments
+{% include header-link.html heading="Accepting New Comments" level=2 %}
 Like I've mentioned before, the whole point of Jekyll is to produce a lightning fast static site generated from non-static data (like posts, comments, pages, templates, etc.)  So how can we accept new comments?  It was a great question and I found a [solution](https://haacked.com/archive/2018/06/24/comments-for-jekyll-blogs/).  It's actually quite straight forward:
 
 * Create a comment form that will post data to an Azure Function
@@ -389,5 +389,5 @@ Now, you do lose spam filtering, but like the source link mentioned, a simple "A
 
 Another cool thing I saw being done on the comment form is the automatic generation of avatar URLs for GitHub, Gravitar, and Twitter.  I'm not sure what their solutions were, but mine was just a [simple (vanilla) JavaScript file](https://github.com/dyn4j/dyn4j.github.io/blob/main/js/comment.js) that takes the username field and generates an avatar URL based on the format.  I'd forgotten how annoying it is to write vanilla JavaScript...
 
-## Summary
+{% include header-link.html heading="Summary" level=2 %}
 While the conversion took more effort than I was expecting, I've very happy with the results.  It actually forced me to go back and revise pages and posts that were in need of some updates.  It also allowes me to maintain the site entirely out of GitHub and drop the hosting I was paying for as well.  Other benefits include speed and full control of the UI.  All this while retaining the capability to blog and receive comments.
