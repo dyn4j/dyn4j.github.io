@@ -49,7 +49,7 @@ dyn4j is a Maven project and deployed to [Maven Central]({{ site.maven_url }}) a
 <dependency>
     <groupId>org.dyn4j</groupId>
     <artifactId>dyn4j</artifactId>
-    <version>4.1.4</version>
+    <version>4.2.0</version>
 </dependency>
 ```
 
