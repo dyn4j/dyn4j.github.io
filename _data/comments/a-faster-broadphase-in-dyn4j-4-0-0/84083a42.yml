@@ -1,0 +1,12 @@
+id: 84083a42
+date: 2021-11-23T22:49:40.8261867Z
+author: Manolis Tsamis
+avatar: https://github.com/mtsamis.png
+message: >
+  Hi William,
+
+  this is a very nice performance improvement for dyn4j.
+
+  While designing some new broad-phase algorithms I also found out that searching only for new collision pairs can be nice for performance.
+
+  Great work!
