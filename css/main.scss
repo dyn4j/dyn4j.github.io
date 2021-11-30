@@ -137,6 +137,10 @@ article .comment-divider {
         max-width: 100%;
 }
 
+article .comment-message {
+    white-space: pre-wrap;
+}
+
 blockquote {
         margin: 1em;
         padding: 0.5em 0.5em 0.5em 1em;
