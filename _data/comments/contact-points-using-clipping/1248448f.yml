@@ -1,0 +1,12 @@
+id: 1248448f
+date: 2021-11-30T15:10:20.0740242Z
+author: William
+avatar: https://github.com/wnbittle.png
+message: >-
+  See here for the Edge definition:  https://github.com/dyn4j/dyn4j/blob/master/src/main/java/org/dyn4j/geometry/EdgeFeature.java
+
+
+  In the case of dyn4j, I abstracted out the collision feature into two types: a VertexFeature (for things like circle vs. anything else collisions) and an EdgeFeature (for polygon-polygon) and then handle them differently when determining what type of contact point(s) (collision manifold) to produce.
+
+
+  The ref.max is just the farthest vertex.  It's computed in step 1 in the first code sample.  The max vertex (the one farthest along the collision normal) allows us to determine the two edges involved in the collision so we can choose the best one of those.  Is it the edge to the right or left of that maximum vertex?  In this article and in dyn4j I choose the edge that's most perpendicular to the collision normal.
