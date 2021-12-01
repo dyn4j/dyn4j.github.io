@@ -90,7 +90,7 @@ The Douglas-Peucker algorithm is a $$ O(n log_2 n) $$ complexity algorithm that 
 
 ```java
 // NOT INTENDED TO BE SOURCE CODE - MORE PSUEDO CODE
-List<Vertex> dp(List<Vertex> polyline) {
+List<Vertex> dp(List<Vertex> polyline, double max) {
     int size = polyline.size();
     Vertex first = polyline.get(0);
     Vertex last = polyline.get(size - 1);
@@ -107,10 +107,10 @@ List<Vertex> dp(List<Vertex> polyline) {
         }
     }
 
-    if (maxDistance >= minDistance) {
+    if (maxDistance >= max) {
         // subdivide
-        List<Vertex> one = dp(polyline.sublist(0, i + 1));
-        List<Vertex> two = dp(polyline.sublist(i, size));
+        List<Vertex> one = dp(polyline.sublist(0, maxVertex + 1));
+        List<Vertex> two = dp(polyline.sublist(maxVertex, size));
         // rejoin the two (TODO without repeating the middle point)
         List<Vertex> simplified = new ArrayList<Vertex>();
         simplified.addAll(one);
