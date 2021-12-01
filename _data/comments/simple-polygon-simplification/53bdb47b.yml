@@ -1,0 +1,5 @@
+id: 53bdb47b
+date: 2021-12-01T03:27:17.7428836Z
+author: errta
+avatar: https://www.gravatar.com/avatar/398c6640da9c85c620aac5638a2c91bbs=96
+message: The psuedo code of Douglas-Peucker algorithm is wrong. The input function shoud have maxDistance pre-defined as an input, and the divide-and-conquer of dp() function should be indexed by maxVertice rather than i.
