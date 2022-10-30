@@ -29,7 +29,7 @@ The quickest way to get started with [dyn4j](/) is to clone the [dyn4j-samples](
 
 Starting with the samples project has a number of benefits:
 
-* The result is more satisifying because the samples implement keyboard/mouse iteraction and the output is visible (dyn4j itself has no rendering capability)
+* The result is more satisfying because the samples implement keyboard/mouse interaction and the output is visible (dyn4j itself has no rendering capability)
 * The project should compile and run without any modification which allows you to avoid any tooling setup while evaluating the library
 * The project contains a number of common usage scenarios that you could build off of
 * The project allows you to build off of it's simple framework to do POCs much quicker
@@ -187,11 +187,13 @@ b.setVelocity(new Vector2(0.0, 2.0));
 <a id="Integrating_Into_The_Game_Loop"></a>
 
 #### Integrating Into The Game Loop
-Most, if not all, games use active rendering and something called a "game loop" to poll for input, update graphics, etc.  To allow the simulation, which is represented by the `World`, you must call one of the update/step methods: `World.update(double)`, `World.updatev(double)`, `World.step(int)`, etc.  The update methods must be passed the elapsed time from the last iteration <strong>in seconds</strong> whereas the step methods are looking for the number of steps to perform.
+Most, if not all, games use active rendering and something called a "game loop" to poll for input, update graphics, etc.  Integrate the simulation, which is represented by the `World`, by calling one of the update/step methods: `World.update(double)`, `World.updatev(double)`, or `World.step(int)`, etc.  The update methods must be passed the elapsed time from the last iteration <strong>in seconds</strong> whereas the step methods take the number of steps to perform.
 
 The `World.updatev(double)` method can be used if you prefer a variable time step or would like to control when the World updates yourself. The `World.update(double)` method accumulates the elapsed time until it reaches `Settings.getStepFrequency()`, at which time the simulation is updated.  The `World.step(int)` methods are useful when you want to manually step through the simulation.
 
 > NOTE: Variable time steps can reduce accuracy and stability.
+
+Updating/stepping the world changes the bodies inside it. In particular, a body's updated `transform` can be used to position and rotate the element it represents for display. Notably, the shapes inside the bodies are not changed by the world's simulation; so, you need to take into account the body's updated transform when displaying the shapes.
 
 <a id="Exceptions"></a>
 
